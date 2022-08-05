@@ -1,0 +1,25 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: Password reset on 127.0.0.1:8000
+From: webmaster@localhost
+To: ayomide@gmail.com
+Date: Wed, 03 Aug 2022 22:55:04 -0000
+Message-ID: <165956730401.3452.4174045908426158249@DESKTOP-CFBGDKS>
+
+
+You're receiving this email because you requested a password reset for your user account at 127.0.0.1:8000.
+
+Please go to the following page and choose a new password:
+
+http://127.0.0.1:8000/accounts/reset/MQ/b9lufs-0cbd8ea2c06b4bc24bd296bcdaefcb6a/
+
+Your username, in case you’ve forgotten: Ayomide
+
+Thanks for using our site!
+
+The 127.0.0.1:8000 team
+
+
+
+-------------------------------------------------------------------------------
