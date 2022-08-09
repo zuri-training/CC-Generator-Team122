@@ -1,73 +1,114 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us</title>
-    <link rel="stylesheet" href="{% static './registration.css' %}">
-</head>
-<body>
+    <link rel="stylesheet" href="{% static 'css/registration.css' %}" />
+  </head>
+  <body>
     <div class="about-container">
-        <!-- heading -->
-	{% block title %}
-        <h1>About Us</h1>
-	{% endblock %} {% block content%}
-        <p class="first-para">GET TO KNOW MORE ABOUT <span class="name">CARDXTRA</span></p>
-       <div class="flex-container">
-           <!-- right part -->
+      <!-- heading -->
+      {% block title %}
+      <h1>About Us</h1>
+      {% endblock %} {% block content%}
+      <p class="first-para">
+        GET TO KNOW MORE ABOUT <span class="name">CARDXTRA</span>
+      </p>
+      <div class="flex-container">
+        <!-- right part -->
         <div class="platform">
-            <div class="out"></div>
-            <div class="in"></div>
-            <h3>Platform for credit card generator.</h3>
-            <img src="./Images/cuate.png" alt="credit-card-payment" class="platform-img">
-            <img src="/Images/cardxtra_logo1-removebg-preview 6.png" alt="logo" class="logo">
+          <div class="out"></div>
+          <div class="in"></div>
+          <h3>Platform for credit card generator.</h3>
+          <img
+            src="./Images/cuate.png"
+            alt="credit-card-payment"
+            class="platform-img"
+          />
+          <img
+            src="/Images/cardxtra_logo1-removebg-preview 6.png"
+            alt="logo"
+            class="logo"
+          />
         </div>
-            <!-- left part -->
+        <!-- left part -->
         <div class="left">
-            <h1>Learn about who we are and our mission</h1>
-            <p>Cardxtra is a platform that allows users to creatively brand their credit cards from the comfort of their homes. In this era of creativity and evolution, Cardxtra gives you the ability to choose from pre-designed cards or create your own card design from scratch.</p>
-            <p>Cardxtra is revolutionizing the future with beautiful cards design, jump to our website and start the process or Download our application from playstore to begin your journey.</p>
-            <p>Stay connected for more updates.</p>
-            <p>Have questions? <a href="./contact_us.html" class="contact-support"> Contact Support &rarr;</a></p>
+          <h1>Learn about who we are and our mission</h1>
+          <p>
+            Cardxtra is a platform that allows users to creatively brand their
+            credit cards from the comfort of their homes. In this era of
+            creativity and evolution, Cardxtra gives you the ability to choose
+            from pre-designed cards or create your own card design from scratch.
+          </p>
+          <p>
+            Cardxtra is revolutionizing the future with beautiful cards design,
+            jump to our website and start the process or Download our
+            application from playstore to begin your journey.
+          </p>
+          <p>Stay connected for more updates.</p>
+          <p>
+            Have questions?
+            <a href="./contact_us.html" class="contact-support">
+              Contact Support &rarr;</a
+            >
+          </p>
         </div>
-        
-       </div>
+      </div>
     </div>
     <footer>
-        <div class="footer">
-            <div class="first-div">
-            <img src="./Images/cardxtra_logo1-removebg-preview 6.png" alt="logo" class="footer-logo">
+      <div class="footer">
+        <div class="first-div">
+          <img
+            src="./Images/cardxtra_logo1-removebg-preview 6.png"
+            alt="logo"
+            class="footer-logo"
+          />
         </div>
         <div class="second-div">
-            <ul>
-                <li><a href="#">Designs</a></li>
-            </ul>
+          <ul>
+            <li><a href="#">Designs</a></li>
+          </ul>
         </div>
         <div class="third-div">
-            <ul>
-                <li><a href="#">Terms and Condition </a></li>
-                <li><a href="#">Policy and Privacy</a></li>
-            </ul>
+          <ul>
+            <li><a href="#">Terms and Condition </a></li>
+            <li><a href="#">Policy and Privacy</a></li>
+          </ul>
         </div>
         <div class="fourth-div">
-            <ul>
-                <li><a href="./signup.html">Sign Up</a></li>
-                <li><a href="./login.html">Log In</a></li>
-            </ul>
+          <ul>
+            <li><a href="./signup.html">Sign Up</a></li>
+            <li><a href="./login.html">Log In</a></li>
+          </ul>
         </div>
-        </div>
-        <div class="footer-media">
-            <ul>
-                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="info@cardxtra.com"><i class="fa-solid fa-envelope"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-            </ul>
-        </div>
+      </div>
+      <div class="footer-media">
+        <ul>
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="info@cardxtra.com"><i class="fa-solid fa-envelope"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </li>
+        </ul>
+      </div>
     </footer>
-    <script src="https://kit.fontawesome.com/4fed0c590c.js" crossorigin="anonymous"></script>
-{% endblock %}
-</body>
+    <script
+      src="https://kit.fontawesome.com/4fed0c590c.js"
+      crossorigin="anonymous"
+    ></script>
+    {% endblock %}
+  </body>
 </html>

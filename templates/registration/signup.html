@@ -1,92 +1,115 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-up</title>
-    <link rel="stylesheet" href="{% static '../registration.css' %}">
-</head>
-<body>
+    <link rel="stylesheet" href="{% static 'css/registration.css' %}" />
+  </head>
+  <body>
     <div class="signup-container">
-        <div class="customize">
-            <h1>Customize your card and standout from the crowd.</h1>
-            <div class="outer"></div>
-            <div class="middle"></div>
-            <div class="inner"></div>
+      <div class="customize">
+        <h1>Customize your card and standout from the crowd.</h1>
+        <div class="outer"></div>
+        <div class="middle"></div>
+        <div class="inner"></div>
+      </div>
+      <div class="create">
+        <div class="greet">
+          {% block title %}
+          <h3>Create an account</h3>
+          {% endblock %} {% block content%}
+          <p>Hello there! Let's get started</p>
         </div>
-        <div class="create">
-            <div class="greet">
-                {% block title %}
-                <h3>Create an account</h3>
-                {% endblock %} {% block content%}
-            <p>Hello there! Let's get started</p>
+        <div class="fill">
+          <form action="" method="post">
+            {% csrf_token %}
+            <label for="Full-Name">Full Name</label>
+            <br />
+            <input type="text" placeholder="Full-Name" />
+            <br />
+            <label for="Email">Email Address</label>
+            <br />
+            <input type="email" placeholder="Enter your email address" />
+            <br />
+            <label for="Password">Password</label>
+            <br />
+            <div class="password">
+              <input type="password" placeholder="Password" /><i
+                class="fa-regular fa-eye-slash icon"
+              ></i>
             </div>
-           <div class="fill">
-                <form action="" method="post">
-                    {% csrf_token %} {{ form.as_p}}
-                <label for="Full-Name">Full Name</label>
-                <br>
-                <input type="text" placeholder="Full-Name">
-                <br>
-                <label for="Email">Email Address</label>
-                <br>
-                <input type="email" placeholder="Enter your email address">
-                <br>
-                <label for="Password">Password</label>
-                <br>
-                <div class="password">
-                    <input type="password" placeholder="Password"><i class="fa-regular fa-eye-slash icon"></i>
-                </div>
-                <br>
-                <label for="Password" class="confirm">Confirm Password</label>
-                <br>
-                <div class="password">
-                    <input type="password" placeholder="Password"><i class="fa-regular fa-eye-slash icon"></i>
-                </div>
-            </form>
-            <div class="signup">
-                <button><a href="#">Sign-up</a></button>
-            <p class="already">Already have an account? <a href="./login.html">Log In</a></p>
+            <br />
+            <label for="Password" class="confirm">Confirm Password</label>
+            <br />
+            <div class="password">
+              <input type="password" placeholder="Password" /><i
+                class="fa-regular fa-eye-slash icon"
+              ></i>
             </div>
-           </div>
-            
+          </form>
+          <div class="signup">
+            <button><a href="#">Sign-up</a></button>
+            <p class="already">
+              Already have an account? <a href="./login.html">Log In</a>
+            </p>
+          </div>
         </div>
+      </div>
     </div>
     <footer>
-        <div class="footer">
-            <div class="first-div">
-            <img src="./Images/cardxtra_logo1-removebg-preview 6.png" alt="logo" class="footer-logo">
+      <div class="footer">
+        <div class="first-div">
+          <img
+            src="./Images/cardxtra_logo1-removebg-preview 6.png"
+            alt="logo"
+            class="footer-logo"
+          />
         </div>
         <div class="second-div">
-            <ul>
-                <li><a href="#">Designs</a></li>
-            </ul>
+          <ul>
+            <li><a href="#">Designs</a></li>
+          </ul>
         </div>
         <div class="third-div">
-            <ul>
-                <li><a href="#">Terms and Condition </a></li>
-                <li><a href="#">Policy and Privacy</a></li>
-            </ul>
+          <ul>
+            <li><a href="#">Terms and Condition </a></li>
+            <li><a href="#">Policy and Privacy</a></li>
+          </ul>
         </div>
         <div class="fourth-div">
-            <ul>
-                <li><a href="./contact_us.html">Contact Us</a></li>
-                <li><a href="./about_us.html">About Us</a></li>
-            </ul>
+          <ul>
+            <li><a href="./contact_us.html">Contact Us</a></li>
+            <li><a href="./about_us.html">About Us</a></li>
+          </ul>
         </div>
-        </div>
-        <div class="footer-media">
-            <ul>
-                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="info@cardxtra.com"><i class="fa-solid fa-envelope"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-            </ul>
-        </div>
+      </div>
+      <div class="footer-media">
+        <ul>
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="info@cardxtra.com"><i class="fa-solid fa-envelope"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </li>
+        </ul>
+      </div>
     </footer>
-    <script src="https://kit.fontawesome.com/4fed0c590c.js" crossorigin="anonymous"></script>
-{% endblock %}
-</body>
+    <script
+      src="https://kit.fontawesome.com/4fed0c590c.js"
+      crossorigin="anonymous"
+    ></script>
+    {% endblock %}
+  </body>
 </html>
