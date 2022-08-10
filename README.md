@@ -104,7 +104,7 @@ Coming Soon....
 
 - GitHub: [@Bayilasolomon](https://github.com/SidKay)
 
-👤 **Lanre**
+👤 **Akinuli Iyanuoluwa**
 
 - GitHub: [@Akinuli Iyanuoluwa Lydia](https://github.com/Iyanuoluwa19)
 
