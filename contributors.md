@@ -22,15 +22,15 @@
 
 -[User Research](https://github.com/zuri-training/CC-Generator-Team122/issues/18)
 
-# [@Frankieeeeeeeeeee Contribution](<(https://github.com/Frankieeeeeeeeeee)>)
+# [@Frankieeeeeeeeeee Contribution](https://github.com/Frankieeeeeeeeeee)
 
 -[User Research](https://github.com/zuri-training/CC-Generator-Team122/issues/18) -[Credit cards and Logo designs](https://github.com/zuri-training/CC-Generator-Team122/issues/37)
 
-# [@Akinuli Iyanuoluwa Lydia Contribution](<(https://github.com/Iyanuoluwa19)>)
+# [@Akinuli Iyanuoluwa Lydia Contribution](https://github.com/Iyanuoluwa19)
 
 -[User Research](https://github.com/zuri-training/CC-Generator-Team122/issues/18) -[About us, contact us and user profile mobile screen design](https://github.com/zuri-training/CC-Generator-Team122/issues/36)
 
-# [@Bayilasolomon Contribution](<(https://github.com/SidKay)>)
+# [@Bayilasolomon Contribution](https://github.com/SidKay)
 
 -[User Research](https://github.com/zuri-training/CC-Generator-Team122/issues/18) -[About us, contact us and user profile mobile screen design](https://github.com/zuri-training/CC-Generator-Team122/issues/36)
 
