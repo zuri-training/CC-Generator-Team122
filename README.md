@@ -7,8 +7,8 @@
 ## :zap: GENERAL PROJECT INFORMATION
 
 **CardXtra** is a website that allows authenticated users to
-customize their credit card by selecting templates from our library of credit card designs.
-By having this product, our users can now brand their cards according to their personalities and interests. The possibilities are endless.
+download customized card designs, as well as their code samples, from our library of credit card designs.
+By having this product, our users can now brand their cards according to their personalities and interests and brands can also integrate our API into their financial apps or websites. The possibilities are endless.
 
 There is also a robust documentation to guide users through the website and the create the best User Experience.
 
@@ -31,7 +31,7 @@ Coming Soon....
 
 - Visit the website with the live link
 - Go through the library of various card designs
-- Sign up to create an account to edit and download your desired card designs
+- Sign up to create an account and download your desired card designs
 - It is that simple
 
 ## FEATURES
@@ -43,7 +43,7 @@ Coming Soon....
 - Navigation Bar
   Users can navigate the site and move from one page accessible to them to another. Pages includes: About Us Page, Contact Us page and Library page.
 - Library Page
-  Users can only scroll through the library page and view the available designs. They can neither edit nor download.
+  Users can only scroll through the library page and view the available designs. They cannot download.
 - Call To Action (CTA)
   Users will be receive prompts to register or log in (if they already have an account and are just logged out).
 
@@ -57,7 +57,7 @@ Coming Soon....
 - Navigation Bar
   Users can navigate the site and move from one page accessible to them to another. Pages includes: About Page, Contact Us page, Library page and User profile page
 - Library Page
-  Users can fully interact by editing and downloading their designs
+  Users can fully interact by downloading their desired designs
 
 - User Profile Page
   Users get access to options to switch to dark mode, reset their password, check their saved card designs, change their profile image and log out.
@@ -68,6 +68,7 @@ Coming Soon....
 ## Team Lead and Assistant Team Lead
 
 👤 **Ayomide Victoria Akomolafe, Fullstack Developer**
+
 👤 **Ayodeji Muhydeen, Product Designer**
 
 - Team Lead GitHub: [@MideMario](https://github.com/MideMario)
