@@ -92,24 +92,19 @@ Coming Soon....
 
 - GitHub: [@Phebian7](https://github.com/Phebian7)
 
-👤 **Mbonu Glory**
-
-- GitHub: [@GloryM26](https://github.com/GloryM26)
-
 👤 **Shalom Ajiyana**
 
 - GitHub: [@Shally2luv](https://github.com/Shally2luv)
 
 👤 **Ebuka Chukwuma**
 
+- GitHub: [@Frankieeeeeeeeeee](https://github.com/Frankieeeeeeeeeee)
+
 👤 **Innocent Solomon**
 
 - GitHub: [@Bayilasolomon](https://github.com/SidKay)
 
 👤 **Lanre**
-
-- GitHub: [@Lanre](https://github.com/talphlanre)
-  👤 **Akinuli Iyanuoluwa Lydia**
 
 - GitHub: [@Akinuli Iyanuoluwa Lydia](https://github.com/Iyanuoluwa19)
 
