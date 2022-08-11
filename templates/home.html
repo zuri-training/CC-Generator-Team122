@@ -1,0 +1,389 @@
+<!-- Authenticated user homepage goes in here -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="stylesheet" href="{% static './landingpage.css' %}">
+</head>
+<body>
+    <nav>
+        <img src="./Images/cardxtra_logo1-removebg-preview 6.png" alt="logo">
+        <ul>
+          <li>
+            <a href="#">Libraries</a>
+          </li>
+          <li>
+            <a href="./contact_us.html">Contact Us</a>
+          </li>
+          <li>
+            <a href="./about_us.html">About Us</a>
+          </li>
+          <li>
+            <a href="./userprofile.html"><i class="fa-solid fa-user"></i></a>
+          </li>
+        </ul>
+    </nav>
+    <div class="body-container">
+        <div class="brand">
+         <div class="brand-first">
+             {% block title %}
+             <h1>Brand your credit card as beautiful as you desire</h1>
+             {% endblock %} {% block content%}
+          <p>
+            Explore and cusromize a very good looking credit card for your financial journey
+          </p>
+          <div class="brand-btn">
+              <button class="get-started"><a href="#">Get Started</a></button>
+            <button class="explore"><a href="#">Explore</a></button>
+          </div>
+         </div>
+         <div class="brand-cards">
+             <div class="flex-brand">
+                 <div class="card card1">
+                  <div class="up">
+                        <div class="up-logo"><img src="./Images/card extra copyww 1.png" alt="logo"></div>
+                            <h4>Sport Card</h4>
+                        </div>
+                        <div class="mid">
+                            <img src="./Images/wwww 1.png" alt="card-sensor">
+                            <h5>000-000-000 000-000-000 000-000-000</h5>
+                        </div>
+                        <div class="end">
+                            <div class="exp">
+                                <h5 class="card-name">First-Name Last-Name</h5>
+                                <h6>VALID THRU</h6>
+                            <h4>01/01</h4>
+                            </div>
+                            <div class="visa-logo">
+                                <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo">
+                            </div>
+                            </div>
+             </div>
+                   <div class="card card2">
+                  <div class="up">
+                        <div class="up-logo"><img src="./Images/card extra copyww 1.png" alt="logo"></div>
+                            <h4>Sport Card</h4>
+                        </div>
+                        <div class="mid">
+                            <img src="./Images/wwww 1.png" alt="card-sensor">
+                            <h5>000-000-000 000-000-000 000-000-000</h5>
+                        </div>
+                        <div class="end">
+                            <div class="exp">
+                                <h5 class="card-name">First-Name Last-Name</h5>
+                                <h6>VALID THRU</h6>
+                            <h4>01/01</h4>
+                            </div>
+                            <div class="visa-logo">
+                                <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo">
+                            </div>
+                            </div>
+             </div>
+             </div>
+                   <div class="card card3">
+                  <div class="up">
+                        <div class="up-logo"><img src="./Images/card extra copyww 1.png" alt="logo"></div>
+                            <h4>Sport Card</h4>
+                        </div>
+                        <div class="mid">
+                            <img src="./Images/wwww 1.png" alt="card-sensor">
+                            <h5>000-000-000 000-000-000 000-000-000</h5>
+                        </div>
+                        <div class="end">
+                            <div class="exp">
+                                <h5 class="card-name">First-Name Last-Name</h5>
+                                <h6>VALID THRU</h6>
+                            <h4>01/01</h4>
+                            </div>
+                            <div class="visa-logo">
+                                <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo">
+                            </div>
+                            </div>
+             </div>
+         </div>
+    </div>
+    <div class="card-brands">
+        <ul>
+            <li><img src="./Images/visa logo blur.png" alt="visa logo"></li>
+            <li><img src="./Images/master card logo.png" alt="master card logo"></li>
+            <li><img src="./Images/American Express logo.png" alt="American express"></li>
+            <li><img src="./Images/Verve logo.png" alt="verve logo"></li>
+        </ul>
+    </div>
+    <div class="inspire">
+        <h2>Get Inspired</h2>
+        <p>Look around and choose your desire design</p>
+        <div class="inspire-cards">
+             <div class="card card1">
+                  <div class="up">
+                        <div class="up-logo"><img src="./Images/card extra copyww 1.png" alt="logo"></div>
+                            <h4>Sport Card</h4>
+                        </div>
+                        <div class="mid">
+                            <img src="./Images/wwww 1.png" alt="card-sensor">
+                            <h5>000-000-000 000-000-000 000-000-000</h5>
+                        </div>
+                        <div class="end">
+                            <div class="exp">
+                                <h5 class="card-name">First-Name Last-Name</h5>
+                                <h6>VALID THRU</h6>
+                            <h4>01/01</h4>
+                            </div>
+                            <div class="visa-logo">
+                                <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo">
+                            </div>
+                            </div>
+             </div>
+                   <div class="card card2">
+                  <div class="up">
+                        <div class="up-logo"><img src="./Images/card extra copyww 1.png" alt="logo"></div>
+                            <h4>Sport Card</h4>
+                        </div>
+                        <div class="mid">
+                            <img src="./Images/wwww 1.png" alt="card-sensor">
+                            <h5>000-000-000 000-000-000 000-000-000</h5>
+                        </div>
+                        <div class="end">
+                            <div class="exp">
+                                <h5 class="card-name">First-Name Last-Name</h5>
+                                <h6>VALID THRU</h6>
+                            <h4>01/01</h4>
+                            </div>
+                            <div class="visa-logo">
+                                <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo">
+                            </div>
+                            </div>
+             </div>
+                   <div class="card card3">
+                  <div class="up">
+                        <div class="up-logo"><img src="./Images/card extra copyww 1.png" alt="logo"></div>
+                            <h4>Sport Card</h4>
+                        </div>
+                        <div class="mid">
+                            <img src="./Images/wwww 1.png" alt="card-sensor">
+                            <h5>000-000-000 000-000-000 000-000-000</h5>
+                        </div>
+                        <div class="end">
+                            <div class="exp">
+                                <h5 class="card-name">First-Name Last-Name</h5>
+                                <h6>VALID THRU</h6>
+                            <h4>01/01</h4>
+                            </div>
+                            <div class="visa-logo">
+                                <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo">
+                            </div>
+                            </div>
+             </div>
+         </div>
+         <button class="explore-more"><a href="#">Explore More</a></button>
+    </div>
+    <div class="how">
+        <img src="./Images/cuate.png" alt="card-payment">
+        <div class="how-it-works">
+            <h2>HOW IT WORKS FOR YOU</h2>
+            <div class="flex-how">
+                <div>
+                    <h4>BEAUTIFICATION</h4>
+            <p>
+              Having credit card with a very attractive design will beautify your card among others, you can also place your image, pets and any other thing on your credit card
+            </p>
+                </div>
+                <div>
+                    <h4>SECURITY</h4>
+            <p>
+              Customizing your credit card will make it unique among others and if mistakenly misplaced it can be easily traced because of the unique design or image of the card holder on it
+            </p>
+                </div>
+            </div>
+            <button class="get-started-sec">
+            <a href="#">Get Started</a>
+          </button>
+        </div>
+    </div>
+    <div class="choose">
+        <div class="card">
+                  <div class="up">
+                        <div class="up-logo"><img src="./Images/card extra copyww 1.png" alt="logo"></div>
+                            <h4>Sport Card</h4>
+                        </div>
+                        <div class="mid">
+                            <img src="./Images/wwww 1.png" alt="card-sensor">
+                            <h5>000-000-000 000-000-000 000-000-000</h5>
+                        </div>
+                        <div class="end">
+                            <div class="exp">
+                                <h5 class="card-name">First-Name Last-Name</h5>
+                                <h6>VALID THRU</h6>
+                            <h4>01/01</h4>
+                            </div>
+                            <div class="visa-logo">
+                                <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo">
+                            </div>
+                            </div>
+             </div>
+             <div class="steps">
+                 <ol>
+                     <li><span>1</span> Choose your preferred card design.</li>
+                     <li><span>2</span>Edit to your taste</li>
+                     <li><span>3</span>Save as your favourite or download</li>
+                 </ol>
+             </div>
+    </div>
+    <div class="top-designs">
+        <h2>Top Card Designs</h2>
+        <div class="top-card-designs">
+             <div class="first-flex-top">
+                 <div class="card card1">
+                  <div class="up">
+                        <div class="up-logo"><img src="./Images/card extra copyww 1.png" alt="logo"></div>
+                            <h4>Sport Card</h4>
+                        </div>
+                        <div class="mid">
+                            <img src="./Images/wwww 1.png" alt="card-sensor">
+                            <h5>000-000-000 000-000-000 000-000-000</h5>
+                        </div>
+                        <div class="end">
+                            <div class="exp">
+                                <h5 class="card-name">First-Name Last-Name</h5>
+                                <h6>VALID THRU</h6>
+                            <h4>01/01</h4>
+                            </div>
+                            <div class="visa-logo">
+                                <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo">
+                            </div>
+                            </div>
+             </div>
+                   <div class="card card2">
+                  <div class="up">
+                        <div class="up-logo"><img src="./Images/card extra copyww 1.png" alt="logo"></div>
+                            <h4>Sport Card</h4>
+                        </div>
+                        <div class="mid">
+                            <img src="./Images/wwww 1.png" alt="card-sensor">
+                            <h5>000-000-000 000-000-000 000-000-000</h5>
+                        </div>
+                        <div class="end">
+                            <div class="exp">
+                                <h5 class="card-name">First-Name Last-Name</h5>
+                                <h6>VALID THRU</h6>
+                            <h4>01/01</h4>
+                            </div>
+                            <div class="visa-logo">
+                                <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo">
+                            </div>
+                            </div>
+             </div>
+             </div>
+             <div class="second-flex-top">
+                 <div class="card card3">
+                  <div class="up">
+                        <div class="up-logo"><img src="./Images/card extra copyww 1.png" alt="logo"></div>
+                            <h4>Sport Card</h4>
+                        </div>
+                        <div class="mid">
+                            <img src="./Images/wwww 1.png" alt="card-sensor">
+                            <h5>000-000-000 000-000-000 000-000-000</h5>
+                        </div>
+                        <div class="end">
+                            <div class="exp">
+                                <h5 class="card-name">First-Name Last-Name</h5>
+                                <h6>VALID THRU</h6>
+                            <h4>01/01</h4>
+                            </div>
+                            <div class="visa-logo">
+                                <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo">
+                            </div>
+                            </div>
+             </div>
+                   <div class="card card4">
+                  <div class="up">
+                        <div class="up-logo"><img src="./Images/card extra copyww 1.png" alt="logo"></div>
+                            <h4>Sport Card</h4>
+                        </div>
+                        <div class="mid">
+                            <img src="./Images/wwww 1.png" alt="card-sensor">
+                            <h5>000-000-000 000-000-000 000-000-000</h5>
+                        </div>
+                        <div class="end">
+                            <div class="exp">
+                                <h5 class="card-name">First-Name Last-Name</h5>
+                                <h6>VALID THRU</h6>
+                            <h4>01/01</h4>
+                            </div>
+                            <div class="visa-logo">
+                                <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo">
+                            </div>
+                            </div>
+             </div>
+             <div class="card card5">
+                  <div class="up">
+                        <div class="up-logo"><img src="./Images/card extra copyww 1.png" alt="logo"></div>
+                            <h4>Sport Card</h4>
+                        </div>
+                        <div class="mid">
+                            <img src="./Images/wwww 1.png" alt="card-sensor">
+                            <h5>000-000-000 000-000-000 000-000-000</h5>
+                        </div>
+                        <div class="end">
+                            <div class="exp">
+                                <h5 class="card-name">First-Name Last-Name</h5>
+                                <h6>VALID THRU</h6>
+                            <h4>01/01</h4>
+                            </div>
+                            <div class="visa-logo">
+                                <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo">
+                            </div>
+                            </div>
+             </div>
+             </div>
+         </div>
+         <button class="design-yours">
+          <a href="#">Design your card</a>
+        </button>
+    </div>
+    <div class="small-circ"></div>
+    <div class="big-circ"></div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="first-div">
+            <img src="./Images/cardxtra_logo1-removebg-preview 6.png" alt="logo" class="footer-logo">
+        </div>
+        <div class="second-div">
+            <ul>
+                <li><a href="#">Designs</a></li>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">API Reference</a></li>
+            </ul>
+        </div>
+        <div class="third-div">
+            <ul>
+                <li><a href="#">Terms and Condition </a></li>
+                <li><a href="#">Policy and Privacy</a></li>
+            </ul>
+        </div>
+        <div class="fourth-div">
+            <ul>
+                <li><a href="./about_us.html">About Us</a></li>
+                <li><a href="./contact_us.html">Contact Us</a></li>
+            </ul>
+        </div>
+        </div>
+        <div class="footer-media">
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="info@cardxtra.com"><i class="fa-solid fa-envelope"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            </ul>
+        </div>
+        <p>All rights reserved &copy; 2022</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/4fed0c590c.js" crossorigin="anonymous"></script>
+</body>
+</html>
