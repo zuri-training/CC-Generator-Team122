@@ -1,0 +1,878 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --font-family: 'Lato', sans-serif;
+    --primary-blue:rgba(10, 62, 139, 1);
+    --White: rgba(255, 255, 255, 1);
+    --turquoise: rgba(6, 195, 254, 1);
+}
+body{
+    font-family: var(--font-family);
+    background-color: rgba(231, 240, 252, 1);
+}
+h2, h4{
+    color: var(--primary-blue);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+p{
+    color: rgba(112, 115, 118, 1);
+    text-align: center;
+    line-height: 1.5rem;
+    padding: 2rem;
+}
+ul li{
+    display: inline-block;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: var(--primary-blue);
+    cursor: pointer;
+}
+button{
+    display: inline-block;
+    padding: 1rem;
+    background-color: var(--primary-blue);
+    border: transparent;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin: 1.5rem 0.5rem;
+}
+.explore{
+    padding: 1rem 2rem;
+}
+button:hover{
+    background-color: transparent;
+    border: 2px solid rgba(10, 62, 139, 1);
+}
+button a{
+    color: var(--White);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+}
+button a:hover{
+    color: var(--primary-blue);
+    font-size: 1rem;
+    transition: ease 1s;
+}
+/* NAV */
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--White);
+}
+nav img{
+    margin-top: 0.5rem;
+    width: 20%;
+}
+nav ul li a{
+    font-size: 0.8rem;
+    display: inline-block;
+    margin: 1.5rem 0.2rem;
+}
+nav ul li a:hover{
+    background-color: var(--primary-blue);
+    color: var(--White);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transition: ease 1s;
+}
+/* BRAND */
+.brand{
+    margin-top: 2rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+.brand h1{
+    color: rgba(112, 115, 118, 1);
+    margin-bottom: 1.5rem;
+    padding: 0 5rem;
+}
+.brand p{
+    padding: 0 4rem;
+}
+.brand-cards{
+    position: relative;
+    padding-bottom: 2rem;
+}
+.brand-cards .card1{
+    background-image: url(./Images/player.png);
+}
+.brand-cards .card2, .brand-cards .card3{
+    position: absolute;
+}
+.brand-cards .card2{
+    top: 0;
+    left: 13%;
+}
+.brand-cards .card3{
+    background-image: url(./Images/sport-car.png);
+    top: 15%;
+    left: 8%;
+}
+.brand-btn{
+    display: flex;
+    justify-content: center;
+}
+
+/* CARD BRAND */
+.card-brands{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem;
+}
+.card-brands li img{
+    width: 3rem;
+    margin: 0 1rem;
+}
+
+/* GET INSPIRED */
+.inspire{
+    margin: 3rem 0;
+}
+.inspire h2{
+    margin-bottom: 0;
+}
+.inspire-cards{
+    position: relative;
+    padding-bottom: 2rem;
+}
+.inspire-cards .end h6{
+    margin-left: 1.8rem;
+}
+.inspire-cards .card1{
+    background-image: url(./Images/play-ball.png);
+}
+.inspire-cards .card2{
+    background-image: url(./Images/tiger.png);
+    position: absolute;
+    top: 0%;
+    left: 15%;
+}
+.inspire-cards .card3{
+    position: absolute;
+    top: 15%;
+    left: 8%;
+}
+.design-yours, .explore-more, .get-started-sec{
+    display: block;
+    margin: 1.5rem auto;
+}
+
+/* HOW IT WORKS */
+.how img{
+    display: block;
+    width: 20rem;
+    margin: 2rem auto;
+}
+.how-it-works{
+    margin: 3rem 2rem;
+    border: 2px solid rgba(112, 115, 118, 1);
+    border-top: 0;
+    border-bottom: 0;
+    border-radius: 1rem;
+}
+.how-it-works h2{
+    margin-top: -2rem;
+    z-index: 2;
+}
+.get-started-sec{
+    margin-bottom: -1.5rem;
+}
+
+/* TOP CARD DESIGNS */
+.top-designs{
+    margin-top: 5rem;
+}
+.top-card-designs{
+    position: relative;
+    padding-bottom: 2rem;
+    margin-bottom: 6rem;
+}
+.top-card-designs .card1 .end h6, .top-card-designs .card2 .end h6{
+    margin-left: 1.8rem;
+}
+.top-card-designs .card1{
+    background-image: url(./Images/black-sports-car.png);
+}
+.top-card-designs .first-flex-top .card2{
+    background-image: url(./Images/beautiful-nature.png);
+    position: absolute;
+    top: -5%;
+    left: 18%;
+}
+.top-card-designs .second-flex-top  .card3{
+    background-image: url(./Images/play-ball.png);
+    position: absolute;
+    top: 5%;
+    left: 14%;
+}
+ .top-card-designs .second-flex-top .card4{
+    background-image: url(./Images/tiger.png);
+    position: absolute;
+    top: 15%;
+    left: 11%;
+}
+.top-card-designs .second-flex-top .card5{
+    position: absolute;
+    top: 25%;
+    left: 8%;
+}
+/* CHOOSE */
+.choose{
+    margin: 5rem auto;
+}
+.choose .card{
+    margin: 9rem auto 7rem;
+    border-radius: 0.5rem;
+    box-shadow: -5px -10px 5px 5px rgba(112, 115, 118, 1);
+    transform: rotate(-25deg);
+}
+.choose .step ol{
+    display: block;
+    margin: 3rem auto 1rem;
+}
+.steps ol li{
+    list-style: none;
+    margin: 1rem 2rem 2rem 4rem;
+    color: rgba(112, 115, 118, 1);
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.steps ol li span{
+    border: 2px solid rgba(112, 115, 118, 1);
+    border-radius: 50%;
+    padding: 0.1rem 0.4rem;
+    margin-right: 1rem;
+}
+
+/* CARD STYLING */
+.card{
+    background-image: url(./Images/71MyHdn01bL\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 2rem auto;
+    width: 290px;
+    height: 160px;
+    color: var(--White);
+    padding: 0.5rem;
+    position: relative;
+}
+
+.up{
+    display: flex;
+    justify-content: space-between;
+}
+.up h4{
+    text-transform: capitalize;
+    color: var(--White);
+}
+.up-logo{
+    width: 8rem;
+    margin-top: -0.5rem;
+    margin-left: -0.5rem;
+}
+.mid{
+    margin-top: 1.5rem;
+    position: relative;
+}
+.mid img{
+    width: 2rem;
+    margin-top: -2rem;
+    position: absolute;
+    left: 8%;
+}
+.mid h5{
+    text-align: center;
+}
+.end{
+    display: flex;
+    margin-top: 1rem;
+}
+.end .card-name{
+    font-size: 0.5rem;
+}
+.end h6{
+    font-size: 0.3rem;
+}
+.end h4{
+    color: var(--White);
+    font-size: 1rem;
+    margin-left: 0.1rem;
+    margin-top: -0.2rem;
+}
+.visa-logo{
+    position: absolute;
+    bottom: 3%;
+    right: 1%;
+    width: 4rem;
+}
+
+/* FOOTER */
+footer{
+    padding: 3rem 4rem;
+    background-color: var(--primary-blue);
+}
+.footer-logo{
+    display: block;
+    margin: 0 auto;
+    width: 15rem;
+}
+footer ul li{
+    display: block;
+    list-style: none;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+footer ul li a:hover{
+    font-size: 1.5rem;
+    transition: ease 1s;
+}
+footer a{
+    color:var(--White);
+    text-decoration: none;
+}
+.footer-media{
+    text-align: center;
+    margin-top: 3rem;
+}
+.footer-media li{
+    display: inline-block;
+    margin-right: 1.5rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+.footer-media li:hover{
+    font-size: 1.5rem;
+    color: rgba(157, 192, 244);
+    border: 2px;
+    border-color: var(--primary-blue);
+    transition: ease 1s;
+}
+footer p{
+    color: var(--White);
+    font-weight: bold;
+}
+.body-container{
+    position: relative;
+    padding-bottom: 15rem;
+}
+.small-circ{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background-color: rgba(157, 192, 244);
+    border-radius: 50%;
+    bottom: 2%;
+    right: 11%;
+    z-index: 2;
+}
+.big-circ{
+    width: 200px;
+    height: 200px;
+    background-color: var(--turquoise);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+    border-bottom-right-radius: 0 0;
+    border-top-left-radius: 100% 110%;
+    z-index: 1;
+}
+@media screen and (min-width: 657px){
+nav img{
+    margin-top: 0;
+    width: 10rem;
+}
+nav ul{
+    margin-top: 0.2rem;
+}
+nav ul li a{
+    font-size: 1rem;
+    margin: 1.5rem 1rem;
+}
+.brand-cards .card2{
+    top: 0;
+    left: 22%;
+}
+.brand-cards .card3{
+    left: 17%;
+}
+.card-brands li img{
+    width: 5rem;
+}
+.inspire-cards .card2{
+    left: 23%;
+}
+.inspire-cards .card3{
+    position: absolute;
+    left: 18%;
+}
+.top-card-designs .first-flex-top .card2{
+    left: 25%;
+}
+.top-card-designs .second-flex-top  .card3{
+    left: 22%;
+}
+ .top-card-designs .second-flex-top .card4{
+    left: 19%;
+}
+.top-card-designs .second-flex-top .card5{
+    left: 16%;
+}
+}
+@media screen and (min-width: 867px){
+    /* CARD */
+.card{
+    width:250px;
+    height: 150px
+}
+.mid{
+    margin-top: 0.5rem;
+}
+.mid h5{
+    font-size: 0.8rem;
+}
+.end{
+    margin-top: 0.3rem;
+}
+.end h6{
+    margin-left: 1.7rem;
+}
+    /* BRAND */
+.brand{
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+.brand-first{
+    width: 40%;
+}
+.brand-cards{
+    margin-top: -3rem;
+    width: 57%;
+    display: flex;
+    flex-direction: column;
+}
+.flex-brand{
+     display: flex;
+}
+.brand h1{
+    padding: 0 2.3rem;
+}
+.brand p{
+    padding: 0 2.3rem;
+    text-align: left;
+}
+.brand-cards .card1{
+    position: static;
+    margin-left: -2rem;
+}
+.brand-cards .card2{
+    position: static;
+}
+.brand-cards .card3{
+    position: static;
+    margin-top: 0;
+}
+.brand-cards .card1 .visa-logo{
+    top: 35%;
+    left: 30%;
+    width: 4rem;
+}
+.brand-cards .card2 .visa-logo{
+    top: 35%;
+    left: 85%;
+    width: 4rem;
+}
+.brand-cards .card3 .visa-logo{
+    top: 78%;
+    left: 62%;
+    width: 4rem;
+}
+/* CARD BRANDS */
+.card-brands ul li img{
+    width: 6rem;
+    margin: 0 3rem;
+}
+/* GET INSPIRED */
+.inspire-cards{
+    display: flex;
+}
+.inspire-cards .card1{
+    position: static;
+}
+.inspire-cards .card2{
+    position: static;
+}
+.inspire-cards .card3{
+    position: static;
+}
+.inspire-cards .card1 .visa-logo{
+    top: 62%;
+    left: 24%;
+}
+.inspire-cards .card2 .visa-logo{
+    top: 62%;
+    left: 91%;
+}
+.inspire-cards .card3 .visa-logo{
+    top: 62%;
+    left: 57%;
+}
+/* HOW */
+.how{
+    display: flex;
+    padding: 0 2rem;
+}
+.how img{
+    width: 40%;
+}
+.flex-how{
+    display: flex;
+}
+.how-it-works h2{
+    margin-bottom: 3rem;
+}
+.flex-how h4{
+    margin-bottom: 0;
+}
+.flex-how p{
+    text-align: left;
+    padding: 1.5rem;
+}
+/* TOP CARD DESIGNS */
+.top-card-designs{
+     margin-bottom: 0;
+}
+.first-flex-top{
+    display: flex;
+    padding: 0 9rem;
+}
+.second-flex-top{
+    display: flex;
+}
+.top-card-designs .first-flex-top .card2{
+    position: static;
+}
+.top-card-designs .second-flex-top .card3{
+   position: static;
+}
+ .top-card-designs .second-flex-top .card4{
+    position: static;
+}
+ .top-card-designs .second-flex-top .card5{
+    position: static;
+}
+.top-card-designs .first-flex-top .card2 .visa-logo{
+    top: 34%;
+    left: 74%;
+}
+.top-card-designs .second-flex-top .card3 .visa-logo{
+    top: 80%;
+    left: 24%;
+}
+.top-card-designs .second-flex-top .card4 .visa-logo{
+    top: 80%;
+    left: 57.5%;
+}
+.top-card-designs .second-flex-top .card5 .visa-logo{
+    top: 80%;
+    left: 91%;
+}
+.small-circ{
+    bottom: 2%;
+    right: 6%;
+}
+/* CHOOSE */
+.choose{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.choose .card{
+    margin: 3rem auto;
+}
+
+/* FOOTER */
+footer{
+    background-color: var(--primary-blue);
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-logo{
+     margin-top: -2.6rem;
+}
+}
+@media screen and (min-width: 967px){
+button a{
+    font-size: 1.2rem;
+}
+button a:hover{
+    font-size: 1.2rem;
+}
+.card .end{
+    margin-top: 1rem;
+}
+.brand h1, .brand p{
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+    padding-left: 4rem;
+}
+.brand-btn button a{
+    font-size: 1rem;
+}
+.brand-cards{
+    margin: 0 auto;
+}
+.brand-cards .card1{
+    margin-left: 0;
+}
+.brand-cards .card1 .visa-logo{
+    left: 34%;
+}
+.brand-cards .card2 .visa-logo{
+    left: 86%;
+}
+.brand-cards .card3 .visa-logo{
+    left: 61%;
+} 
+.card-brands ul li{
+    margin-right: 3rem;
+}
+.inspire-cards .card1 .visa-logo{
+    top: 72%;
+    left: 27.5%;
+}
+.inspire-cards .card2 .visa-logo{
+    top: 72%;
+    left: 85.5%;
+}
+.inspire-cards .card3 .visa-logo{
+    top: 72%;
+    left: 56.5%;
+}
+.inspire-cards{
+    padding: 0 4rem;
+}
+.how{
+    padding: 0 5rem;
+}
+/* TOP CARD DESIGNS */
+.first-flex-top{
+    padding: 0 13rem;
+}
+.second-flex-top{
+    padding: 0 4rem;
+}
+.top-card-designs .first-flex-top .card2 .visa-logo{
+    left: 72%;
+}
+.top-card-designs .second-flex-top .card3 .visa-logo{
+    left: 29%;
+}
+.top-card-designs .second-flex-top .card4 .visa-logo{
+    left: 56.5%;
+}
+.top-card-designs .second-flex-top .card5 .visa-logo{
+    left: 85%;
+}
+.choose{
+    padding: 1rem 3rem;
+}
+}
+
+@media screen and (min-width: 1040px){
+        /* CARD */
+.card{
+    width:290px;
+    height: 160px
+}
+.mid{
+    margin-top: 1.2rem;
+}
+.mid h5{
+    font-size: 0.9rem;
+}
+.end{
+    margin-top: 0;
+}
+.end h6{
+    margin-left: 1.7rem;
+}
+.brand-first{
+    width: 37%;
+    padding: 1rem 0;
+}
+.brand-btn{
+    margin-left: 3rem;
+}
+.brand-cards .card1{
+    top: -20%;
+    left: -3%;
+}
+.brand-cards .card2{
+    top: -20%;
+    right: -50%;
+}
+.brand-cards .card3{
+    top: 40%;
+    left: 25%;
+}
+.inspire-cards{
+    width: 100%;
+    margin: 0 auto;
+}
+.how{
+    padding: 0 5rem;
+}
+.choose .card{
+    margin-left: 2rem;
+}
+}
+@media screen and (min-width: 1240px){
+.brand{
+    padding: 2rem 3rem;
+}
+.brand-first h1, .brand-first p{
+    padding-left: 6rem;
+    margin-bottom: 2rem;
+}
+.brand-cards{
+    width: 55%;
+}
+.brand-cards{
+    width: 50%;
+}
+.brand-cards .card1 .visa-logo{
+    top: 36%;
+    left: 35%;
+}
+.brand-cards .card2 .visa-logo{
+    top: 36%;
+    left: 87%;
+}
+.brand-cards .card3 .visa-logo{
+    top: 79%;
+    left: 62%;
+} 
+.inspire-cards{
+    margin: 0 auto;
+    padding: 0 6rem;
+}
+.inspire-cards .card2 .visa-logo{
+    left: 85%;
+}
+.how{
+    padding: 0 8rem;
+}
+/* TOP CARD DESIGNS */
+.first-flex-top{
+    width: 85%;
+    margin: 0 auto;
+}
+.second-flex-top{
+    margin: 0 auto;
+    width: 85%;
+}
+.top-card-designs .first-flex-top .card2 .visa-logo{
+    left: 70%;
+}
+.top-card-designs .second-flex-top .card3 .visa-logo{
+    left: 31.5%;
+}
+.top-card-designs .second-flex-top .card4 .visa-logo{
+    left: 55.5%;
+}
+.top-card-designs .second-flex-top .card5 .visa-logo{
+    left: 81.5%;
+}
+.small-circ{
+    bottom: 2.5%;
+    right: 5%;
+}
+.choose{
+    width: 80%;
+}
+}
+@media screen and (min-width: 1440px){
+.brand-first{
+    padding: 0 3rem;
+    margin-top: 1rem;
+}
+.brand-cards .card1 .visa-logo{
+    left: 31%;
+}
+.brand-cards .card2 .visa-logo{
+    left: 84%;
+}
+.brand-cards .card3 .visa-logo{
+    left: 61%;
+} 
+.card-brands ul li{
+    margin-right: 6rem;
+}
+.inspire-cards{
+    width: 75%;
+}
+.inspire-cards .card1 .visa-logo{
+    top: 72%;
+    left: 29%;
+}
+.inspire-cards .card2 .visa-logo{
+    top: 72%;
+    left: 84.5%;
+}
+.inspire-cards .card3 .visa-logo{
+    top: 72%;
+    left: 56.5%;
+}
+
+/* HOW */
+.how-it-works{
+    margin-top: 5rem;
+}
+.flex-how{
+    padding: 0 4rem;
+}
+.how-it-works button{
+    margin-top: 5rem;
+}
+/* TOP CARD DESIGNS */
+.first-flex-top{
+    width: 75%;
+}
+.second-flex-top{
+    width: 75%;
+}
+.top-card-designs .first-flex-top .card2 .visa-logo{
+    left: 67.5%;
+}
+.top-card-designs .second-flex-top .card3 .visa-logo{
+    left: 33%;
+}
+.top-card-designs .second-flex-top .card4 .visa-logo{
+    left: 55%;
+}
+.top-card-designs .second-flex-top .card5 .visa-logo{
+    left: 77.5%;
+}
+.small-circ{
+    bottom: 2.5%;
+    right: 3.5%;
+}
+}
