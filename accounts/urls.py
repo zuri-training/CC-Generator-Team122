@@ -1,10 +1,14 @@
 from django.urls import path
-from .views import signup_view
+from . import views
+from django.contrib import admin
+from .views import (tutorialpreference)
 
 
 
-
-app_name = "accounts"
 urlpatterns = [
-    path('signup/', signup_view.as_view(), name="signup"),
+    path('signup', views.signup_request, name='signup'),
+    path('login', views.login, name='login'),
+    # path('logout_req', views.logout_req, name='logout_req'),
+    path('<int:tutorialid>/tutorialpreference/<int:tutorialpreference>/', views.tutorialpreference, name='tutorialpreference'),
+#     path('<int:tutorialid>/cardpreference/<int:cardpreference>/', views.cardpreference, name='cardpreference'),
 ]

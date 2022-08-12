@@ -2,116 +2,166 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile-Setup</title>
-    <link rel="stylesheet" href="{% static './userprofile.css' %}">
-</head>
-<body>
-     <div class="hide dropdown" id="hidden">
-                <a href="#" class="close" id="close"><i class="fa-solid fa-xmark"></i></a>
-            <ul>
-                <li><a href="#"><i class="fa-solid fa-house-user"></i> Home Page</a></li>
-                <li><a href="#"><i class="fa-solid fa-credit-card"></i>Cards</a></li>
-                <li><a href="#"><i class="fa-solid fa-pen-to-square"></i> Edit Profile</a></li>
-                <li><a href="#"><i class="fa-solid fa-file-pen"></i>Change Password</a></li>
-                <li><a href="#"><i class="fa-solid fa-moon"></i>Dark Mode</a></li>
-                <li><a href="#"><i class="fa-solid fa-gear"></i>Help</a></li>
-                <li><a href="./about_us.html"><i class="fa-solid fa-book-open-reader"></i>About Us</a></li>
-                <li class="logout"><a href="./login.html">Log Out <i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
-            </ul>
-        </div>
+    <link rel="stylesheet" href="{% static 'css/userprofile.css' %}" />
+  </head>
+  <body>
+    <div class="hide dropdown" id="hidden">
+      <a href="#" class="close" id="close"><i class="fa-solid fa-xmark"></i></a>
+      <ul>
+        <li>
+          <a href="#"><i class="fa-solid fa-house-user"></i> Home Page</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-credit-card"></i>Cards</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-pen-to-square"></i> Edit Profile</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-file-pen"></i>Change Password</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-moon"></i>Dark Mode</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-gear"></i>Help</a>
+        </li>
+        <li>
+          <a href="./about_us.html"
+            ><i class="fa-solid fa-book-open-reader"></i>About Us</a
+          >
+        </li>
+        <li class="logout">
+          <a href="./login.html"
+            >Log Out <i class="fa-solid fa-arrow-right-to-bracket"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
     <div class="profile-container">
-        <div class="side-bar">
-            <div class="side-bar-top">
-                <img src="./Images/cardxtra_logo1-removebg-preview 6.png" alt="logo">
-                <i class="fa-solid fa-user DP"></i>
-            </div>
-            <div class="side-bar-main">
-                <h3>Full Name</h3>
-                <h6>Username</h6>
-                <ul>
-                    <li><a href="#" id="user-info">Personal Information</a></li>
-                </ul>
-                    <div class="card">
-                        <div class="up">
-                        <div class="up-logo"><img src="./Images/card extra copyww 1.png" alt="logo"></div>
-                            <h4>Sport Card</h4>
-                        </div>
-                        <div class="mid">
-                            <img src="./Images/wwww 1.png" alt="card-sensor">
-                            <h5>000-000-000 000-000-000 000-000-000</h5>
-                        </div>
-                        <div class="end">
-                            <div class="exp">
-                                <h5 class="card-name">First-Name Last-Name</h5>
-                                <h6>VALID THRU</h6>
-                            <h4>01/01</h4>
-                            </div>
-                            <div class="visa-logo">
-                                <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo">
-                            </div>
-                            </div>
-                        </div>
-               <ul>
-                   <li><a href="#"><i class="fa-brands fa-cc-discover"></i>Explore our designs</a></li>
-                   <li><a href="#"><i class="fa-solid fa-gear"></i> Account Settings</a></li>
-               </ul>
-               </div>
+      <div class="side-bar">
+        <div class="side-bar-top">
+          <img
+            src="static/Images/cardxtra_logo1-removebg-preview 6.png"
+            alt="logo"
+          />
+          <i class="fa-solid fa-user DP"></i>
         </div>
-        <div class="main-page">
-            <div class="heading">
-                {% block title %}
-                <h2>Welcome back!</h2>
-                {% endblock %} {% block content%}
-                <ul>
-                    <li><a href="#"><i class="fa-solid fa-bell"></i></a></li>
-                    <li><i class="fa-solid fa-user"></i></li>
-                </ul>
+        <div class="side-bar-main">
+          <h3>Full Name</h3>
+          <h6>Username</h6>
+          <ul>
+            <li><a href="#" id="user-info">Personal Information</a></li>
+          </ul>
+          <div class="card">
+            <div class="up">
+              <div class="up-logo">
+                <img src="static/Images/card extra copyww 1.png" alt="logo" />
+              </div>
+              <h4>Sport Card</h4>
             </div>
-            <div class="downloads">
-                <img src="./Images/two-credit-cards-svgrepo-com 1.png" alt="creit-cards">
-                <p class="msg">No downloaded cards yet!</p>
+            <div class="mid">
+              <img src="static/Images/wwww 1.png" alt="card-sensor" />
+              <h5>000-000-000 000-000-000 000-000-000</h5>
             </div>
+            <div class="end">
+              <div class="exp">
+                <h5 class="card-name">First-Name Last-Name</h5>
+                <h6>VALID THRU</h6>
+                <h4>01/01</h4>
+              </div>
+              <div class="visa-logo">
+                <img src="static/Images/Visa_Inc._logo 1.png" alt="visa-logo" />
+              </div>
+            </div>
+          </div>
+          <ul>
+            <li>
+              <a href="#"
+                ><i class="fa-brands fa-cc-discover"></i>Explore our designs</a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-gear"></i> Account Settings</a>
+            </li>
+          </ul>
         </div>
+      </div>
+      <div class="main-page">
+        <div class="heading">
+          <h2>Welcome back!</h2>
+          <ul>
+            <li>
+              <a href="#"><i class="fa-solid fa-bell"></i></a>
+            </li>
+            <li><i class="fa-solid fa-user"></i></li>
+          </ul>
+        </div>
+        <div class="downloads">
+          <img
+            src="static/Images/two-credit-cards-svgrepo-com 1.png"
+            alt="creit-cards"
+          />
+          <p class="msg">No downloaded cards yet!</p>
+        </div>
+      </div>
     </div>
     <footer>
-        <div class="footer">
-            <div class="first-div">
-            <img src="./Images/cardxtra_logo1-removebg-preview 6.png" alt="logo" class="footer-logo">
+      <div class="footer">
+        <div class="first-div">
+          <img
+            src="static/Images/cardxtra_logo1-removebg-preview 6.png"
+            alt="logo"
+            class="footer-logo"
+          />
         </div>
         <div class="second-div">
-            <ul>
-                <li><a href="#">Designs</a></li>
-            </ul>
+          <ul>
+            <li><a href="#">Designs</a></li>
+          </ul>
         </div>
         <div class="third-div">
-            <ul>
-                <li><a href="#">Terms and Condition </a></li>
-                <li><a href="#">Policy and Privacy</a></li>
-            </ul>
+          <ul>
+            <li><a href="#">Terms and Condition </a></li>
+            <li><a href="#">Policy and Privacy</a></li>
+          </ul>
         </div>
         <div class="fourth-div">
-            <ul>
-                <li><a href="./about_us.html">About Us</a></li>
-                <li><a href="./contact_us.html">Contact Us</a></li>
-            </ul>
+          <ul>
+            <li><a href="./about_us.html">About Us</a></li>
+            <li><a href="./contact_us.html">Contact Us</a></li>
+          </ul>
         </div>
-        </div>
-        <div class="footer-media">
-            <ul>
-                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="info@cardxtra.com"><i class="fa-solid fa-envelope"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-            </ul>
-        </div>
+      </div>
+      <div class="footer-media">
+        <ul>
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="info@cardxtra.com"><i class="fa-solid fa-envelope"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </li>
+        </ul>
+      </div>
     </footer>
-    <script src="https://kit.fontawesome.com/4fed0c590c.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/4fed0c590c.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="./userprofile.js"></script>
-    {% endblock %}
-</body>
+  </body>
 </html>

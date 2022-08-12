@@ -1,89 +1,168 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tutorials</title>
+    <link rel="stylesheet" href="{% static 'css/tutorials.css' %}"/>
   </head>
   <body>
-    <!-- Each tutorial will have an height of 100vh -->
-    <h1>CREATE AN ACCOUNT</h1>
-    <p>To create an account:</p>
-    <ol>
-      <li>Click on the <a href="http://">sign up</a> button</li>
-      <img src="#" alt="sign_up_botton_action" />
-      <li>Enter your details into the provided fields.</li>
-      <img src="#" alt="sign_up_form" />
-      <li>Click on the Sign Up button</li>
-      <img src="#" alt="sign_up_button_action" />
-      <li>Welcome on board! You will be redirected to the homepage</li>
-      <img src="#" alt="home_page_image" />
-    </ol>
-    <!-- When a user clicks on a link to a separate tutorial, it jumps to the section with the tutorialn the same page -->
-    <p>
-      If you already have an account <a href="#login_tutorial">login here</a>
-    </p>
-    <h1 id="login_tutorial">LOGIN TO YOUR ACCOUNT</h1>
-    <p>If you already have an account:</p>
-    <ol>
-      <li>Click on the <a href="http://">login</a> button</li>
-      <img src="#" alt="login_button_action" />
-      <li>Enter your email address and password</li>
-      <img src="#" alt="login_form" />
-      <li>Click on the login button</li>
-      <img src="#" alt="login_button" />
-      <li>You will be redirected to the homepage where you can <a href="#start_designing">start designing</a></li>
-      <img src="#" alt="home_page_image" />
-    </ol>
-    <h1 id="start_designing">START DESIGNING</h1>
-    <p>To start creating your custom card design:
-        <ol>
-            <li>Click on the <a href="http://">libraries</a> button on the navigation bar </li>
-            <img src="#" alt="library_button_action">
-            <li>Select any card design of your choice</li>
-            <img src="#" alt="card_designs_display">
-            <li>Click on the design</li>
-            <img src="#" alt="desired_card_display_with_form">
-            <li>Click download and your design will be automatically downloaded</li>
-            <img src="#" alt="download_button">
-            <img src="#" alt="download_sucess_img">
-        </ol>
-    </p>
-    <h1>RESET YOUR PASSWORD</h1>
-    <p>To reset your password:</p>
-    <ol>
-        <li>Click on the profile icon on the right corner of your navigation bar</li>
-        <img src="#" alt="profile_icon_img">
-        <li>Click on settings from the options that pop up</li>
-        <img src="#" alt="profile_options_img">
-        <li>Click on change password from the settings options</li>
-        <img src="#" alt="change_password_img">
-        <li>Enter your email address</li>
-        <li>A reset link will be sent to your email</li>
-    </ol>
-    <h1>LOGOUT OF YOUR ACCOUNT</h1>
-    <p>To logout of your account:</p>
-    <ol>
-        <li>Click on the profile icon on the right corner of your navigation bar</li>
-        <img src="#" alt="profile_icon_img">
-        <li>Click on settings from the options that pop up</li>
-        <img src="#" alt="profile_options_img">
-        <li>At the buttom of the settings page is the sign out button</li>
-        <img src="#" alt="signout_button_img">
-        <li>You will be redirected to the landing page</li>
-        <img src="#" alt="landing_page_img">
-    </ol>
-    <div class="interaction">
-      <p>Did this page help you?</p>
-      <div class="yes">
-        <img src="#" alt="thumb_up" />
-        <p>Yes</p>
-      </div>
-      <div class="no">
-        <img src="#" alt="thumb_down" />
-        <p>No</p>
+    <div class="navbar">
+      <div class="logo">
+        <img src="/images-cc/cardxtra_logo1-removebg-preview 6.png" alt="" />
       </div>
     </div>
-</body>
+    <!-- This is a simple intro to the website before jumping into tutorials -->
+    <div class="intro">
+      <h1>Introduction to CardXtra</h1>
+      <p>
+        CardXtra is a website that allows you to be creative with your credit
+        card designs just by creating an account and making a few clicks. As a
+        CardXtra account ownner, you can use access our full library of
+        beautiful pre-made templates. In addition, you can download, save and
+        share your designs. This can be achieved in few steps:
+      </p>
+
+      <ol>
+        <li>Create a CardXtra account</li>
+        <li>Browse through the library</li>
+        <li>Select any template of yur choice</li>
+        <li>Edit the demo details and enter yours</li>
+        <li>Click the download button</li>
+        <li>You can now use your card whenever and where ever!</li>
+      </ol>
+      <div class="tutorial_page">
+        <p>
+          <a href="#create_account"
+            >Let's get started 
+          </a>
+        </p>
+  </div>
+      <!-- Each tutorial will have an height of 100vh -->
+      <div class="create_account">
+        <h1 id="create_account">CREATE AN ACCOUNT</h1>
+        <p>To create an account:</p>
+        <ol>
+          <li>Click on the sign up button</li>
+          <li>Enter your details into the provided fields.</li>
+          <li>Click on the Sign Up button</li>
+          <li>Welcome on board! You will be redirected to the homepage</li>
+        </ol>
+        <!-- When a user clicks on a link to a separate tutorial, it jumps to the section with the tutorialn the same page -->
+        <p>
+          If you already have an account
+          <a href="#login_tutorial">login here</a>
+        </p>
+        <img
+          src="static/Images/CREATE AN ACCOUNT.jpg"
+          alt=""
+          class="createaccount_img"
+        />
+      </div>
+      <div class="login">
+        <h1 id="login_tutorial">LOGIN TO YOUR ACCOUNT</h1>
+        <p>If you already have an account:</p>
+        <ol>
+          <li>Click on the login button</li>
+
+          <li>Enter your email address and password</li>
+
+          <li>Click on the login button</li>
+
+          <li>
+            You will be redirected to the homepage where you can
+           start designing
+          </li>
+        </ol>
+        <img
+          src="static/Images/lOGIN TO YOUR ACCOUNT.jpg"
+          alt=""
+          class="login_img"
+        />
+      </div>
+      <div class="download">
+        <h1 id="start_designing">DOWNLOAD YOUR DESIGN</h1>
+        <p>To start downloading your custom card designs:</p>
+        <ol>
+          <li>
+            Click on the button on the
+            navigation bar
+          </li>
+
+          <li>Select any card design of your choice</li>
+
+          <li>Click on the design</li>
+
+          <li>
+            Click download and your design will be automatically downloaded
+          </li>
+        </ol>
+        <img
+          src="static/Images/DOWNLOAD YOUR DESIGN.jpg"
+          alt=""
+          class="download_img"
+        />
+      </div>
+      <div class="reset_pw">
+        <h1>RESET YOUR PASSWORD</h1>
+        <p>To reset your password:</p>
+        <ol>
+          <li>
+            Click on the profile icon on the right corner of your navigation bar
+          </li>
+
+          <li>Click on settings from the options that pop up</li>
+
+          <li>Click on change password from the settings options</li>
+
+          <li>Enter your email address</li>
+          <li>A reset link will be sent to your email</li>
+        </ol>
+        <img
+          src="static/Images/RESET YOUR PASSWORD.jpg"
+          alt=""
+          class="resetpw_img"
+        />
+      </div>
+      <div class="logout">
+        <h1>LOGOUT OF YOUR ACCOUNT</h1>
+        <p>To logout of your account:</p>
+        <ol>
+          <li>
+            Click on the profile icon on the right corner of your navigation bar
+          </li>
+
+          <li>Click on settings from the options that pop up</li>
+
+          <li>At the buttom of the settings page is the sign out button</li>
+
+          <li>You will be redirected to the landing page</li>
+        </ol>
+        <img
+          src="static/Images/LOGOUT OF YOUR ACCOUNT.jpg"
+          alt=""
+          class="logout_img"
+        />
+      </div>
+      <div class="interaction">
+        <p class="question">Did this page help you?</p>
+        <div class="yes">
+         <a href="{% url 'landingpage' %}" onClick="document.getElementById('likebutton').submit()"> <img src="static/Images/THUMBS UP.png" alt="thumb_up" />
+          <p>Yes</p></a>{{eachtutorial.likes}}
+        </div>
+        <div class="no">
+         <a href="{% url 'landingpage' %}" onClick="document.getElementById('likebutton').submit()"> <img src="static/Images/THUMBS DOWN.png" alt="thumb_down" />
+          <p>No</p></a>{{eachtutorial.likes}}
+        </div>
+        <form id="likebutton" method="POST" action="/tutorial/{{eachtutorial.id}}/tutorialpreference/1">
+          {% csrf_token %}
+          <input type="hidden">
+        </form>
+        <form id="dislikebutton" method="POST" action="/tutorial/{{eachtutorial.id}}/tutorialpreference/2">
+          {% csrf_token %}
+          <input type="hidden">
+        </form>
+      </div>
+  </body>
 </html>

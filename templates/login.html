@@ -1,0 +1,132 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'css/registration.css' %}" />
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="login-right">
+        <img src="static/Images/kisspng-credit-card-visa.png" alt="Visa-card" />
+        <p class="welcome">Welcome to your card design platform!</p>
+        <p>
+          Personalize and gnerate credit card designs to suite your lifestyle in
+          a beautiful way
+        </p>
+      </div>
+      <div class="login-left">
+        <div class="greet">
+          <h3>Log In</h3>
+
+          <p>Welcome back! Please enter your details</p>
+
+          <div class="login-right">
+            <img
+              src="static/Images/kisspng-credit-card-visa.png"
+              alt="Visa-card"
+            />
+            <p class="welcome">Welcome to your card design platform!</p>
+            <p>
+              Personalize and gnerate credit card designs to suite your
+              lifestyle in a beautiful way
+            </p>
+          </div>
+          <div class="fill">
+            <form action="" method="post">
+              {% csrf_token %} {{ form.as_p }}
+              <br />
+              <div class="password">
+                <input type="password" placeholder="Password" /><i
+                  class="fa-regular fa-eye-slash icon"
+                ></i>
+              </div>
+              <br />
+            </form>
+            <div class="remind">
+              <div>
+                <input type="checkbox" />
+                <span class="remember">Remember me</span>
+              </div>
+              <a href="#" class="forgot">Forgot Password</a>
+            </div>
+            <div class="signin">
+              <button><a href="#">Sign In</a></button>
+              <button class="use-google">
+                <span
+                  ><img
+                    src="static/Images/Google_Icons.webp"
+                    alt="Google_Icons"
+                    class="google" /></span
+                >Sign In with Google
+              </button>
+              <p class="already">
+                Don't have an account? <a href="./signup.html">Sign Up</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer">
+        <div class="first-div">
+          <img
+            src="static/Images/cardxtra_logo1-removebg-preview 6.png"
+            alt="logo"
+            class="footer-logo"
+          />
+
+          <div class="second-div">
+            <ul>
+              <li><a href="#">Designs</a></li>
+            </ul>
+          </div>
+          <div class="third-div">
+            <ul>
+              <li><a href="#">Terms and Condition </a></li>
+              <li><a href="#">Policy and Privacy</a></li>
+            </ul>
+          </div>
+          <div class="fourth-div">
+            <ul>
+              <li><a href="contact_us.html">Contact Us</a></li>
+              <li><a href="about_us.html">About Us</a></li>
+            </ul>
+
+            <ul>
+              <li><a href="contact_us.html">Contact Us</a></li>
+              <li><a href="about_us.html">About Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-media">
+        <ul>
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="info@cardxtra.com"><i class="fa-solid fa-envelope"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/4fed0c590c.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
