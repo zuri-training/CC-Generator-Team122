@@ -51,7 +51,7 @@
           <p>Stay connected for more updates.</p>
           <p>
             Have questions?
-            <a href="./contact_us.html" class="contact-support">
+            <a href="{% url 'contact_us' %}" class="contact-support">
               Contact Support &rarr;</a
             >
           </p>
@@ -80,8 +80,8 @@
         </div>
         <div class="fourth-div">
           <ul>
-            <li><a href="./signup.html">Sign Up</a></li>
-            <li><a href="./login.html">Log In</a></li>
+            <li><a href="{% url 'signup' %}">Sign Up</a></li>
+            <li><a href="{% url 'login' %}">Log In</a></li>
           </ul>
         </div>
       </div>

@@ -14,7 +14,7 @@
 body{
     font-family: var(--font-family);
 }
-/* Signup and Login Page */
+Signup and Login Page
 .signup-container, .login-container{
     min-width: 376px;
     height: auto;
@@ -91,7 +91,7 @@ label{
 } */
 form input{
     margin-top: 0.5rem;
-    padding: 1rem;
+    /* padding: 1rem; */
     display: inline-block;
     width: 65%;
     border-radius: 0.5rem;
@@ -652,6 +652,10 @@ img{
 .contact-info img{
     bottom: 9%;
 }
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
 }
 
 
@@ -659,6 +663,9 @@ img{
     /* signup and login */
 .signup-container, .login-container{
     display: flex;
+}
+.footer li {
+    display: f;
 }
 .customize{
     text-align: left;
@@ -754,5 +761,12 @@ img{
 }
 .contact-info p{
     margin-bottom: 4rem;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+.footer li{
+display: flex;
 }
 }
