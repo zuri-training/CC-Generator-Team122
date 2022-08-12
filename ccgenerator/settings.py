@@ -40,8 +40,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'accounts.apps.AccountsConfig',
     'core',
-    'crispy_forms',
-    'startdownload',
 ]
 CRISPY_TEMPLATE_PACK = 'uni_form'
 MIDDLEWARE = [
@@ -130,7 +128,8 @@ STATICFILES_DIRS = [
 ]
 #where django relocates them
 STATIC_ROOT = os.path.join(BASE_DIR, 'templates/assets')
-
+MEDIA_URL = 'media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static/media')
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
