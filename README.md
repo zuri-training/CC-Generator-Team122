@@ -25,7 +25,7 @@ Coming Soon....
 - Figjam for UX Design
 - Figma for UI Design
 
-### Here is a link to our [UI/UX Process](https://www.figma.com/file/xkfpVjvykgTUNhifQsMQ81/CC-GENERATOR?node-id=2%3A3)
+### Here is a link to our [UI/UX Process](<https://www.figma.com/file/oUI3wf2x5ZLns4Y6TR9q5W/CC-GENERATOR-(Copy)?node-id=244%3A465>)
 
 ## How to Use CardXtra
 
