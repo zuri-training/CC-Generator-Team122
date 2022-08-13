@@ -10,7 +10,7 @@ from django.contrib.auth.decorators import login_required
 
 
 #NOTE user authentication not yet completed...password not checked
-def signup_request(request):
+def signup(request):
     if request.method == "POST":
         form = NewUserForm(request.POST)
 
@@ -18,11 +18,14 @@ def signup_request(request):
             user = form.save()
             login(request, user)
             messages.success(request, "Registration successful." )
-            return redirect("home")
-        messages.error(request, "Unsuccessful registration. Invalid information.")
-        return redirect('index')
+            return redirect("index.html")
+        else:
+            messages.error(request, "Unsuccessful registration. Invalid information.")
+            return redirect('index')
     form = NewUserForm()
     return render (request, "signup.html", {"form":form})
+
+
 
 
 def login(request):
@@ -48,7 +51,7 @@ def login(request):
 
 def logout_req(request):
     auth.logout(request)
-    return redirect('landingpage.html')
+    return redirect('landingpage')
 
 @login_required
 def tutorialpreference(request, postid, userpreference):
