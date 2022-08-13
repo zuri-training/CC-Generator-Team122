@@ -6,7 +6,7 @@ from django.contrib.auth.models import User, auth
 
 
 class Card(models.Model):
-    card = models.ImageField()
+    card = models.ImageField(default=True)
     likes = models.IntegerField(default=0)
     dislikes = models.IntegerField(default=0)
 class Tutorial(models.Model):
