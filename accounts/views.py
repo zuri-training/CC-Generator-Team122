@@ -18,7 +18,7 @@ def signup_request(request):
             user = form.save()
             login(request, user)
             messages.success(request, "Registration successful." )
-            return redirect("core:home")
+            return redirect("home")
         messages.error(request, "Unsuccessful registration. Invalid information.")
     form = NewUserForm()
     return render (request, "signup.html", {"form":form})
@@ -40,7 +40,7 @@ def login(request):
             return redirect('index.html')
         else:
             messages.info(request, 'wrong username or password')
-            return redirect('login')
+            return redirect('index')
     form = LoginForm()
     return render(request, 'login.html', {'form':form})
 

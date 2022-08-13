@@ -23,7 +23,7 @@ Signup and Login Page
     background-color: var(--primary-blue);
     color: var(--White);
     text-align: center;
-    padding: 7rem 10rem;
+    /* padding: 7rem 10rem; */
     position: relative;
 }
 .customize h1{

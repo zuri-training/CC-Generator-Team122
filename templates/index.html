@@ -11,19 +11,22 @@
   </head>
   <body>
     <nav>
-      <img src="./Images/cardxtra_logo1-removebg-preview 6.png" alt="logo" />
+      <img
+        src="static/Images/cardxtra_logo1-removebg-preview 6.png"
+        alt="logo"
+      />
       <ul>
         <li>
-          <a href="#">Libraries</a>
+          <a href="{% url 'library' %}">Libraries</a>
         </li>
         <li>
-          <a href="./contact_us.html">Contact Us</a>
+          <a href="{% url 'contact_us' %}">Contact Us</a>
         </li>
         <li>
-          <a href="./about_us.html">About Us</a>
+          <a href="{% url 'about_us' %}">About Us</a>
         </li>
         <li>
-          <a href="./userprofile.html"><i class="fa-solid fa-user"></i></a>
+          <a href="{% url 'profile' %}"><i class="fa-solid fa-user"></i></a>
         </li>
       </ul>
     </nav>
@@ -37,8 +40,12 @@
             financial journey
           </p>
           <div class="brand-btn">
-            <button class="get-started"><a href="#">Get Started</a></button>
-            <button class="explore"><a href="#">Explore</a></button>
+            <button class="get-started">
+              <a href="{% url 'documentation' %}">Get Started</a>
+            </button>
+            <button class="explore">
+              <a href="{% url 'library' %}">Explore</a>
+            </button>
           </div>
         </div>
         <div class="brand-cards">
@@ -46,12 +53,12 @@
             <div class="card card1">
               <div class="up">
                 <div class="up-logo">
-                  <img src="./Images/card extra copyww 1.png" alt="logo" />
+                  <img src="static/Images/card extra copyww 1.png" alt="logo" />
                 </div>
                 <h4>Sport Card</h4>
               </div>
               <div class="mid">
-                <img src="./Images/wwww 1.png" alt="card-sensor" />
+                <img src="static/Images/wwww 1.png" alt="card-sensor" />
                 <h5>000-000-000 000-000-000 000-000-000</h5>
               </div>
               <div class="end">
@@ -61,19 +68,22 @@
                   <h4>01/01</h4>
                 </div>
                 <div class="visa-logo">
-                  <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo" />
+                  <img
+                    src="static/Images/Visa_Inc._logo 1.png"
+                    alt="visa-logo"
+                  />
                 </div>
               </div>
             </div>
             <div class="card card2">
               <div class="up">
                 <div class="up-logo">
-                  <img src="./Images/card extra copyww 1.png" alt="logo" />
+                  <img src="static/Images/card extra copyww 1.png" alt="logo" />
                 </div>
                 <h4>Sport Card</h4>
               </div>
               <div class="mid">
-                <img src="./Images/wwww 1.png" alt="card-sensor" />
+                <img src="static/Images/wwww 1.png" alt="card-sensor" />
                 <h5>000-000-000 000-000-000 000-000-000</h5>
               </div>
               <div class="end">
@@ -83,7 +93,10 @@
                   <h4>01/01</h4>
                 </div>
                 <div class="visa-logo">
-                  <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo" />
+                  <img
+                    src="static/Images/Visa_Inc._logo 1.png"
+                    alt="visa-logo"
+                  />
                 </div>
               </div>
             </div>
@@ -91,12 +104,12 @@
           <div class="card card3">
             <div class="up">
               <div class="up-logo">
-                <img src="./Images/card extra copyww 1.png" alt="logo" />
+                <img src="static/Images/card extra copyww 1.png" alt="logo" />
               </div>
               <h4>Sport Card</h4>
             </div>
             <div class="mid">
-              <img src="./Images/wwww 1.png" alt="card-sensor" />
+              <img src="static/Images/wwww 1.png" alt="card-sensor" />
               <h5>000-000-000 000-000-000 000-000-000</h5>
             </div>
             <div class="end">
@@ -106,7 +119,7 @@
                 <h4>01/01</h4>
               </div>
               <div class="visa-logo">
-                <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo" />
+                <img src="static/Images/Visa_Inc._logo 1.png" alt="visa-logo" />
               </div>
             </div>
           </div>
@@ -114,17 +127,22 @@
       </div>
       <div class="card-brands">
         <ul>
-          <li><img src="./Images/visa logo blur.png" alt="visa logo" /></li>
           <li>
-            <img src="./Images/master card logo.png" alt="master card logo" />
+            <img src="static/Images/visa logo blur.png" alt="visa logo" />
           </li>
           <li>
             <img
-              src="./Images/American Express logo.png"
+              src="static/Images/master card logo.png"
+              alt="master card logo"
+            />
+          </li>
+          <li>
+            <img
+              src="static/Images/American Express logo.png"
               alt="American express"
             />
           </li>
-          <li><img src="./Images/Verve logo.png" alt="verve logo" /></li>
+          <li><img src="static/Images/Verve logo.png" alt="verve logo" /></li>
         </ul>
       </div>
       <div class="inspire">
@@ -134,12 +152,12 @@
           <div class="card card1">
             <div class="up">
               <div class="up-logo">
-                <img src="./Images/card extra copyww 1.png" alt="logo" />
+                <img src="static/Images/card extra copyww 1.png" alt="logo" />
               </div>
               <h4>Sport Card</h4>
             </div>
             <div class="mid">
-              <img src="./Images/wwww 1.png" alt="card-sensor" />
+              <img src="static/Images/wwww 1.png" alt="card-sensor" />
               <h5>000-000-000 000-000-000 000-000-000</h5>
             </div>
             <div class="end">
@@ -149,19 +167,19 @@
                 <h4>01/01</h4>
               </div>
               <div class="visa-logo">
-                <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo" />
+                <img src="static/Images/Visa_Inc._logo 1.png" alt="visa-logo" />
               </div>
             </div>
           </div>
           <div class="card card2">
             <div class="up">
               <div class="up-logo">
-                <img src="./Images/card extra copyww 1.png" alt="logo" />
+                <img src="static/Images/card extra copyww 1.png" alt="logo" />
               </div>
               <h4>Sport Card</h4>
             </div>
             <div class="mid">
-              <img src="./Images/wwww 1.png" alt="card-sensor" />
+              <img src="static/Images/wwww 1.png" alt="card-sensor" />
               <h5>000-000-000 000-000-000 000-000-000</h5>
             </div>
             <div class="end">
@@ -171,19 +189,19 @@
                 <h4>01/01</h4>
               </div>
               <div class="visa-logo">
-                <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo" />
+                <img src="static/Images/Visa_Inc._logo 1.png" alt="visa-logo" />
               </div>
             </div>
           </div>
           <div class="card card3">
             <div class="up">
               <div class="up-logo">
-                <img src="./Images/card extra copyww 1.png" alt="logo" />
+                <img src="static/Images/card extra copyww 1.png" alt="logo" />
               </div>
               <h4>Sport Card</h4>
             </div>
             <div class="mid">
-              <img src="./Images/wwww 1.png" alt="card-sensor" />
+              <img src="static/Images/wwww 1.png" alt="card-sensor" />
               <h5>000-000-000 000-000-000 000-000-000</h5>
             </div>
             <div class="end">
@@ -193,7 +211,7 @@
                 <h4>01/01</h4>
               </div>
               <div class="visa-logo">
-                <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo" />
+                <img src="static/Images/Visa_Inc._logo 1.png" alt="visa-logo" />
               </div>
             </div>
           </div>
@@ -201,7 +219,7 @@
         <button class="explore-more"><a href="#">Explore More</a></button>
       </div>
       <div class="how">
-        <img src="./Images/cuate.png" alt="card-payment" />
+        <img src="static/Images/cuate.png" alt="card-payment" />
         <div class="how-it-works">
           <h2>HOW IT WORKS FOR YOU</h2>
           <div class="flex-how">
@@ -231,12 +249,12 @@
         <div class="card">
           <div class="up">
             <div class="up-logo">
-              <img src="./Images/card extra copyww 1.png" alt="logo" />
+              <img src="static/Images/card extra copyww 1.png" alt="logo" />
             </div>
             <h4>Sport Card</h4>
           </div>
           <div class="mid">
-            <img src="./Images/wwww 1.png" alt="card-sensor" />
+            <img src="static/Images/wwww 1.png" alt="card-sensor" />
             <h5>000-000-000 000-000-000 000-000-000</h5>
           </div>
           <div class="end">
@@ -246,7 +264,7 @@
               <h4>01/01</h4>
             </div>
             <div class="visa-logo">
-              <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo" />
+              <img src="static/Images/Visa_Inc._logo 1.png" alt="visa-logo" />
             </div>
           </div>
         </div>
@@ -265,12 +283,12 @@
             <div class="card card1">
               <div class="up">
                 <div class="up-logo">
-                  <img src="./Images/card extra copyww 1.png" alt="logo" />
+                  <img src="static/Images/card extra copyww 1.png" alt="logo" />
                 </div>
                 <h4>Sport Card</h4>
               </div>
               <div class="mid">
-                <img src="./Images/wwww 1.png" alt="card-sensor" />
+                <img src="static/Images/wwww 1.png" alt="card-sensor" />
                 <h5>000-000-000 000-000-000 000-000-000</h5>
               </div>
               <div class="end">
@@ -280,19 +298,22 @@
                   <h4>01/01</h4>
                 </div>
                 <div class="visa-logo">
-                  <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo" />
+                  <img
+                    src="static/Images/Visa_Inc._logo 1.png"
+                    alt="visa-logo"
+                  />
                 </div>
               </div>
             </div>
             <div class="card card2">
               <div class="up">
                 <div class="up-logo">
-                  <img src="./Images/card extra copyww 1.png" alt="logo" />
+                  <img src="static/Images/card extra copyww 1.png" alt="logo" />
                 </div>
                 <h4>Sport Card</h4>
               </div>
               <div class="mid">
-                <img src="./Images/wwww 1.png" alt="card-sensor" />
+                <img src="static/Images/wwww 1.png" alt="card-sensor" />
                 <h5>000-000-000 000-000-000 000-000-000</h5>
               </div>
               <div class="end">
@@ -302,7 +323,10 @@
                   <h4>01/01</h4>
                 </div>
                 <div class="visa-logo">
-                  <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo" />
+                  <img
+                    src="static/Images/Visa_Inc._logo 1.png"
+                    alt="visa-logo"
+                  />
                 </div>
               </div>
             </div>
@@ -311,12 +335,12 @@
             <div class="card card3">
               <div class="up">
                 <div class="up-logo">
-                  <img src="./Images/card extra copyww 1.png" alt="logo" />
+                  <img src="static/Images/card extra copyww 1.png" alt="logo" />
                 </div>
                 <h4>Sport Card</h4>
               </div>
               <div class="mid">
-                <img src="./Images/wwww 1.png" alt="card-sensor" />
+                <img src="static/Images/wwww 1.png" alt="card-sensor" />
                 <h5>000-000-000 000-000-000 000-000-000</h5>
               </div>
               <div class="end">
@@ -326,19 +350,22 @@
                   <h4>01/01</h4>
                 </div>
                 <div class="visa-logo">
-                  <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo" />
+                  <img
+                    src="static/Images/Visa_Inc._logo 1.png"
+                    alt="visa-logo"
+                  />
                 </div>
               </div>
             </div>
             <div class="card card4">
               <div class="up">
                 <div class="up-logo">
-                  <img src="./Images/card extra copyww 1.png" alt="logo" />
+                  <img src="static/Images/card extra copyww 1.png" alt="logo" />
                 </div>
                 <h4>Sport Card</h4>
               </div>
               <div class="mid">
-                <img src="./Images/wwww 1.png" alt="card-sensor" />
+                <img src="static/Images/wwww 1.png" alt="card-sensor" />
                 <h5>000-000-000 000-000-000 000-000-000</h5>
               </div>
               <div class="end">
@@ -348,19 +375,22 @@
                   <h4>01/01</h4>
                 </div>
                 <div class="visa-logo">
-                  <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo" />
+                  <img
+                    src="static/Images/Visa_Inc._logo 1.png"
+                    alt="visa-logo"
+                  />
                 </div>
               </div>
             </div>
             <div class="card card5">
               <div class="up">
                 <div class="up-logo">
-                  <img src="./Images/card extra copyww 1.png" alt="logo" />
+                  <img src="static/Images/card extra copyww 1.png" alt="logo" />
                 </div>
                 <h4>Sport Card</h4>
               </div>
               <div class="mid">
-                <img src="./Images/wwww 1.png" alt="card-sensor" />
+                <img src="static/Images/wwww 1.png" alt="card-sensor" />
                 <h5>000-000-000 000-000-000 000-000-000</h5>
               </div>
               <div class="end">
@@ -370,7 +400,10 @@
                   <h4>01/01</h4>
                 </div>
                 <div class="visa-logo">
-                  <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo" />
+                  <img
+                    src="static/Images/Visa_Inc._logo 1.png"
+                    alt="visa-logo"
+                  />
                 </div>
               </div>
             </div>
@@ -387,7 +420,7 @@
       <div class="footer">
         <div class="first-div">
           <img
-            src="./Images/cardxtra_logo1-removebg-preview 6.png"
+            src="static/Images/cardxtra_logo1-removebg-preview 6.png"
             alt="logo"
             class="footer-logo"
           />
@@ -407,8 +440,8 @@
         </div>
         <div class="fourth-div">
           <ul>
-            <li><a href="./about_us.html">About Us</a></li>
-            <li><a href="./contact_us.html">Contact Us</a></li>
+            <li><a href="{% url 'about_us' %}">About Us</a></li>
+            <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
           </ul>
         </div>
       </div>

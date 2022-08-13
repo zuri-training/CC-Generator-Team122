@@ -34,6 +34,14 @@ Coming Soon....
 - Sign up to create an account and download your desired card designs
 - It is that simple
 
+## How to Run this project Locally
+
+- Open your terminal
+- Activate the virtual environment with env\script\activate
+- Run 'python manage.py runserver'
+- Copy the generated link into your browser's address bar
+- Navigate the website
+
 ## FEATURES
 
 #### Unauthenticated Users

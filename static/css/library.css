@@ -292,22 +292,22 @@ nav ul li a:hover{
     bottom: 5%;
 }
 .flower .flowery-col .flower-card-designs .first-flex-top .card-options .flo1{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./Images/flower1.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(static/Images/flower1.png);
 }
 .flower .flowery-col .flower-card-designs .first-flex-top .card-options .flo2{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./Images/flower2.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(static/Images/flower2.png);
     
 }
 .flower .flowery-col .flower-card-designs .first-flex-top .card-options .flo3{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./Images/flower3.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(static/Images/flower3.png);
     
 }
 .flower .flowery-col .flower-card-designs .first-flex-top .card-options .flo4{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./Images/flower4.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(static/Images/flower4.png);
     
 }
 .flower .flowery-col .flower-card-designs .first-flex-top .card-options .flo5{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./Images/flower5.png);   
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(static/Images/flower5.png);   
 }
 
 /* ANIMAL */
@@ -328,23 +328,23 @@ nav ul li a:hover{
     width: 80%;
 }
 .animal .animal-col .animal-card-designs .first-flex-top .card-options .ani1{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./Images/animal1.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(static/Images/animal1.png);
 
 }
 .animal .animal-col .animal-card-designs .first-flex-top .card-options .ani2{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./Images/animal2.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(static/Images/animal2.png);
     
 }
 .animal .animal-col .animal-card-designs .first-flex-top .card-options .ani3{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./Images/animal3.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(static/Images/animal3.png);
     
 }
 .animal .animal-col .animal-card-designs .first-flex-top .card-options .ani4{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./Images/animal4.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(static/Images/animal4.png);
     
 }
 .animal .animal-col .animal-card-designs .first-flex-top .card-options .ani5{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./Images/tiger.png);   
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(static/Images/tiger.png);   
 }
 
 /* NATURE */
@@ -365,22 +365,22 @@ nav ul li a:hover{
     width: 80%;
 }
 .nature .nature-col .nature-card-designs .first-flex-top .card-options .nat1{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./Images/nature1.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(static/Images/nature1.png);
 
 }
 .nature .nature-col .nature-card-designs .first-flex-top .card-options .nat2{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./Images/nature2.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(static/Images/nature2.png);
     
 }
 .nature .nature-col .nature-card-designs .first-flex-top .card-options .nat3{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./Images/beautiful-nature.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(static/Images/beautiful-nature.png);
 }
 .nature .nature-col .nature-card-designs .first-flex-top .card-options .nat4{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./Images/nature4.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(static/Images/nature4.png);
     
 }
 .nature .nature-col .nature-card-designs .first-flex-top .card-options .nat5{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./Images/71MyHdn01bL\ 1.png);   
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(static/Images/71MyHdn01bL\ 1.png);   
 }
 
 /* SPORT */
@@ -401,22 +401,22 @@ nav ul li a:hover{
     width: 80%;
 }
 .sport .sport-col .sport-card-designs .first-flex-top .card-options .spo1{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./Images/sport1.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(static/Images/sport1.png);
 
 }
 .sport .sport-col .sport-card-designs .first-flex-top .card-options .spo2{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./Images/player.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(static/Images/player.png);
     
 }
 .sport .sport-col .sport-card-designs .first-flex-top .card-options .spo3{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./Images/sport3.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(static/Images/sport3.png);
 }
 .sport .sport-col .sport-card-designs .first-flex-top .card-options .spo4{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./Images/sport4.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(static/Images/sport4.png);
     
 }
 .sport .sport-col .sport-card-designs .first-flex-top .card-options .spo5{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./Images/play-ball.png);   
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(static/Images/play-ball.png);   
 }
 
 
@@ -438,22 +438,22 @@ nav ul li a:hover{
     width: 80%;
 }
 .car .car-col .car-card-designs .first-flex-top .card-options .car1{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./Images/sport-car.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(static/Images/sport-car.png);
 
 }
 .car .car-col .car-card-designs .first-flex-top .card-options .car2{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./Images/car2.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(static/Images/car2.png);
     
 }
 .car .car-col .car-card-designs .first-flex-top .card-options .car3{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./Images/car3.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(static/Images/car3.png);
 }
 .car .car-col .car-card-designs .first-flex-top .card-options .car4{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./Images/car4.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(static/Images/car4.png);
     
 }
 .car .car-col .car-card-designs .first-flex-top .card-options .car5{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./Images/black-sports-car.png);   
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(static/Images/black-sports-car.png);   
 }
 
 .flower-card-designs .first-flex-top, .animal-card-designs .first-flex-top, .nature-card-designs .first-flex-top, .sport-card-designs .first-flex-top, .car-card-designs .first-flex-top{

@@ -6,11 +6,11 @@ from django.contrib.auth.models import User
 
 class NewUserForm(UserCreationForm):
     email = forms.EmailField(max_length=254, required=True, help_text='Required.Enter a valid email address.')
-    first_name = forms.CharField(max_length=30, required=False, help_text='Optional.')
-    last_name = forms.CharField(max_length=30, required=False, help_text='Optional.')
+    # first_name = forms.CharField(max_length=30, required=False, help_text='Optional.')
+    # last_name = forms.CharField(max_length=30, required=False, help_text='Optional.')
     class Meta:
         model = User
-        fields = ('username','first_name', 'last_name', 'email', 'password', 'password')
+        fields = ('username','email', 'password1', 'password2')
     def save(self, commit=True):
         user = super(NewUserForm, self).save(commit=False)
         user.email = self.cleaned_data['email']
