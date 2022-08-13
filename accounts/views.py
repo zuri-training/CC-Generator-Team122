@@ -20,6 +20,7 @@ def signup_request(request):
             messages.success(request, "Registration successful." )
             return redirect("home")
         messages.error(request, "Unsuccessful registration. Invalid information.")
+        return redirect('index')
     form = NewUserForm()
     return render (request, "signup.html", {"form":form})
 
