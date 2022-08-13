@@ -10,6 +10,7 @@ urlpatterns = [
     path('profile', profile.as_view(), name='profile'),
     path('documentation', documentation.as_view(), name='documentation'),
     path('index', index.as_view(), name='index'),
-    path('download', views.download_flower1, name='flower1')
+    path('download', views.download_flower1, name='flower1'),
+    path('download', views.download_flower1, name='flower2')
      ]
 
