@@ -1,894 +1,1345 @@
-{% load static%}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CARD LIBRARY</title>
-    <link rel="stylesheet" href="{% static './library.css' %}">
-</head>
-<body>
+    <link rel="stylesheet" href="{% static 'css/library.css' %}" />
+  </head>
+  <body>
     <div class="library">
-        <nav>
-        <img src="./Images/cardxtra_logo1-removebg-preview 6.png" alt="logo">
+      <nav>
+        <img
+          src="static/Images/cardxtra_logo1-removebg-preview 6.png"
+          alt="logo"
+        />
         <ul>
           <li>
-            <a href="#">Libraries</a>
+            <a href="{% url 'documentation' %}">Documentation</a>
           </li>
           <li>
-            <a href="./contact_us.html">Contact Us</a>
+            <a href="{% url 'contact_us' %}">Contact Us</a>
           </li>
           <li>
-            <a href="./about_us.html">About Us</a>
+            <a href="{% url 'about_us' %}">About Us</a>
           </li>
           <li>
-            <a href="#"><i class="fa-solid fa-user"></i></a>
+            <a href="{% url 'profile' %}"><i class="fa-solid fa-user"></i></a>
           </li>
         </ul>
-    </nav>
-    <div class="exotic">
-        {% block title %}
+      </nav>
+      <div class="exotic">
         <h1>EXOTIC CREDIT CARD LIBRARY</h1>
-        {% endblock %} {% block content%}
+
         <p>Select from one of our exotic credit card designs and download</p>
         <ul>
-            <li><a href="#"><i class="fa-solid fa-floppy-disk"></i></a></li>
-            <li><a href="#">PNG</a></li>
-            <li><a href="#">JPG</a></li>
-            <li><a href="#">PDF</a></li>
+          <li>
+            <a href="#"><i class="fa-solid fa-floppy-disk"></i></a>
+          </li>
+          <li><a href="#">PNG</a></li>
+          <li><a href="#">JPG</a></li>
+          <li><a href="#">PDF</a></li>
         </ul>
-    </div>
-    <div class="categories">
+      </div>
+      <div class="categories">
         <h4>Explore Pre-made Categories</h4>
-        <hr>
+        <hr />
         <div class="categories-listed">
-            <div class="flowery-sec lists">
+          <div class="flowery-sec lists">
             <div class="bar">
-                <img src="./Images/Chip Card.png" alt="chip-card" class="chip">
-            <img src="./Images/flower.png" alt="flower" class="bar-img">
-            <h5>Flowery</h5>
+              <img
+                src="static/Images/Chip Card.png"
+                alt="chip-card"
+                class="chip"
+              />
+              <img
+                src="static/Images/flower.png"
+                alt="flower"
+                class="bar-img"
+              />
+              <h5>Flowery</h5>
             </div>
             <button><a href="#flower">View Collections</a></button>
-        </div>
-        <div class="animal-sec lists">
+          </div>
+          <div class="animal-sec lists">
             <div class="bar">
-                <img src="./Images/Chip Card.png" alt="chip-card" class="chip">
-            <img src="./Images/dog.png" alt="dog" class="bar-img">
-            <h5>Animals</h5>
+              <img
+                src="static/Images/Chip Card.png"
+                alt="chip-card"
+                class="chip"
+              />
+              <img src="static/Images/dog.png" alt="dog" class="bar-img" />
+              <h5>Animals</h5>
             </div>
             <button><a href="#animals">View Collections</a></button>
-        </div>
-        <div class="nature-sec lists">
+          </div>
+          <div class="nature-sec lists">
             <div class="bar">
-                <img src="./Images/Chip Card.png" alt="chip-card"
-                class="chip">
-            <img src="./Images/nature.png" alt="nature" class="bar-img">
-            <h5>Nature</h5>
+              <img
+                src="static/Images/Chip Card.png"
+                alt="chip-card"
+                class="chip"
+              />
+              <img
+                src="static/Images/nature.png"
+                alt="nature"
+                class="bar-img"
+              />
+              <h5>Nature</h5>
             </div>
             <button><a href="#nature">View Collections</a></button>
-        </div>
-        <div class="sport-sec lists">
+          </div>
+          <div class="sport-sec lists">
             <div class="bar">
-                <img src="./Images/Chip Card.png" alt="chip-card"
-                class="chip">
-            <img src="./Images/ball.png" alt="ball" class="bar-img">
-            <h5>Sports</h5>
+              <img
+                src="static/Images/Chip Card.png"
+                alt="chip-card"
+                class="chip"
+              />
+              <img src="static/Images/ball.png" alt="ball" class="bar-img" />
+              <h5>Sports</h5>
             </div>
             <button><a href="#sports">View Collections</a></button>
-        </div>
-        <div class="car-sec lists">
+          </div>
+          <div class="car-sec lists">
             <div class="bar">
-                <img src="./Images/Chip Card.png" alt="chip-card"
-                class="chip">
-            <img src="./Images/cars.png" alt="sport-car" class="bar-img">
-            <h5>Cars</h5>
+              <img
+                src="static/Images/Chip Card.png"
+                alt="chip-card"
+                class="chip"
+              />
+              <img
+                src="static/Images/cars.png"
+                alt="sport-car"
+                class="bar-img"
+              />
+              <h5>Cars</h5>
             </div>
             <button><a href="#cars">View Collections</a></button>
+          </div>
         </div>
-
-        </div>
-    </div>
-    <hr>
-    <!-- FLOWERY COLLECTIONS -->
-    <div class="flower" id="flower">
-        <span><img src="./Images/flower.png" alt="flower"></span><h2>Flowers</h2>
-        <hr>
+      </div>
+      <hr />
+      <!-- FLOWERY COLLECTIONS -->
+      <div class="flower" id="flower">
+        <span><img src="static/Images/flower.png" alt="flower" /></span>
+        <h2>Flowers</h2>
+        <hr />
         <div class="flowery-col">
-            <div class="flower-card-designs">
-             <div class="first-flex-top">
-                 <div class="card-options">
-                     <div class="card card1 flo1">
+          <div class="flower-card-designs">
+            <div class="first-flex-top">
+              <div class="card-options">
+                <div class="card card1 flo1">
                   <div class="up">
-                        <div class="up-logo"><img src="./Images/card extra copyww 1.png" alt="logo"></div>
-                            <h4>Flower Card</h4>
-                        </div>
-                        <div class="mid">
-                            <img src="./Images/wwww 1.png" alt="card-sensor">
-                            <h5>000-000-000 000-000-000 000-000-000</h5>
-                        </div>
-                        <div class="end">
-                            <div class="exp">
-                                <h5 class="card-name">First-Name Last-Name</h5>
-                                <h6>VALID THRU</h6>
-                            <h4>01/01</h4>
-                            </div>
-                            <div class="visa-logo">
-                                <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo">
-                            </div>
-                            </div>
-             </div>
-             <div class="save">
-                 <ul>
-                     <li><a href="#"><i class="fa-solid fa-floppy-disk"></i>Save</a></li>
-                     <li><a href="#"><i class="fa-solid fa-download"></i>Download</a></li>
-                 </ul>
-             </div>
-                 </div>
-                   <div class="card-options">
-                       <div class="card card2 flo2">
-                  <div class="up">
-                        <div class="up-logo"><img src="./Images/card extra copyww 1.png" alt="logo"></div>
-                            <h4>Flower Card</h4>
-                        </div>
-                        <div class="mid">
-                            <img src="./Images/wwww 1.png" alt="card-sensor">
-                            <h5>000-000-000 000-000-000 000-000-000</h5>
-                        </div>
-                        <div class="end">
-                            <div class="exp">
-                                <h5 class="card-name">First-Name Last-Name</h5>
-                                <h6>VALID THRU</h6>
-                            <h4>01/01</h4>
-                            </div>
-                            <div class="visa-logo">
-                                <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo">
-                            </div>
-                            </div>
-             </div>
-             <div class="save">
-                 <ul>
-                     <li><a href="#"><i class="fa-solid fa-floppy-disk"></i>Save</a></li>
-                     <li><a href="#"><i class="fa-solid fa-download"></i>Download</a></li>
-                 </ul>
-             </div>
-                   </div>
-             <div class="card-options">
-                 <div class="card card3 flo3">
-                  <div class="up">
-                        <div class="up-logo"><img src="./Images/card extra copyww 1.png" alt="logo"></div>
-                            <h4>Flower Card</h4>
-                        </div>
-                        <div class="mid">
-                            <img src="./Images/wwww 1.png" alt="card-sensor">
-                            <h5>000-000-000 000-000-000 000-000-000</h5>
-                        </div>
-                        <div class="end">
-                            <div class="exp">
-                                <h5 class="card-name">First-Name Last-Name</h5>
-                                <h6>VALID THRU</h6>
-                            <h4>01/01</h4>
-                            </div>
-                            <div class="visa-logo">
-                                <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo">
-                            </div>
-                            </div>
-             </div>
-             <div class="save">
-                 <ul>
-                     <li><a href="#"><i class="fa-solid fa-floppy-disk"></i>Save</a></li>
-                     <li><a href="#"><i class="fa-solid fa-download"></i>Download</a></li>
-                 </ul>
-             </div>
-             </div>
-                  <div class="card-options">
-                       <div class="card card4 flo4">
-                  <div class="up">
-                        <div class="up-logo"><img src="./Images/card extra copyww 1.png" alt="logo"></div>
-                            <h4>Flower Card</h4>
-                        </div>
-                        <div class="mid">
-                            <img src="./Images/wwww 1.png" alt="card-sensor">
-                            <h5>000-000-000 000-000-000 000-000-000</h5>
-                        </div>
-                        <div class="end">
-                            <div class="exp">
-                                <h5 class="card-name">First-Name Last-Name</h5>
-                                <h6>VALID THRU</h6>
-                            <h4>01/01</h4>
-                            </div>
-                            <div class="visa-logo">
-                                <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo">
-                            </div>
-                            </div>
-             </div>
-             <div class="save">
-                 <ul>
-                     <li><a href="#"><i class="fa-solid fa-floppy-disk"></i>Save</a></li>
-                     <li><a href="#"><i class="fa-solid fa-download"></i>Download</a></li>
-                 </ul>
-             </div>
+                    <div class="up-logo">
+                      <img
+                        src="static/Images/card extra copyww 1.png"
+                        alt="logo"
+                      />
+                    </div>
+                    <h4>Flower Card</h4>
                   </div>
-             <div class="card-options">
-                 <div class="card card5 flo5">
+                  <div class="mid">
+                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <h5>000-000-000 000-000-000 000-000-000</h5>
+                  </div>
+                  <div class="end">
+                    <div class="exp">
+                      <h5 class="card-name">First-Name Last-Name</h5>
+                      <h6>VALID THRU</h6>
+                      <h4>01/01</h4>
+                    </div>
+                    <div class="visa-logo">
+                      <img
+                        src="static/Images/Visa_Inc._logo 1.png"
+                        alt="visa-logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="save">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-floppy-disk"></i>Save</a
+                      >
+                    </li>
+                    <li>
+                      <a href="{% url 'flower1' %}"
+                        ><i class="fa-solid fa-download"></i>Download</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-options">
+                <div class="card card2 flo2">
                   <div class="up">
-                        <div class="up-logo"><img src="./Images/card extra copyww 1.png" alt="logo"></div>
-                            <h4>Flower Card</h4>
-                        </div>
-                        <div class="mid">
-                            <img src="./Images/wwww 1.png" alt="card-sensor">
-                            <h5>000-000-000 000-000-000 000-000-000</h5>
-                        </div>
-                        <div class="end">
-                            <div class="exp">
-                                <h5 class="card-name">First-Name Last-Name</h5>
-                                <h6>VALID THRU</h6>
-                            <h4>01/01</h4>
-                            </div>
-                            <div class="visa-logo">
-                                <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo">
-                            </div>
-                            </div>
-             </div>
-             <div class="save">
-                 <ul>
-                     <li><a href="#"><i class="fa-solid fa-floppy-disk"></i>Save</a></li>
-                     <li><a href="#"><i class="fa-solid fa-download"></i>Download</a></li>
-                 </ul>
-             </div>
-             </div>
-         </div>
-         </div>
+                    <div class="up-logo">
+                      <img
+                        src="static/Images/card extra copyww 1.png"
+                        alt="logo"
+                      />
+                    </div>
+                    <h4>Flower Card</h4>
+                  </div>
+                  <div class="mid">
+                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <h5>000-000-000 000-000-000 000-000-000</h5>
+                  </div>
+                  <div class="end">
+                    <div class="exp">
+                      <h5 class="card-name">First-Name Last-Name</h5>
+                      <h6>VALID THRU</h6>
+                      <h4>01/01</h4>
+                    </div>
+                    <div class="visa-logo">
+                      <img
+                        src="static/Images/Visa_Inc._logo 1.png"
+                        alt="visa-logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="save">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-floppy-disk"></i>Save</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-download"></i>Download</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-options">
+                <div class="card card3 flo3">
+                  <div class="up">
+                    <div class="up-logo">
+                      <img
+                        src="static/Images/card extra copyww 1.png"
+                        alt="logo"
+                      />
+                    </div>
+                    <h4>Flower Card</h4>
+                  </div>
+                  <div class="mid">
+                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <h5>000-000-000 000-000-000 000-000-000</h5>
+                  </div>
+                  <div class="end">
+                    <div class="exp">
+                      <h5 class="card-name">First-Name Last-Name</h5>
+                      <h6>VALID THRU</h6>
+                      <h4>01/01</h4>
+                    </div>
+                    <div class="visa-logo">
+                      <img
+                        src="static/Images/Visa_Inc._logo 1.png"
+                        alt="visa-logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="save">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-floppy-disk"></i>Save</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-download"></i>Download</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-options">
+                <div class="card card4 flo4">
+                  <div class="up">
+                    <div class="up-logo">
+                      <img
+                        src="static/Images/card extra copyww 1.png"
+                        alt="logo"
+                      />
+                    </div>
+                    <h4>Flower Card</h4>
+                  </div>
+                  <div class="mid">
+                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <h5>000-000-000 000-000-000 000-000-000</h5>
+                  </div>
+                  <div class="end">
+                    <div class="exp">
+                      <h5 class="card-name">First-Name Last-Name</h5>
+                      <h6>VALID THRU</h6>
+                      <h4>01/01</h4>
+                    </div>
+                    <div class="visa-logo">
+                      <img
+                        src="static/Images/Visa_Inc._logo 1.png"
+                        alt="visa-logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="save">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-floppy-disk"></i>Save</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-download"></i>Download</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-options">
+                <div class="card card5 flo5">
+                  <div class="up">
+                    <div class="up-logo">
+                      <img
+                        src="static/Images/card extra copyww 1.png"
+                        alt="logo"
+                      />
+                    </div>
+                    <h4>Flower Card</h4>
+                  </div>
+                  <div class="mid">
+                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <h5>000-000-000 000-000-000 000-000-000</h5>
+                  </div>
+                  <div class="end">
+                    <div class="exp">
+                      <h5 class="card-name">First-Name Last-Name</h5>
+                      <h6>VALID THRU</h6>
+                      <h4>01/01</h4>
+                    </div>
+                    <div class="visa-logo">
+                      <img
+                        src="static/Images/Visa_Inc._logo 1.png"
+                        alt="visa-logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="save">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-floppy-disk"></i>Save</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-download"></i>Download</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
 
-<!-- ANIMALS COLLECTION -->
-<div class="animal" id="animals">
-        <span><img src="./Images/dog.png" alt="dog"></span><h2>Animals</h2>
-        <hr>
+      <!-- ANIMALS COLLECTION -->
+      <div class="animal" id="animals">
+        <span><img src="static/Images/dog.png" alt="dog" /></span>
+        <h2>Animals</h2>
+        <hr />
         <div class="animal-col">
-            <div class="animal-card-designs">
-             <div class="first-flex-top">
-                 <div class="card-options">
-                     <div class="card card1 ani1">
+          <div class="animal-card-designs">
+            <div class="first-flex-top">
+              <div class="card-options">
+                <div class="card card1 ani1">
                   <div class="up">
-                        <div class="up-logo"><img src="./Images/card extra copyww 1.png" alt="logo"></div>
-                            <h4>Animals</h4>
-                        </div>
-                        <div class="mid">
-                            <img src="./Images/wwww 1.png" alt="card-sensor">
-                            <h5>000-000-000 000-000-000 000-000-000</h5>
-                        </div>
-                        <div class="end">
-                            <div class="exp">
-                                <h5 class="card-name">First-Name Last-Name</h5>
-                                <h6>VALID THRU</h6>
-                            <h4>01/01</h4>
-                            </div>
-                            <div class="visa-logo">
-                                <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo">
-                            </div>
-                            </div>
-             </div>
-             <div class="save">
-                 <ul>
-                     <li><a href="#"><i class="fa-solid fa-floppy-disk"></i>Save</a></li>
-                     <li><a href="#"><i class="fa-solid fa-download"></i>Download</a></li>
-                 </ul>
-             </div>
-                 </div>
-                   <div class="card-options">
-                       <div class="card card2 ani2">
-                  <div class="up">
-                        <div class="up-logo"><img src="./Images/card extra copyww 1.png" alt="logo"></div>
-                            <h4>Animals</h4>
-                        </div>
-                        <div class="mid">
-                            <img src="./Images/wwww 1.png" alt="card-sensor">
-                            <h5>000-000-000 000-000-000 000-000-000</h5>
-                        </div>
-                        <div class="end">
-                            <div class="exp">
-                                <h5 class="card-name">First-Name Last-Name</h5>
-                                <h6>VALID THRU</h6>
-                            <h4>01/01</h4>
-                            </div>
-                            <div class="visa-logo">
-                                <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo">
-                            </div>
-                            </div>
-             </div>
-             <div class="save">
-                 <ul>
-                     <li><a href="#"><i class="fa-solid fa-floppy-disk"></i>Save</a></li>
-                     <li><a href="#"><i class="fa-solid fa-download"></i>Download</a></li>
-                 </ul>
-             </div>
-                   </div>
-             <div class="card-options">
-                 <div class="card card3 ani3">
-                  <div class="up">
-                        <div class="up-logo"><img src="./Images/card extra copyww 1.png" alt="logo"></div>
-                            <h4>Animals</h4>
-                        </div>
-                        <div class="mid">
-                            <img src="./Images/wwww 1.png" alt="card-sensor">
-                            <h5>000-000-000 000-000-000 000-000-000</h5>
-                        </div>
-                        <div class="end">
-                            <div class="exp">
-                                <h5 class="card-name">First-Name Last-Name</h5>
-                                <h6>VALID THRU</h6>
-                            <h4>01/01</h4>
-                            </div>
-                            <div class="visa-logo">
-                                <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo">
-                            </div>
-                            </div>
-             </div>
-             <div class="save">
-                 <ul>
-                     <li><a href="#"><i class="fa-solid fa-floppy-disk"></i>Save</a></li>
-                     <li><a href="#"><i class="fa-solid fa-download"></i>Download</a></li>
-                 </ul>
-             </div>
-             </div>
-                  <div class="card-options">
-                       <div class="card card4 ani4">
-                  <div class="up">
-                        <div class="up-logo"><img src="./Images/card extra copyww 1.png" alt="logo"></div>
-                            <h4>Animals</h4>
-                        </div>
-                        <div class="mid">
-                            <img src="./Images/wwww 1.png" alt="card-sensor">
-                            <h5>000-000-000 000-000-000 000-000-000</h5>
-                        </div>
-                        <div class="end">
-                            <div class="exp">
-                                <h5 class="card-name">First-Name Last-Name</h5>
-                                <h6>VALID THRU</h6>
-                            <h4>01/01</h4>
-                            </div>
-                            <div class="visa-logo">
-                                <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo">
-                            </div>
-                            </div>
-             </div>
-             <div class="save">
-                 <ul>
-                     <li><a href="#"><i class="fa-solid fa-floppy-disk"></i>Save</a></li>
-                     <li><a href="#"><i class="fa-solid fa-download"></i>Download</a></li>
-                 </ul>
-             </div>
+                    <div class="up-logo">
+                      <img
+                        src="static/Images/card extra copyww 1.png"
+                        alt="logo"
+                      />
+                    </div>
+                    <h4>Animals</h4>
                   </div>
-             <div class="card-options">
-                 <div class="card card5 ani5">
+                  <div class="mid">
+                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <h5>000-000-000 000-000-000 000-000-000</h5>
+                  </div>
+                  <div class="end">
+                    <div class="exp">
+                      <h5 class="card-name">First-Name Last-Name</h5>
+                      <h6>VALID THRU</h6>
+                      <h4>01/01</h4>
+                    </div>
+                    <div class="visa-logo">
+                      <img
+                        src="static/Images/Visa_Inc._logo 1.png"
+                        alt="visa-logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="save">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-floppy-disk"></i>Save</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-download"></i>Download</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-options">
+                <div class="card card2 ani2">
                   <div class="up">
-                        <div class="up-logo"><img src="./Images/card extra copyww 1.png" alt="logo"></div>
-                            <h4>Animals</h4>
-                        </div>
-                        <div class="mid">
-                            <img src="./Images/wwww 1.png" alt="card-sensor">
-                            <h5>000-000-000 000-000-000 000-000-000</h5>
-                        </div>
-                        <div class="end">
-                            <div class="exp">
-                                <h5 class="card-name">First-Name Last-Name</h5>
-                                <h6>VALID THRU</h6>
-                            <h4>01/01</h4>
-                            </div>
-                            <div class="visa-logo">
-                                <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo">
-                            </div>
-                            </div>
-             </div>
-             <div class="save">
-                 <ul>
-                     <li><a href="#"><i class="fa-solid fa-floppy-disk"></i>Save</a></li>
-                     <li><a href="#"><i class="fa-solid fa-download"></i>Download</a></li>
-                 </ul>
-             </div>
-             </div>
-             </div>
-         </div>
+                    <div class="up-logo">
+                      <img
+                        src="static/Images/card extra copyww 1.png"
+                        alt="logo"
+                      />
+                    </div>
+                    <h4>Animals</h4>
+                  </div>
+                  <div class="mid">
+                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <h5>000-000-000 000-000-000 000-000-000</h5>
+                  </div>
+                  <div class="end">
+                    <div class="exp">
+                      <h5 class="card-name">First-Name Last-Name</h5>
+                      <h6>VALID THRU</h6>
+                      <h4>01/01</h4>
+                    </div>
+                    <div class="visa-logo">
+                      <img
+                        src="static/Images/Visa_Inc._logo 1.png"
+                        alt="visa-logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="save">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-floppy-disk"></i>Save</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-download"></i>Download</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-options">
+                <div class="card card3 ani3">
+                  <div class="up">
+                    <div class="up-logo">
+                      <img
+                        src="static/Images/card extra copyww 1.png"
+                        alt="logo"
+                      />
+                    </div>
+                    <h4>Animals</h4>
+                  </div>
+                  <div class="mid">
+                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <h5>000-000-000 000-000-000 000-000-000</h5>
+                  </div>
+                  <div class="end">
+                    <div class="exp">
+                      <h5 class="card-name">First-Name Last-Name</h5>
+                      <h6>VALID THRU</h6>
+                      <h4>01/01</h4>
+                    </div>
+                    <div class="visa-logo">
+                      <img
+                        src="static/Images/Visa_Inc._logo 1.png"
+                        alt="visa-logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="save">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-floppy-disk"></i>Save</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-download"></i>Download</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-options">
+                <div class="card card4 ani4">
+                  <div class="up">
+                    <div class="up-logo">
+                      <img
+                        src="static/Images/card extra copyww 1.png"
+                        alt="logo"
+                      />
+                    </div>
+                    <h4>Animals</h4>
+                  </div>
+                  <div class="mid">
+                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <h5>000-000-000 000-000-000 000-000-000</h5>
+                  </div>
+                  <div class="end">
+                    <div class="exp">
+                      <h5 class="card-name">First-Name Last-Name</h5>
+                      <h6>VALID THRU</h6>
+                      <h4>01/01</h4>
+                    </div>
+                    <div class="visa-logo">
+                      <img
+                        src="static/Images/Visa_Inc._logo 1.png"
+                        alt="visa-logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="save">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-floppy-disk"></i>Save</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-download"></i>Download</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-options">
+                <div class="card card5 ani5">
+                  <div class="up">
+                    <div class="up-logo">
+                      <img
+                        src="static/Images/card extra copyww 1.png"
+                        alt="logo"
+                      />
+                    </div>
+                    <h4>Animals</h4>
+                  </div>
+                  <div class="mid">
+                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <h5>000-000-000 000-000-000 000-000-000</h5>
+                  </div>
+                  <div class="end">
+                    <div class="exp">
+                      <h5 class="card-name">First-Name Last-Name</h5>
+                      <h6>VALID THRU</h6>
+                      <h4>01/01</h4>
+                    </div>
+                    <div class="visa-logo">
+                      <img
+                        src="static/Images/Visa_Inc._logo 1.png"
+                        alt="visa-logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="save">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-floppy-disk"></i>Save</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-download"></i>Download</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
 
-    <!-- NATURE  COLLECTION -->
-    <div class="nature" id="nature">
-        <span><img src="./Images/nature.png" alt="nature"></span><h2>Nature</h2>
-        <hr>
+      <!-- NATURE  COLLECTION -->
+      <div class="nature" id="nature">
+        <span><img src="static/Images/nature.png" alt="nature" /></span>
+        <h2>Nature</h2>
+        <hr />
         <div class="nature-col">
-            <div class="nature-card-designs">
-             <div class="first-flex-top">
-                 <div class="card-options">
-                     <div class="card card1 nat1">
+          <div class="nature-card-designs">
+            <div class="first-flex-top">
+              <div class="card-options">
+                <div class="card card1 nat1">
                   <div class="up">
-                        <div class="up-logo"><img src="./Images/card extra copyww 1.png" alt="logo"></div>
-                            <h4>Nature</h4>
-                        </div>
-                        <div class="mid">
-                            <img src="./Images/wwww 1.png" alt="card-sensor">
-                            <h5>000-000-000 000-000-000 000-000-000</h5>
-                        </div>
-                        <div class="end">
-                            <div class="exp">
-                                <h5 class="card-name">First-Name Last-Name</h5>
-                                <h6>VALID THRU</h6>
-                            <h4>01/01</h4>
-                            </div>
-                            <div class="visa-logo">
-                                <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo">
-                            </div>
-                            </div>
-             </div>
-             <div class="save">
-                 <ul>
-                     <li><a href="#"><i class="fa-solid fa-floppy-disk"></i>Save</a></li>
-                     <li><a href="#"><i class="fa-solid fa-download"></i>Download</a></li>
-                 </ul>
-             </div>
-                 </div>
-                   <div class="card-options">
-                       <div class="card card2 nat2">
-                  <div class="up">
-                        <div class="up-logo"><img src="./Images/card extra copyww 1.png" alt="logo"></div>
-                            <h4>Nature</h4>
-                        </div>
-                        <div class="mid">
-                            <img src="./Images/wwww 1.png" alt="card-sensor">
-                            <h5>000-000-000 000-000-000 000-000-000</h5>
-                        </div>
-                        <div class="end">
-                            <div class="exp">
-                                <h5 class="card-name">First-Name Last-Name</h5>
-                                <h6>VALID THRU</h6>
-                            <h4>01/01</h4>
-                            </div>
-                            <div class="visa-logo">
-                                <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo">
-                            </div>
-                            </div>
-             </div>
-             <div class="save">
-                 <ul>
-                     <li><a href="#"><i class="fa-solid fa-floppy-disk"></i>Save</a></li>
-                     <li><a href="#"><i class="fa-solid fa-download"></i>Download</a></li>
-                 </ul>
-             </div>
-                   </div>
-             <div class="card-options">
-                 <div class="card card3 nat3">
-                  <div class="up">
-                        <div class="up-logo"><img src="./Images/card extra copyww 1.png" alt="logo"></div>
-                            <h4>Nature</h4>
-                        </div>
-                        <div class="mid">
-                            <img src="./Images/wwww 1.png" alt="card-sensor">
-                            <h5>000-000-000 000-000-000 000-000-000</h5>
-                        </div>
-                        <div class="end">
-                            <div class="exp">
-                                <h5 class="card-name">First-Name Last-Name</h5>
-                                <h6>VALID THRU</h6>
-                            <h4>01/01</h4>
-                            </div>
-                            <div class="visa-logo">
-                                <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo">
-                            </div>
-                            </div>
-             </div>
-             <div class="save">
-                 <ul>
-                     <li><a href="#"><i class="fa-solid fa-floppy-disk"></i>Save</a></li>
-                     <li><a href="#"><i class="fa-solid fa-download"></i>Download</a></li>
-                 </ul>
-             </div>
-             </div>
-                  <div class="card-options">
-                       <div class="card card4 nat4">
-                  <div class="up">
-                        <div class="up-logo"><img src="./Images/card extra copyww 1.png" alt="logo"></div>
-                            <h4>Nature</h4>
-                        </div>
-                        <div class="mid">
-                            <img src="./Images/wwww 1.png" alt="card-sensor">
-                            <h5>000-000-000 000-000-000 000-000-000</h5>
-                        </div>
-                        <div class="end">
-                            <div class="exp">
-                                <h5 class="card-name">First-Name Last-Name</h5>
-                                <h6>VALID THRU</h6>
-                            <h4>01/01</h4>
-                            </div>
-                            <div class="visa-logo">
-                                <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo">
-                            </div>
-                            </div>
-             </div>
-             <div class="save">
-                 <ul>
-                     <li><a href="#"><i class="fa-solid fa-floppy-disk"></i>Save</a></li>
-                     <li><a href="#"><i class="fa-solid fa-download"></i>Download</a></li>
-                 </ul>
-             </div>
+                    <div class="up-logo">
+                      <img
+                        src="static/Images/card extra copyww 1.png"
+                        alt="logo"
+                      />
+                    </div>
+                    <h4>Nature</h4>
                   </div>
-             <div class="card-options">
-                 <div class="card card5 nat5">
+                  <div class="mid">
+                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <h5>000-000-000 000-000-000 000-000-000</h5>
+                  </div>
+                  <div class="end">
+                    <div class="exp">
+                      <h5 class="card-name">First-Name Last-Name</h5>
+                      <h6>VALID THRU</h6>
+                      <h4>01/01</h4>
+                    </div>
+                    <div class="visa-logo">
+                      <img
+                        src="static/Images/Visa_Inc._logo 1.png"
+                        alt="visa-logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="save">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-floppy-disk"></i>Save</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-download"></i>Download</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-options">
+                <div class="card card2 nat2">
                   <div class="up">
-                        <div class="up-logo"><img src="./Images/card extra copyww 1.png" alt="logo"></div>
-                            <h4>Nature</h4>
-                        </div>
-                        <div class="mid">
-                            <img src="./Images/wwww 1.png" alt="card-sensor">
-                            <h5>000-000-000 000-000-000 000-000-000</h5>
-                        </div>
-                        <div class="end">
-                            <div class="exp">
-                                <h5 class="card-name">First-Name Last-Name</h5>
-                                <h6>VALID THRU</h6>
-                            <h4>01/01</h4>
-                            </div>
-                            <div class="visa-logo">
-                                <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo">
-                            </div>
-                            </div>
-             </div>
-             <div class="save">
-                 <ul>
-                     <li><a href="#"><i class="fa-solid fa-floppy-disk"></i>Save</a></li>
-                     <li><a href="#"><i class="fa-solid fa-download"></i>Download</a></li>
-                 </ul>
-             </div>
-             </div>
-             </div>
-         </div>
+                    <div class="up-logo">
+                      <img
+                        src="static/Images/card extra copyww 1.png"
+                        alt="logo"
+                      />
+                    </div>
+                    <h4>Nature</h4>
+                  </div>
+                  <div class="mid">
+                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <h5>000-000-000 000-000-000 000-000-000</h5>
+                  </div>
+                  <div class="end">
+                    <div class="exp">
+                      <h5 class="card-name">First-Name Last-Name</h5>
+                      <h6>VALID THRU</h6>
+                      <h4>01/01</h4>
+                    </div>
+                    <div class="visa-logo">
+                      <img
+                        src="static/Images/Visa_Inc._logo 1.png"
+                        alt="visa-logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="save">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-floppy-disk"></i>Save</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-download"></i>Download</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-options">
+                <div class="card card3 nat3">
+                  <div class="up">
+                    <div class="up-logo">
+                      <img
+                        src="static/Images/card extra copyww 1.png"
+                        alt="logo"
+                      />
+                    </div>
+                    <h4>Nature</h4>
+                  </div>
+                  <div class="mid">
+                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <h5>000-000-000 000-000-000 000-000-000</h5>
+                  </div>
+                  <div class="end">
+                    <div class="exp">
+                      <h5 class="card-name">First-Name Last-Name</h5>
+                      <h6>VALID THRU</h6>
+                      <h4>01/01</h4>
+                    </div>
+                    <div class="visa-logo">
+                      <img
+                        src="static/Images/Visa_Inc._logo 1.png"
+                        alt="visa-logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="save">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-floppy-disk"></i>Save</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-download"></i>Download</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-options">
+                <div class="card card4 nat4">
+                  <div class="up">
+                    <div class="up-logo">
+                      <img
+                        src="static/Images/card extra copyww 1.png"
+                        alt="logo"
+                      />
+                    </div>
+                    <h4>Nature</h4>
+                  </div>
+                  <div class="mid">
+                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <h5>000-000-000 000-000-000 000-000-000</h5>
+                  </div>
+                  <div class="end">
+                    <div class="exp">
+                      <h5 class="card-name">First-Name Last-Name</h5>
+                      <h6>VALID THRU</h6>
+                      <h4>01/01</h4>
+                    </div>
+                    <div class="visa-logo">
+                      <img
+                        src="static/Images/Visa_Inc._logo 1.png"
+                        alt="visa-logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="save">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-floppy-disk"></i>Save</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-download"></i>Download</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-options">
+                <div class="card card5 nat5">
+                  <div class="up">
+                    <div class="up-logo">
+                      <img
+                        src="static/Images/card extra copyww 1.png"
+                        alt="logo"
+                      />
+                    </div>
+                    <h4>Nature</h4>
+                  </div>
+                  <div class="mid">
+                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <h5>000-000-000 000-000-000 000-000-000</h5>
+                  </div>
+                  <div class="end">
+                    <div class="exp">
+                      <h5 class="card-name">First-Name Last-Name</h5>
+                      <h6>VALID THRU</h6>
+                      <h4>01/01</h4>
+                    </div>
+                    <div class="visa-logo">
+                      <img
+                        src="static/Images/Visa_Inc._logo 1.png"
+                        alt="visa-logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="save">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-floppy-disk"></i>Save</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-download"></i>Download</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
 
-    <!-- SPORTS -->
-    <div class="sport" id="sports">
-        <span><img src="./Images/ball.png" alt="ball"></span><h2>Sports</h2>
-        <hr>
+      <!-- SPORTS -->
+      <div class="sport" id="sports">
+        <span><img src="static/Images/ball.png" alt="ball" /></span>
+        <h2>Sports</h2>
+        <hr />
         <div class="sport-col">
-            <div class="sport-card-designs">
-             <div class="first-flex-top">
-                 <div class="card-options">
-                     <div class="card card1 spo1">
+          <div class="sport-card-designs">
+            <div class="first-flex-top">
+              <div class="card-options">
+                <div class="card card1 spo1">
                   <div class="up">
-                        <div class="up-logo"><img src="./Images/card extra copyww 1.png" alt="logo"></div>
-                            <h4>Sport</h4>
-                        </div>
-                        <div class="mid">
-                            <img src="./Images/wwww 1.png" alt="card-sensor">
-                            <h5>000-000-000 000-000-000 000-000-000</h5>
-                        </div>
-                        <div class="end">
-                            <div class="exp">
-                                <h5 class="card-name">First-Name Last-Name</h5>
-                                <h6>VALID THRU</h6>
-                            <h4>01/01</h4>
-                            </div>
-                            <div class="visa-logo">
-                                <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo">
-                            </div>
-                            </div>
-             </div>
-             <div class="save">
-                 <ul>
-                     <li><a href="#"><i class="fa-solid fa-floppy-disk"></i>Save</a></li>
-                     <li><a href="#"><i class="fa-solid fa-download"></i>Download</a></li>
-                 </ul>
-             </div>
-                 </div>
-                   <div class="card-options">
-                       <div class="card card2 spo2">
-                  <div class="up">
-                        <div class="up-logo"><img src="./Images/card extra copyww 1.png" alt="logo"></div>
-                            <h4>Sport</h4>
-                        </div>
-                        <div class="mid">
-                            <img src="./Images/wwww 1.png" alt="card-sensor">
-                            <h5>000-000-000 000-000-000 000-000-000</h5>
-                        </div>
-                        <div class="end">
-                            <div class="exp">
-                                <h5 class="card-name">First-Name Last-Name</h5>
-                                <h6>VALID THRU</h6>
-                            <h4>01/01</h4>
-                            </div>
-                            <div class="visa-logo">
-                                <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo">
-                            </div>
-                            </div>
-             </div>
-             <div class="save">
-                 <ul>
-                     <li><a href="#"><i class="fa-solid fa-floppy-disk"></i>Save</a></li>
-                     <li><a href="#"><i class="fa-solid fa-download"></i>Download</a></li>
-                 </ul>
-             </div>
-                   </div>
-             <div class="card-options">
-                 <div class="card card3 spo3">
-                  <div class="up">
-                        <div class="up-logo"><img src="./Images/card extra copyww 1.png" alt="logo"></div>
-                            <h4>Sport</h4>
-                        </div>
-                        <div class="mid">
-                            <img src="./Images/wwww 1.png" alt="card-sensor">
-                            <h5>000-000-000 000-000-000 000-000-000</h5>
-                        </div>
-                        <div class="end">
-                            <div class="exp">
-                                <h5 class="card-name">First-Name Last-Name</h5>
-                                <h6>VALID THRU</h6>
-                            <h4>01/01</h4>
-                            </div>
-                            <div class="visa-logo">
-                                <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo">
-                            </div>
-                            </div>
-             </div>
-             <div class="save">
-                 <ul>
-                     <li><a href="#"><i class="fa-solid fa-floppy-disk"></i>Save</a></li>
-                     <li><a href="#"><i class="fa-solid fa-download"></i>Download</a></li>
-                 </ul>
-             </div>
-             </div>
-                  <div class="card-options">
-                       <div class="card card4 spo4">
-                  <div class="up">
-                        <div class="up-logo"><img src="./Images/card extra copyww 1.png" alt="logo"></div>
-                            <h4>Sport</h4>
-                        </div>
-                        <div class="mid">
-                            <img src="./Images/wwww 1.png" alt="card-sensor">
-                            <h5>000-000-000 000-000-000 000-000-000</h5>
-                        </div>
-                        <div class="end">
-                            <div class="exp">
-                                <h5 class="card-name">First-Name Last-Name</h5>
-                                <h6>VALID THRU</h6>
-                            <h4>01/01</h4>
-                            </div>
-                            <div class="visa-logo">
-                                <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo">
-                            </div>
-                            </div>
-             </div>
-             <div class="save">
-                 <ul>
-                     <li><a href="#"><i class="fa-solid fa-floppy-disk"></i>Save</a></li>
-                     <li><a href="#"><i class="fa-solid fa-download"></i>Download</a></li>
-                 </ul>
-             </div>
+                    <div class="up-logo">
+                      <img
+                        src="static/Images/card extra copyww 1.png"
+                        alt="logo"
+                      />
+                    </div>
+                    <h4>Sport</h4>
                   </div>
-             <div class="card-options">
-                 <div class="card card5 spo5">
+                  <div class="mid">
+                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <h5>000-000-000 000-000-000 000-000-000</h5>
+                  </div>
+                  <div class="end">
+                    <div class="exp">
+                      <h5 class="card-name">First-Name Last-Name</h5>
+                      <h6>VALID THRU</h6>
+                      <h4>01/01</h4>
+                    </div>
+                    <div class="visa-logo">
+                      <img
+                        src="static/Images/Visa_Inc._logo 1.png"
+                        alt="visa-logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="save">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-floppy-disk"></i>Save</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-download"></i>Download</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-options">
+                <div class="card card2 spo2">
                   <div class="up">
-                        <div class="up-logo"><img src="./Images/card extra copyww 1.png" alt="logo"></div>
-                            <h4>Sport</h4>
-                        </div>
-                        <div class="mid">
-                            <img src="./Images/wwww 1.png" alt="card-sensor">
-                            <h5>000-000-000 000-000-000 000-000-000</h5>
-                        </div>
-                        <div class="end">
-                            <div class="exp">
-                                <h5 class="card-name">First-Name Last-Name</h5>
-                                <h6>VALID THRU</h6>
-                            <h4>01/01</h4>
-                            </div>
-                            <div class="visa-logo">
-                                <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo">
-                            </div>
-                            </div>
-             </div>
-             <div class="save">
-                 <ul>
-                     <li><a href="#"><i class="fa-solid fa-floppy-disk"></i>Save</a></li>
-                     <li><a href="#"><i class="fa-solid fa-download"></i>Download</a></li>
-                 </ul>
-             </div>
-             </div>
-             </div>
-         </div>
+                    <div class="up-logo">
+                      <img
+                        src="static/Images/card extra copyww 1.png"
+                        alt="logo"
+                      />
+                    </div>
+                    <h4>Sport</h4>
+                  </div>
+                  <div class="mid">
+                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <h5>000-000-000 000-000-000 000-000-000</h5>
+                  </div>
+                  <div class="end">
+                    <div class="exp">
+                      <h5 class="card-name">First-Name Last-Name</h5>
+                      <h6>VALID THRU</h6>
+                      <h4>01/01</h4>
+                    </div>
+                    <div class="visa-logo">
+                      <img
+                        src="static/Images/Visa_Inc._logo 1.png"
+                        alt="visa-logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="save">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-floppy-disk"></i>Save</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-download"></i>Download</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-options">
+                <div class="card card3 spo3">
+                  <div class="up">
+                    <div class="up-logo">
+                      <img
+                        src="static/Images/card extra copyww 1.png"
+                        alt="logo"
+                      />
+                    </div>
+                    <h4>Sport</h4>
+                  </div>
+                  <div class="mid">
+                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <h5>000-000-000 000-000-000 000-000-000</h5>
+                  </div>
+                  <div class="end">
+                    <div class="exp">
+                      <h5 class="card-name">First-Name Last-Name</h5>
+                      <h6>VALID THRU</h6>
+                      <h4>01/01</h4>
+                    </div>
+                    <div class="visa-logo">
+                      <img
+                        src="static/Images/Visa_Inc._logo 1.png"
+                        alt="visa-logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="save">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-floppy-disk"></i>Save</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-download"></i>Download</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-options">
+                <div class="card card4 spo4">
+                  <div class="up">
+                    <div class="up-logo">
+                      <img
+                        src="static/Images/card extra copyww 1.png"
+                        alt="logo"
+                      />
+                    </div>
+                    <h4>Sport</h4>
+                  </div>
+                  <div class="mid">
+                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <h5>000-000-000 000-000-000 000-000-000</h5>
+                  </div>
+                  <div class="end">
+                    <div class="exp">
+                      <h5 class="card-name">First-Name Last-Name</h5>
+                      <h6>VALID THRU</h6>
+                      <h4>01/01</h4>
+                    </div>
+                    <div class="visa-logo">
+                      <img
+                        src="static/Images/Visa_Inc._logo 1.png"
+                        alt="visa-logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="save">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-floppy-disk"></i>Save</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-download"></i>Download</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-options">
+                <div class="card card5 spo5">
+                  <div class="up">
+                    <div class="up-logo">
+                      <img
+                        src="static/Images/card extra copyww 1.png"
+                        alt="logo"
+                      />
+                    </div>
+                    <h4>Sport</h4>
+                  </div>
+                  <div class="mid">
+                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <h5>000-000-000 000-000-000 000-000-000</h5>
+                  </div>
+                  <div class="end">
+                    <div class="exp">
+                      <h5 class="card-name">First-Name Last-Name</h5>
+                      <h6>VALID THRU</h6>
+                      <h4>01/01</h4>
+                    </div>
+                    <div class="visa-logo">
+                      <img
+                        src="static/Images/Visa_Inc._logo 1.png"
+                        alt="visa-logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="save">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-floppy-disk"></i>Save</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-download"></i>Download</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
 
-<!-- CAR COLLECTION -->
-    <div class="car" id="cars">
-        <span><img src="./Images/cars.png" alt="car"></span><h2>Cars</h2>
-        <hr>
+      <!-- CAR COLLECTION -->
+      <div class="car" id="cars">
+        <span><img src="static/Images/cars.png" alt="car" /></span>
+        <h2>Cars</h2>
+        <hr />
         <div class="car-col">
-            <div class="car-card-designs">
-             <div class="first-flex-top">
-                 <div class="card-options">
-                     <div class="card card1 car1">
+          <div class="car-card-designs">
+            <div class="first-flex-top">
+              <div class="card-options">
+                <div class="card card1 car1">
                   <div class="up">
-                        <div class="up-logo"><img src="./Images/card extra copyww 1.png" alt="logo"></div>
-                            <h4>Cars</h4>
-                        </div>
-                        <div class="mid">
-                            <img src="./Images/wwww 1.png" alt="card-sensor">
-                            <h5>000-000-000 000-000-000 000-000-000</h5>
-                        </div>
-                        <div class="end">
-                            <div class="exp">
-                                <h5 class="card-name">First-Name Last-Name</h5>
-                                <h6>VALID THRU</h6>
-                            <h4>01/01</h4>
-                            </div>
-                            <div class="visa-logo">
-                                <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo">
-                            </div>
-                            </div>
-             </div>
-             <div class="save">
-                 <ul>
-                     <li><a href="#"><i class="fa-solid fa-floppy-disk"></i>Save</a></li>
-                     <li><a href="#"><i class="fa-solid fa-download"></i>Download</a></li>
-                 </ul>
-             </div>
-                 </div>
-                   <div class="card-options">
-                       <div class="card card2 car2">
-                  <div class="up">
-                        <div class="up-logo"><img src="./Images/card extra copyww 1.png" alt="logo"></div>
-                            <h4>Cars</h4>
-                        </div>
-                        <div class="mid">
-                            <img src="./Images/wwww 1.png" alt="card-sensor">
-                            <h5>000-000-000 000-000-000 000-000-000</h5>
-                        </div>
-                        <div class="end">
-                            <div class="exp">
-                                <h5 class="card-name">First-Name Last-Name</h5>
-                                <h6>VALID THRU</h6>
-                            <h4>01/01</h4>
-                            </div>
-                            <div class="visa-logo">
-                                <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo">
-                            </div>
-                            </div>
-             </div>
-             <div class="save">
-                 <ul>
-                     <li><a href="#"><i class="fa-solid fa-floppy-disk"></i>Sport</a></li>
-                     <li><a href="#"><i class="fa-solid fa-download"></i>Download</a></li>
-                 </ul>
-             </div>
-                   </div>
-             <div class="card-options">
-                 <div class="card card3 car3">
-                  <div class="up">
-                        <div class="up-logo"><img src="./Images/card extra copyww 1.png" alt="logo"></div>
-                            <h4>Cars</h4>
-                        </div>
-                        <div class="mid">
-                            <img src="./Images/wwww 1.png" alt="card-sensor">
-                            <h5>000-000-000 000-000-000 000-000-000</h5>
-                        </div>
-                        <div class="end">
-                            <div class="exp">
-                                <h5 class="card-name">First-Name Last-Name</h5>
-                                <h6>VALID THRU</h6>
-                            <h4>01/01</h4>
-                            </div>
-                            <div class="visa-logo">
-                                <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo">
-                            </div>
-                            </div>
-             </div>
-             <div class="save">
-                 <ul>
-                     <li><a href="#"><i class="fa-solid fa-floppy-disk"></i>>Save</a></li>
-                     <li><a href="#"><i class="fa-solid fa-download"></i>Download</a></li>
-                 </ul>
-             </div>
-             </div>
-                  <div class="card-options">
-                       <div class="card card4 car4">
-                  <div class="up">
-                        <div class="up-logo"><img src="./Images/card extra copyww 1.png" alt="logo"></div>
-                            <h4>Cars</h4>
-                        </div>
-                        <div class="mid">
-                            <img src="./Images/wwww 1.png" alt="card-sensor">
-                            <h5>000-000-000 000-000-000 000-000-000</h5>
-                        </div>
-                        <div class="end">
-                            <div class="exp">
-                                <h5 class="card-name">First-Name Last-Name</h5>
-                                <h6>VALID THRU</h6>
-                            <h4>01/01</h4>
-                            </div>
-                            <div class="visa-logo">
-                                <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo">
-                            </div>
-                            </div>
-             </div>
-             <div class="save">
-                 <ul>
-                     <li><a href="#"><i class="fa-solid fa-floppy-disk"></i>Save</a></li>
-                     <li><a href="#"><i class="fa-solid fa-download"></i>Download</a></li>
-                 </ul>
-             </div>
+                    <div class="up-logo">
+                      <img
+                        src="static/Images/card extra copyww 1.png"
+                        alt="logo"
+                      />
+                    </div>
+                    <h4>Cars</h4>
                   </div>
-             <div class="card-options">
-                 <div class="card card5 car5">
+                  <div class="mid">
+                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <h5>000-000-000 000-000-000 000-000-000</h5>
+                  </div>
+                  <div class="end">
+                    <div class="exp">
+                      <h5 class="card-name">First-Name Last-Name</h5>
+                      <h6>VALID THRU</h6>
+                      <h4>01/01</h4>
+                    </div>
+                    <div class="visa-logo">
+                      <img
+                        src="static/Images/Visa_Inc._logo 1.png"
+                        alt="visa-logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="save">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-floppy-disk"></i>Save</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-download"></i>Download</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-options">
+                <div class="card card2 car2">
                   <div class="up">
-                        <div class="up-logo"><img src="./Images/card extra copyww 1.png" alt="logo"></div>
-                            <h4>Cars</h4>
-                        </div>
-                        <div class="mid">
-                            <img src="./Images/wwww 1.png" alt="card-sensor">
-                            <h5>000-000-000 000-000-000 000-000-000</h5>
-                        </div>
-                        <div class="end">
-                            <div class="exp">
-                                <h5 class="card-name">First-Name Last-Name</h5>
-                                <h6>VALID THRU</h6>
-                            <h4>01/01</h4>
-                            </div>
-                            <div class="visa-logo">
-                                <img src="./Images/Visa_Inc._logo 1.png" alt="visa-logo">
-                            </div>
-                            </div>
-             </div>
-             <div class="save">
-                 <ul>
-                     <li><a href="#"><i class="fa-solid fa-floppy-disk"></i>Save</a></li>
-                     <li><a href="#"><i class="fa-solid fa-download"></i>Download</a></li>
-                 </ul>
-             </div>
-             </div>
-             </div>
-         </div>
+                    <div class="up-logo">
+                      <img
+                        src="static/Images/card extra copyww 1.png"
+                        alt="logo"
+                      />
+                    </div>
+                    <h4>Cars</h4>
+                  </div>
+                  <div class="mid">
+                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <h5>000-000-000 000-000-000 000-000-000</h5>
+                  </div>
+                  <div class="end">
+                    <div class="exp">
+                      <h5 class="card-name">First-Name Last-Name</h5>
+                      <h6>VALID THRU</h6>
+                      <h4>01/01</h4>
+                    </div>
+                    <div class="visa-logo">
+                      <img
+                        src="static/Images/Visa_Inc._logo 1.png"
+                        alt="visa-logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="save">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-floppy-disk"></i>Sport</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-download"></i>Download</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-options">
+                <div class="card card3 car3">
+                  <div class="up">
+                    <div class="up-logo">
+                      <img
+                        src="static/Images/card extra copyww 1.png"
+                        alt="logo"
+                      />
+                    </div>
+                    <h4>Cars</h4>
+                  </div>
+                  <div class="mid">
+                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <h5>000-000-000 000-000-000 000-000-000</h5>
+                  </div>
+                  <div class="end">
+                    <div class="exp">
+                      <h5 class="card-name">First-Name Last-Name</h5>
+                      <h6>VALID THRU</h6>
+                      <h4>01/01</h4>
+                    </div>
+                    <div class="visa-logo">
+                      <img
+                        src="static/Images/Visa_Inc._logo 1.png"
+                        alt="visa-logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="save">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-floppy-disk"></i>>Save</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-download"></i>Download</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-options">
+                <div class="card card4 car4">
+                  <div class="up">
+                    <div class="up-logo">
+                      <img
+                        src="static/Images/card extra copyww 1.png"
+                        alt="logo"
+                      />
+                    </div>
+                    <h4>Cars</h4>
+                  </div>
+                  <div class="mid">
+                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <h5>000-000-000 000-000-000 000-000-000</h5>
+                  </div>
+                  <div class="end">
+                    <div class="exp">
+                      <h5 class="card-name">First-Name Last-Name</h5>
+                      <h6>VALID THRU</h6>
+                      <h4>01/01</h4>
+                    </div>
+                    <div class="visa-logo">
+                      <img
+                        src="static/Images/Visa_Inc._logo 1.png"
+                        alt="visa-logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="save">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-floppy-disk"></i>Save</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-download"></i>Download</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-options">
+                <div class="card card5 car5">
+                  <div class="up">
+                    <div class="up-logo">
+                      <img
+                        src="static/Images/card extra copyww 1.png"
+                        alt="logo"
+                      />
+                    </div>
+                    <h4>Cars</h4>
+                  </div>
+                  <div class="mid">
+                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <h5>000-000-000 000-000-000 000-000-000</h5>
+                  </div>
+                  <div class="end">
+                    <div class="exp">
+                      <h5 class="card-name">First-Name Last-Name</h5>
+                      <h6>VALID THRU</h6>
+                      <h4>01/01</h4>
+                    </div>
+                    <div class="visa-logo">
+                      <img
+                        src="static/Images/Visa_Inc._logo 1.png"
+                        alt="visa-logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="save">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-floppy-disk"></i>Save</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-download"></i>Download</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-
-
+      </div>
     </div>
     <footer>
-        <div class="footer">
-            <div class="first-div">
-            <img src="./Images/cardxtra_logo1-removebg-preview 6.png" alt="logo" class="footer-logo">
+      <div class="footer">
+        <div class="first-div">
+          <img
+            src="static/Images/cardxtra_logo1-removebg-preview 6.png"
+            alt="logo"
+            class="footer-logo"
+          />
         </div>
         <div class="second-div">
-            <ul>
-                <li><a href="#">Designs</a></li>
-                <li><a href="#">Documentation</a></li>
-                <li><a href="#">API Reference</a></li>
-            </ul>
+          <ul>
+            <li><a href="#">Designs</a></li>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">API Reference</a></li>
+          </ul>
         </div>
         <div class="third-div">
-            <ul>
-                <li><a href="#">Terms and Condition </a></li>
-                <li><a href="#">Policy and Privacy</a></li>
-            </ul>
+          <ul>
+            <li><a href="#">Terms and Condition </a></li>
+            <li><a href="#">Policy and Privacy</a></li>
+          </ul>
         </div>
         <div class="fourth-div">
-            <ul>
-                <li><a href="./about_us.html">About Us</a></li>
-                <li><a href="./contact_us.html">Contact Us</a></li>
-            </ul>
+          <ul>
+            <li><a href="./about_us.html">About Us</a></li>
+            <li><a href="./contact_us.html">Contact Us</a></li>
+          </ul>
         </div>
-        </div>
-        <div class="footer-media">
-            <ul>
-                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="info@cardxtra.com"><i class="fa-solid fa-envelope"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-            </ul>
-        </div>
-        <p>All rights reserved &copy; 2022</p>
+      </div>
+      <div class="footer-media">
+        <ul>
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="info@cardxtra.com"><i class="fa-solid fa-envelope"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </li>
+        </ul>
+      </div>
+      <p>All rights reserved &copy; 2022</p>
     </footer>
-    <script src="https://kit.fontawesome.com/4fed0c590c.js" crossorigin="anonymous"></script>
-{% endblock %}
-</body>
+    <script
+      src="https://kit.fontawesome.com/4fed0c590c.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
