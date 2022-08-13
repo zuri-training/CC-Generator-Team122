@@ -24,25 +24,11 @@
 
           <p>Welcome back! Please enter your details</p>
 
-          <div class="login-right">
-            <img
-              src="static/Images/kisspng-credit-card-visa.png"
-              alt="Visa-card"
-            />
-            <p class="welcome">Welcome to your card design platform!</p>
-            <p>
-              Personalize and gnerate credit card designs to suite your
-              lifestyle in a beautiful way
-            </p>
-          </div>
           <div class="fill">
             <form action="" method="post">
               {% csrf_token %} {{ form.as_p }}
               <br />
-              <!-- <div class="password">
-                <input type="password" placeholder="Password" /><i
-                  class="fa-regular fa-eye-slash icon"
-                ></i> -->
+             
                 <button type="submit"><a href="#">Login</a></button>
             </form>
           </div>
