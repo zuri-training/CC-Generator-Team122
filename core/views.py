@@ -1,10 +1,13 @@
 from django.shortcuts import render
 from django.views import generic
 import mimetypes
-from django.http import HttpResponse
+from django.http import StreamingHttpResponse
 import os
 from zipfile import ZipFile
 import zipfile
+from wsgiref.util import FileWrapper
+
+
 class home(generic.TemplateView) :
     template_name = "landingpage.html"
 class about_us(generic.TemplateView) :
@@ -24,15 +27,42 @@ class index(generic.TemplateView) :
 
 
 
-def download_flower1(request, filename=''):
+def download_flower1(request):
+    filename = None
     if filename != '':
         BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-        filename = ZipFile('Flower1.zip')
-        file_path = BASE_DIR + '/static/cardfiles/' + filename
-        path = open(file_path, "r")
-        mime_type, _ = mimetypes.guess_type(file_path)
-        response = HttpResponse(path, content_type=mime_type)
+        filename = 'Flower1.zip'
+        filepath = BASE_DIR + '/cardfiles/' + filename
+        thefile = filepath
+        filename = os.path.basename(thefile)
+        chunk_size = 8192
+        path = open(filepath, "r")
+        response = StreamingHttpResponse(FileWrapper(open(thefile, 'rb'),chunk_size),
+            content_type=mimetypes.guess_type(thefile)[0])
+        response['Content-Length'] = os.path.getsize(thefile)
         response['Content-Disposition'] = "attachment; filename=%s" % filename
+        mime_type, _ = mimetypes.guess_type(filepath)
+    else:
+        return render(request, 'Flower1.zip')
+    return response
+
+
+
+def download_flower2(request):
+    filename = None
+    if filename != '':
+        BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        filename = 'Flower2.zip'
+        filepath = BASE_DIR + '/cardfiles/' + filename
+        thefile = filepath
+        filename = os.path.basename(thefile)
+        chunk_size = 8192
+        path = open(filepath, "r")
+        response = StreamingHttpResponse(FileWrapper(open(thefile, 'rb'),chunk_size),
+            content_type=mimetypes.guess_type(thefile)[0])
+        response['Content-Length'] = os.path.getsize(thefile)
+        response['Content-Disposition'] = "attachment; filename=%s" % filename
+        mime_type, _ = mimetypes.guess_type(filepath)
     else:
         return render(request, 'Flower1.zip')
     return response
