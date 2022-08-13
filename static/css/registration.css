@@ -79,7 +79,7 @@ Signup and Login Page
 }
 .login-left{
     background-color: var(--White);
-    margin-bottom: 4rem;
+    /* margin-bottom: 4rem; */
 }
 label{
     display: block;
