@@ -1,0 +1,772 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --font-family: 'Lato', sans-serif;
+    --primary-blue:rgba(10, 62, 139, 1);
+    --White: rgba(255, 255, 255, 1);
+    --turquoise: rgba(6, 195, 254, 1);
+}
+body{
+    font-family: var(--font-family);
+}
+Signup and Login Page
+.signup-container, .login-container{
+    min-width: 376px;
+    height: auto;
+}
+.customize{
+    background-color: var(--primary-blue);
+    color: var(--White);
+    text-align: center;
+    /* padding: 7rem 10rem; */
+    position: relative;
+}
+.customize h1{
+    margin: 0 auto;
+}
+.outer{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    bottom: -3rem;
+    left: -5rem;
+    border: 12px solid rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    border-bottom: 0;
+    border-right: 0;
+    transform: rotate(55deg);
+}
+.middle{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: -2rem;
+    left: -4rem;
+    border: 12px solid rgba(6, 195, 254, 1);
+    border-radius: 50%;
+    border-bottom: 0;
+    border-right: 0;
+    transform: rotate(60deg);
+}
+.inner{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: -1rem;
+    left: -3rem;
+    border: 12px solid rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    overflow: hidden;
+    border-bottom: 0;
+    border-right: 0;
+    transform: rotate(85deg);
+}
+.create{
+    margin-top: 2rem;
+    background-color: var(--White);
+    padding: 2rem;
+}
+.fill{
+    display: block;
+    margin-top: 3rem;
+    margin-left: 7rem;
+}
+.login-left{
+    background-color: var(--White);
+    /* margin-bottom: 4rem; */
+}
+label{
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: -1rem;
+}
+/* form{
+    display: block;
+} */
+form input{
+    margin-top: 0.5rem;
+    /* padding: 1rem; */
+    display: inline-block;
+    width: 65%;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    border-color: var(--primary-blue);
+}
+.password i{
+    margin-top: 1.7rem;
+    margin-left: -2rem;
+}
+.confirm{
+    margin-top: -0.3rem;
+}
+.signup, .signin{
+    width: 65%;
+}
+button{
+    display: block;
+    width: 100%;
+    margin: 1rem auto;
+    padding: 0.9rem;
+    background-color: var(--primary-blue);
+    border: transparent;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.icon{
+    cursor: pointer;
+}
+button a{
+color: var(--White);
+text-decoration: none;
+}
+button:hover{
+    border: 4px solid rgba(10, 62, 139, 1);
+    background-color: rgb(150, 181, 228);
+    transition: ease 0.5s;
+}
+button a:hover{
+    color: rgba(10, 62, 139, 1);
+}
+.already{
+    text-align: center;
+}
+a{
+    font-weight: bolder;
+    color: var(--primary-blue);
+}
+a:hover{
+    color: rgb(7, 28, 59);
+    font-size: 1.5rem;
+    transition: ease 1s;
+}
+.greet h3, p{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.remember{
+    padding-left: 0.1rem;
+    font-weight: bold;
+}
+.remind{
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+}
+.forgot a{
+    display: block;
+    font-weight: bolder;
+    text-decoration: none;
+    text-align: right;
+    margin-top: -1.2rem;
+}
+img{
+    width: 80%;
+    display: block;
+    margin: -3rem auto;
+}
+.login-right{
+    background-color: var(--primary-blue);
+    text-align: center;
+    color: var(--White);
+    padding: 0 2rem 4rem;
+    margin-bottom: 4rem;
+}
+.login-right p{
+   font-weight: lighter;
+   padding: 0 10rem;
+   line-height: 1.5rem;
+}
+.use-google{
+    background-color: transparent;
+    border: 2px solid rgba(10, 62, 139, 1);
+    color: var(--primary-blue);
+    position: relative;
+}
+.use-google img{
+    display: inline-block;
+    width: 2rem;
+    position: absolute;
+    left: 5%;
+    bottom: 3.5rem;
+}
+.login-right .welcome{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+/* About Page */
+.about-container{
+    min-width: 376px;
+    background-color: var(--White);
+    padding: 3rem;
+}
+.about-container h1, .platform h3, .contact-container h1{
+    color: var(--primary-blue);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.name{
+    color: var(--primary-blue);
+    font-weight: 700;
+}
+.platform{
+    position: relative;
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+    background-color: rgba(189, 187, 187, 1);
+    padding: 3rem;
+    
+}
+.in{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border: 7px solid rgba(10, 62, 139, 1);
+    border-radius: 50%;
+    border-bottom: 0;
+    border-left: 0;
+    border-top: 0;
+    top: -10%;
+    right: -5%;
+    transform: rotate(273deg)
+}
+.out{ 
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 9px solid rgba(6, 195, 254, 1);
+    border-radius: 50%;
+    border-left: 0;
+    border-bottom: 0;
+    border-top: 0; 
+    top: -15%;
+    right: -12%;
+    transform: rotate(340deg)
+}
+.platform-img{
+    margin: 2rem 0 5rem;
+    width: 70%;
+}
+.logo{
+    margin-bottom: 2rem;
+    width: 10rem;
+    position: absolute;
+    right: 2%;
+}
+/* Contact Page */
+.contact-container{
+    min-width: 376px;
+    text-align: center;
+    padding: 2rem 2rem 0;
+}
+.contact-info{
+    background-color: var(--primary-blue);
+    margin-top: 3rem;
+    margin-bottom: 0;
+    padding: 3rem;
+    color: var(--White);
+    line-height: 2rem;
+    position: relative;
+}
+.contact-info h4{
+    margin-bottom: 1.5rem;
+}
+.contact-info p{
+    margin-bottom: 3rem;
+}
+.contact-info ul li{
+    list-style: none;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+.contact-info a{
+    color: var(--White);
+    text-decoration: none;
+}
+.contact-info h3{
+    text-align: left;
+    margin: 3rem 0 2rem;
+}
+.contact-icon{
+    margin-right: 1rem;
+}
+.media{
+    text-align: left;
+    margin-bottom: 5rem;
+}
+.media li{
+    display: inline-block;
+    margin-right: 1.5rem;
+}
+.small-circ{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background-color: rgba(157, 192, 244);
+    border-radius: 50%;
+    bottom: 10%;
+    right: 9%;
+    z-index: 2;
+}
+.big-circ{
+    width: 200px;
+    height: 200px;
+    background-color: var(--turquoise);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+    border-bottom-right-radius: 0 0;
+    border-top-left-radius: 100% 110%;
+    z-index: 1;
+}
+.contact-info img{
+    width: 12rem;
+    position: absolute;
+    bottom: 21%;
+    right: 9%;
+    z-index: 5;
+}
+.contact-form{
+    width: 90%;
+    text-align: left;
+}
+.contact-form input, textarea{
+width: 80%;
+padding: 1rem;
+border-radius: 1rem;
+font-size: 1rem;
+border-color: var(--primary-blue);
+}
+.submit{
+    color: var(--White);
+    display: inline;
+    margin-top: 1rem;
+    width: 40%;
+}
+/* FOOTER */
+footer{
+    padding: 3rem 4rem;
+    background-color: rgb(42, 66, 105);
+}
+.footer-logo{
+    width: 15rem;
+}
+footer ul li{
+    list-style: none;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+footer a{
+    color:var(--White);
+    text-decoration: none;
+}
+.footer-media{
+    text-align: center;
+    margin-top: 3rem;
+}
+.footer-media li{
+    display: inline-block;
+    margin-right: 1.5rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+.footer-media li:hover{
+    color: rgba(157, 192, 244);
+    border: 2px;
+    border-color: var(--primary-blue);
+}
+@media screen and (min-width: 567px){
+    /* SIGN-UP */
+    .use-google img{
+    left: 13%;
+    }
+    /* contact us */
+    .platform-img{
+    width: 60%;
+}
+    /* about us */
+.in{
+    width: 120px;
+    height: 120px;
+    top: -6%;
+    right: -2%;
+}
+.out{
+    width: 170px;
+    height: 170px;
+    top: -10%;
+    right: -7%;
+}
+}
+
+@media screen and (min-width: 867px){
+    /* signup and login */
+.signup-container, .login-container{
+    display: flex;
+    height: 100vh;
+}
+.login-container{
+    flex-direction: row-reverse;
+}
+.customize{
+    width: 50%;
+    text-align: left;
+    padding: 5rem;
+}
+.customize h1{
+    margin-top: 6rem;
+    font-size: 3rem;
+}
+.create{
+    width: 50%;
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.login-left{
+    width: 50%;
+    padding: 5rem 1rem;
+    margin-bottom: 0;
+}
+.fill{
+    margin-left: 0;
+    margin-top: 1rem;
+}
+form{
+    margin-top: 2rem;
+}
+form input{
+    margin-top: 0.5rem;
+    width: 80%;
+    font-size: 1rem;
+}
+.password i{
+    margin-top: 1.7rem;
+    margin-left: -2rem;
+}
+.signup, .signin{
+    width: 80%;
+}
+.greet h3, p{
+    text-align: left;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.already{
+    margin-top: 1rem;
+}
+.remember{
+    padding-left: 0.5rem;
+}
+.remind{
+    width: 80%;
+}
+.forgot a{
+    margin-top: -1.2rem;
+}
+.use-google img{
+    left: 3.5rem;
+    bottom: 3.5rem;
+}
+img{
+    width: 95%;
+    margin: -3rem auto;
+}
+/* login page */
+.login-right{
+    width: 50%;
+    padding: 1rem;
+    margin-bottom: 0;
+}
+.login-right p{
+   padding: 0 7rem;
+   text-align: center;
+}
+.login-right img{
+    width: 50;
+}
+/* about us */
+.flex-container, .contact-details{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 0.5rem;
+}
+.left h1, .platform h3{
+    color: var(--primary-blue);
+    margin-bottom: 2rem;
+    text-align: left;
+}
+.left, .contact-form{
+    width: 50%;
+    margin-top: 2.5rem;
+    padding: 2.5rem;
+}
+.left p{
+    line-height: 1.5rem;
+    padding-right: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.contact-support{
+    margin-left: 0.5rem;
+}
+.platform{
+    width: 40%;
+    margin: 5rem 6rem 3rem 0;
+}
+.platform-img{
+    width: 95%;
+}
+
+.logo{
+    top: 95%;
+}
+/* contact us */
+.contact-container{
+    margin-top: 1rem;
+    height: auto;
+}
+.contact-info{
+    width: 45%;
+    margin-bottom: 3rem;
+}
+.contact-info h4{
+    margin-bottom: 0.5rem;
+}
+.contact-info p{
+    margin-bottom: 2rem;
+}
+.contact-details{
+    justify-content: space-between;
+    /* padding: 0 3rem;
+    margin-bottom: 0; */
+}
+.first-para{
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.small-circ{
+    width: 140px;
+    height: 140px;
+    bottom: 7%;
+
+}
+.big-circ{
+    width: 160px;
+    height: 160px;
+}
+.contact-info img{
+    width: 10rem;
+    bottom: 18%;
+}
+.contact-form{
+    width: 50%;
+    text-align: left;
+}
+.contact-form{
+    margin-top: 0;
+    padding: 1rem;
+}
+.contact-form input, textarea{
+padding: 0.7rem;
+}
+/* FOOTER */
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+}
+
+@media screen and (min-width: 1040px){
+    /* signup and login */
+.customize{
+    text-align: left;
+    padding: 2rem 6rem;
+}
+.customize h1{
+    margin: 8rem 0 0 5rem;
+    font-size: 3rem;
+}
+.create{
+    padding: 3rem;
+}
+.login-left{
+    padding: 8rem 3rem;
+}
+form{
+    margin-top: 2rem;
+}
+form input{
+    margin-top: 0.5rem;
+    width: 90%;
+}
+.signup, .signin{
+    width: 90%;
+}
+.remind{
+    width: 90%;
+}
+.use-google img{
+    left: 5.5rem;
+    bottom: 0.5rem;
+}
+img{
+    width: 100%;
+    margin: auto;
+}
+.login-right{
+    width: 50%;
+    padding: 0;
+}
+.login-right img{
+    margin-top: 0;
+    width: 70%;
+}
+.login-right p{
+   padding: 0 5rem;
+}
+/* about us */
+.platform{
+    margin-top: 2rem;
+    margin-right: 7rem;
+}
+.platform-img{
+    width: 60%;
+}
+
+.logo{
+    top: 85%;
+}
+/* contact us */
+.contact-info img{
+    bottom: 9%;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+}
+
+
+@media screen and (min-width: 1440px){
+    /* signup and login */
+.signup-container, .login-container{
+    display: flex;
+}
+.footer li {
+    display: f;
+}
+.customize{
+    text-align: left;
+    padding: 10rem 20rem 15rem 5rem;
+}
+.customize h1{
+    margin: 0 0 1rem 7rem;
+}
+.create{
+    width: 50%;
+    margin-top: 0.5rem;
+    margin-left: 4rem;
+}
+.login-left{
+    padding: 8rem 3rem 8rem 10rem;
+}
+label{
+    margin-top: 1rem;
+    margin-bottom: -1rem;
+}
+form{
+    margin-top: 2rem;
+}
+form input{
+    width: 70%;
+}
+.signup, .signin{
+    width: 70%;
+}
+button{
+    width: 100%;
+}
+.greet h3, p{
+    margin-bottom: 1rem;
+}
+.remind{
+    width: 60%;
+}
+.use-google img{
+    left: 3.5rem;
+    bottom: 3.5rem;
+}
+img{
+    margin: -3rem auto;
+}
+.login-right{
+    padding: 0 5rem;
+}
+.login-right p{
+   padding: 0 10rem;
+}
+/* about us */
+.flex-container{
+    justify-content: space-around;
+}
+.left{
+    width: 55%;
+    padding: 2rem 5rem;
+}
+.left p{
+    padding-right: 6rem;
+}
+.platform{
+    margin-right: 10rem;
+    width: 40%;
+}
+.platform-img{
+    width: 50%;
+}
+.logo{
+    top: 90%;
+}
+/* contact us */
+.contact-details{
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+.contact-info{
+    width: 40%;
+}
+.contact-form input, .contact-form textarea{
+    width: 60%;
+}
+.contact-form{
+    width: 55%;
+    padding-right: 3rem;
+}
+.contact-info img{
+    bottom: 18%;
+}
+.submit{
+    margin-top: 0.5rem;
+}
+.contact-info p{
+    margin-bottom: 4rem;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+.footer li{
+display: flex;
+}
+}

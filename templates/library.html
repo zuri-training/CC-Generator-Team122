@@ -12,7 +12,7 @@
     <div class="library">
       <nav>
         <img
-          src="static/Images/cardxtra_logo1-removebg-preview 6.png"
+          src="{% static  './Images/cardxtra_logo1-removebg-preview 6.png' %}"
           alt="logo"
         />
         <ul>
@@ -50,12 +50,12 @@
           <div class="flowery-sec lists">
             <div class="bar">
               <img
-                src="static/Images/Chip Card.png"
+                src="{% static  './Images/Chip Card.png' %}"
                 alt="chip-card"
                 class="chip"
               />
               <img
-                src="static/Images/flower.png"
+                src="{% static  './Images/flower.png' %}"
                 alt="flower"
                 class="bar-img"
               />
@@ -66,11 +66,15 @@
           <div class="animal-sec lists">
             <div class="bar">
               <img
-                src="static/Images/Chip Card.png"
+                src="{% static  './Images/Chip Card.png' %}"
                 alt="chip-card"
                 class="chip"
               />
-              <img src="static/Images/dog.png" alt="dog" class="bar-img" />
+              <img
+                src="{% static  './Images/dog.png' %}"
+                alt="dog"
+                class="bar-img"
+              />
               <h5>Animals</h5>
             </div>
             <button><a href="#animals">View Collections</a></button>
@@ -78,12 +82,12 @@
           <div class="nature-sec lists">
             <div class="bar">
               <img
-                src="static/Images/Chip Card.png"
+                src="{% static  './Images/Chip Card.png' %}"
                 alt="chip-card"
                 class="chip"
               />
               <img
-                src="static/Images/nature.png"
+                src="{% static  './Images/nature.png' %}"
                 alt="nature"
                 class="bar-img"
               />
@@ -91,27 +95,31 @@
             </div>
             <button><a href="#nature">View Collections</a></button>
           </div>
-          <div class="sport-sec lists">
+          <!-- <div class="sport-sec lists">
             <div class="bar">
               <img
-                src="static/Images/Chip Card.png"
+                src="{% static  './Images/Chip Card.png' %}"
                 alt="chip-card"
                 class="chip"
               />
-              <img src="static/Images/ball.png" alt="ball" class="bar-img" />
+              <img
+                src="{% static  './Images/ball.png' %}"
+                alt="ball"
+                class="bar-img"
+              />
               <h5>Sports</h5>
             </div>
             <button><a href="#sports">View Collections</a></button>
-          </div>
+          </div> -->
           <div class="car-sec lists">
             <div class="bar">
               <img
-                src="static/Images/Chip Card.png"
+                src="{% static  './Images/Chip Card.png' %}"
                 alt="chip-card"
                 class="chip"
               />
               <img
-                src="static/Images/cars.png"
+                src="{% static  './Images/cars.png' %}"
                 alt="sport-car"
                 class="bar-img"
               />
@@ -124,25 +132,33 @@
       <hr />
       <!-- FLOWERY COLLECTIONS -->
       <div class="flower" id="flower">
-        <span><img src="static/Images/flower.png" alt="flower" /></span>
+        <span
+          ><img src="{% static  './Images/flower.png' %}" alt="flower"
+        /></span>
         <h2>Flowers</h2>
         <hr />
         <div class="flowery-col">
           <div class="flower-card-designs">
             <div class="first-flex-top">
               <div class="card-options">
-                <div class="card card1 flo1">
+                <div
+                  class="card card1 flo1"
+                  style="background-image: url(./static/Images/flower1.png)"
+                >
                   <div class="up">
                     <div class="up-logo">
                       <img
-                        src="static/Images/card extra copyww 1.png"
+                        src="{% static  './Images/card extra copyww 1.png"
                         alt="logo"
                       />
                     </div>
                     <h4>Flower Card</h4>
                   </div>
                   <div class="mid">
-                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <img
+                      src="{% static  './Images/wwww 1.png' %}"
+                      alt="card-sensor"
+                    />
                     <h5>000-000-000 000-000-000 000-000-000</h5>
                   </div>
                   <div class="end">
@@ -153,7 +169,7 @@
                     </div>
                     <div class="visa-logo">
                       <img
-                        src="static/Images/Visa_Inc._logo 1.png"
+                        src="{% static  './Images/Visa_Inc._logo 1.png' %}"
                         alt="visa-logo"
                       />
                     </div>
@@ -175,18 +191,24 @@
                 </div>
               </div>
               <div class="card-options">
-                <div class="card card2 flo2">
+                <div
+                  class="card card2 flo2"
+                  style="background-image: url(./static/Images/flower2.png)"
+                >
                   <div class="up">
                     <div class="up-logo">
                       <img
-                        src="static/Images/card extra copyww 1.png"
+                        src="{% static  './Images/card extra copyww 1.png' %}"
                         alt="logo"
                       />
                     </div>
                     <h4>Flower Card</h4>
                   </div>
                   <div class="mid">
-                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <img
+                      src="{% static  './Images/wwww 1.png' %}"
+                      alt="card-sensor"
+                    />
                     <h5>000-000-000 000-000-000 000-000-000</h5>
                   </div>
                   <div class="end">
@@ -197,7 +219,7 @@
                     </div>
                     <div class="visa-logo">
                       <img
-                        src="static/Images/Visa_Inc._logo 1.png"
+                        src="{% static  './Images/Visa_Inc._logo 1.png' %}"
                         alt="visa-logo"
                       />
                     </div>
@@ -219,18 +241,24 @@
                 </div>
               </div>
               <div class="card-options">
-                <div class="card card3 flo3">
+                <div
+                  class="card card3 flo3"
+                  style="background-image: url(./static/Images/flower3.png)"
+                >
                   <div class="up">
                     <div class="up-logo">
                       <img
-                        src="static/Images/card extra copyww 1.png"
+                        src="{% static  './Images/card extra copyww 1.png' %}"
                         alt="logo"
                       />
                     </div>
                     <h4>Flower Card</h4>
                   </div>
                   <div class="mid">
-                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <img
+                      src="{% static  './Images/wwww 1.png' %}"
+                      alt="card-sensor"
+                    />
                     <h5>000-000-000 000-000-000 000-000-000</h5>
                   </div>
                   <div class="end">
@@ -241,7 +269,7 @@
                     </div>
                     <div class="visa-logo">
                       <img
-                        src="static/Images/Visa_Inc._logo 1.png"
+                        src="{% static  './Images/Visa_Inc._logo 1.png' %}"
                         alt="visa-logo"
                       />
                     </div>
@@ -263,18 +291,24 @@
                 </div>
               </div>
               <div class="card-options">
-                <div class="card card4 flo4">
+                <div
+                  class="card card4 flo4"
+                  style="background-image: url(./static/Images/flower4.png)"
+                >
                   <div class="up">
                     <div class="up-logo">
                       <img
-                        src="static/Images/card extra copyww 1.png"
+                        src="{% static  './Images/card extra copyww 1.png' %}"
                         alt="logo"
                       />
                     </div>
                     <h4>Flower Card</h4>
                   </div>
                   <div class="mid">
-                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <img
+                      src="{% static  './Images/wwww 1.png' %}"
+                      alt="card-sensor"
+                    />
                     <h5>000-000-000 000-000-000 000-000-000</h5>
                   </div>
                   <div class="end">
@@ -285,7 +319,7 @@
                     </div>
                     <div class="visa-logo">
                       <img
-                        src="static/Images/Visa_Inc._logo 1.png"
+                        src="{% static  './Images/Visa_Inc._logo 1.png' %}"
                         alt="visa-logo"
                       />
                     </div>
@@ -307,18 +341,24 @@
                 </div>
               </div>
               <div class="card-options">
-                <div class="card card5 flo5">
+                <div
+                  class="card card5 flo5"
+                  style="background-image: url(./static/Images/flower5.png)"
+                >
                   <div class="up">
                     <div class="up-logo">
                       <img
-                        src="static/Images/card extra copyww 1.png"
+                        src="{% static  './Images/card extra copyww 1.png' %}"
                         alt="logo"
                       />
                     </div>
                     <h4>Flower Card</h4>
                   </div>
                   <div class="mid">
-                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <img
+                      src="{% static  './Images/wwww 1.png' %}"
+                      alt="card-sensor"
+                    />
                     <h5>000-000-000 000-000-000 000-000-000</h5>
                   </div>
                   <div class="end">
@@ -329,7 +369,7 @@
                     </div>
                     <div class="visa-logo">
                       <img
-                        src="static/Images/Visa_Inc._logo 1.png"
+                        src="{% static  './Images/Visa_Inc._logo 1.png' %}"
                         alt="visa-logo"
                       />
                     </div>
@@ -357,25 +397,31 @@
 
       <!-- ANIMALS COLLECTION -->
       <div class="animal" id="animals">
-        <span><img src="static/Images/dog.png" alt="dog" /></span>
+        <span><img src="{% static  './Images/dog.png' %}" alt="dog" /></span>
         <h2>Animals</h2>
         <hr />
         <div class="animal-col">
           <div class="animal-card-designs">
             <div class="first-flex-top">
               <div class="card-options">
-                <div class="card card1 ani1">
+                <div
+                  class="card card1 ani1"
+                  style="background-image: url(./static/Images/animal1.png)"
+                >
                   <div class="up">
                     <div class="up-logo">
                       <img
-                        src="static/Images/card extra copyww 1.png"
+                        src="{% static  './Images/card extra copyww 1.png' %}"
                         alt="logo"
                       />
                     </div>
                     <h4>Animals</h4>
                   </div>
                   <div class="mid">
-                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <img
+                      src="{% static  './Images/wwww 1.png' %}"
+                      alt="card-sensor"
+                    />
                     <h5>000-000-000 000-000-000 000-000-000</h5>
                   </div>
                   <div class="end">
@@ -386,7 +432,7 @@
                     </div>
                     <div class="visa-logo">
                       <img
-                        src="static/Images/Visa_Inc._logo 1.png"
+                        src="{% static  './Images/Visa_Inc._logo 1.png' %}"
                         alt="visa-logo"
                       />
                     </div>
@@ -408,18 +454,24 @@
                 </div>
               </div>
               <div class="card-options">
-                <div class="card card2 ani2">
+                <div
+                  class="card card2 ani2"
+                  style="background-image: url(./static/Images/animal2.png)"
+                >
                   <div class="up">
                     <div class="up-logo">
                       <img
-                        src="static/Images/card extra copyww 1.png"
+                        src="{% static  './Images/card extra copyww 1.png' %}"
                         alt="logo"
                       />
                     </div>
                     <h4>Animals</h4>
                   </div>
                   <div class="mid">
-                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <img
+                      src="{% static  './Images/wwww 1.png' %}"
+                      alt="card-sensor"
+                    />
                     <h5>000-000-000 000-000-000 000-000-000</h5>
                   </div>
                   <div class="end">
@@ -430,7 +482,7 @@
                     </div>
                     <div class="visa-logo">
                       <img
-                        src="static/Images/Visa_Inc._logo 1.png"
+                        src="{% static  './Images/Visa_Inc._logo 1.png' %}"
                         alt="visa-logo"
                       />
                     </div>
@@ -452,18 +504,24 @@
                 </div>
               </div>
               <div class="card-options">
-                <div class="card card3 ani3">
+                <div
+                  class="card card3 ani3"
+                  style="background-image: url(./static/Images/animal3.png)"
+                >
                   <div class="up">
                     <div class="up-logo">
                       <img
-                        src="static/Images/card extra copyww 1.png"
+                        src="{% static  './Images/card extra copyww 1.png' %}"
                         alt="logo"
                       />
                     </div>
                     <h4>Animals</h4>
                   </div>
                   <div class="mid">
-                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <img
+                      src="{% static  './Images/wwww 1.png' %}"
+                      alt="card-sensor"
+                    />
                     <h5>000-000-000 000-000-000 000-000-000</h5>
                   </div>
                   <div class="end">
@@ -474,7 +532,7 @@
                     </div>
                     <div class="visa-logo">
                       <img
-                        src="static/Images/Visa_Inc._logo 1.png"
+                        src="{% static  './Images/Visa_Inc._logo 1.png' %}"
                         alt="visa-logo"
                       />
                     </div>
@@ -496,18 +554,24 @@
                 </div>
               </div>
               <div class="card-options">
-                <div class="card card4 ani4">
+                <div
+                  class="card card4 ani4"
+                  style="background-image: url(./static/Images/animal4.png)"
+                >
                   <div class="up">
                     <div class="up-logo">
                       <img
-                        src="static/Images/card extra copyww 1.png"
+                        src="{% static  './Images/card extra copyww 1.png' %}"
                         alt="logo"
                       />
                     </div>
                     <h4>Animals</h4>
                   </div>
                   <div class="mid">
-                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <img
+                      src="{% static  './Images/wwww 1.png' %}"
+                      alt="card-sensor"
+                    />
                     <h5>000-000-000 000-000-000 000-000-000</h5>
                   </div>
                   <div class="end">
@@ -518,7 +582,7 @@
                     </div>
                     <div class="visa-logo">
                       <img
-                        src="static/Images/Visa_Inc._logo 1.png"
+                        src="{% static  './Images/Visa_Inc._logo 1.png' %}"
                         alt="visa-logo"
                       />
                     </div>
@@ -539,19 +603,25 @@
                   </ul>
                 </div>
               </div>
-              <div class="card-options">
-                <div class="card card5 ani5">
+              <!-- <div class="card-options">
+                <div
+                  class="card card5 ani5"
+                  style="background-image: url(./static/Images/animal5.png)"
+                >
                   <div class="up">
                     <div class="up-logo">
                       <img
-                        src="static/Images/card extra copyww 1.png"
+                        src="{% static  './Images/card extra copyww 1.png' %}"
                         alt="logo"
                       />
                     </div>
                     <h4>Animals</h4>
                   </div>
                   <div class="mid">
-                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <img
+                      src="{% static  './Images/wwww 1.png' %}"
+                      alt="card-sensor"
+                    />
                     <h5>000-000-000 000-000-000 000-000-000</h5>
                   </div>
                   <div class="end">
@@ -562,7 +632,7 @@
                     </div>
                     <div class="visa-logo">
                       <img
-                        src="static/Images/Visa_Inc._logo 1.png"
+                        src="{% static  './Images/Visa_Inc._logo 1.png' %}"
                         alt="visa-logo"
                       />
                     </div>
@@ -582,7 +652,7 @@
                     </li>
                   </ul>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -590,25 +660,33 @@
 
       <!-- NATURE  COLLECTION -->
       <div class="nature" id="nature">
-        <span><img src="static/Images/nature.png" alt="nature" /></span>
+        <span
+          ><img src="{% static  './Images/nature.png' %}" alt="nature"
+        /></span>
         <h2>Nature</h2>
         <hr />
         <div class="nature-col">
           <div class="nature-card-designs">
             <div class="first-flex-top">
               <div class="card-options">
-                <div class="card card1 nat1">
+                <div
+                  class="card card1 nat1"
+                  style="background-image: url(./static/Images/nature1.png)"
+                >
                   <div class="up">
                     <div class="up-logo">
                       <img
-                        src="static/Images/card extra copyww 1.png"
+                        src="{% static  './Images/card extra copyww 1.png' %}"
                         alt="logo"
                       />
                     </div>
                     <h4>Nature</h4>
                   </div>
                   <div class="mid">
-                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <img
+                      src="{% static  './Images/wwww 1.png' %}"
+                      alt="card-sensor"
+                    />
                     <h5>000-000-000 000-000-000 000-000-000</h5>
                   </div>
                   <div class="end">
@@ -619,7 +697,7 @@
                     </div>
                     <div class="visa-logo">
                       <img
-                        src="static/Images/Visa_Inc._logo 1.png"
+                        src="{% static  './Images/Visa_Inc._logo 1.png' %}"
                         alt="visa-logo"
                       />
                     </div>
@@ -641,18 +719,24 @@
                 </div>
               </div>
               <div class="card-options">
-                <div class="card card2 nat2">
+                <div
+                  class="card card2 nat2"
+                  style="background-image: url(./static/Images/nature2.png)"
+                >
                   <div class="up">
                     <div class="up-logo">
                       <img
-                        src="static/Images/card extra copyww 1.png"
+                        src="{% static  './Images/card extra copyww 1.png' %}"
                         alt="logo"
                       />
                     </div>
                     <h4>Nature</h4>
                   </div>
                   <div class="mid">
-                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <img
+                      src="{% static  './Images/wwww 1.png' %}"
+                      alt="card-sensor"
+                    />
                     <h5>000-000-000 000-000-000 000-000-000</h5>
                   </div>
                   <div class="end">
@@ -663,7 +747,7 @@
                     </div>
                     <div class="visa-logo">
                       <img
-                        src="static/Images/Visa_Inc._logo 1.png"
+                        src="{% static  './Images/Visa_Inc._logo 1.png' %}"
                         alt="visa-logo"
                       />
                     </div>
@@ -684,19 +768,75 @@
                   </ul>
                 </div>
               </div>
+              <!-- <div class="card-options">
+                <div
+                  class="card card3 nat3"
+                  style="background-image: url(./static/Images/coolforest.png)"
+                >
+                  <div class="up">
+                    <div class="up-logo">
+                      <img
+                        src="{% static  './Images/card extra copyww 1.png' %}"
+                        alt="logo"
+                      />
+                    </div>
+                    <h4>Nature</h4>
+                  </div>
+                  <div class="mid">
+                    <img
+                      src="{% static  './Images/wwww 1.png' %}"
+                      alt="card-sensor"
+                    />
+                    <h5>000-000-000 000-000-000 000-000-000</h5>
+                  </div>
+                  <div class="end">
+                    <div class="exp">
+                      <h5 class="card-name">First-Name Last-Name</h5>
+                      <h6>VALID THRU</h6>
+                      <h4>01/01</h4>
+                    </div>
+                    <div class="visa-logo">
+                      <img
+                        src="{% static  './Images/Visa_Inc._logo 1.png' %}"
+                        alt="visa-logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="save">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-floppy-disk"></i>Save</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-download"></i>Download</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div> -->
               <div class="card-options">
-                <div class="card card3 nat3">
+                <div
+                  class="card card4 nat4"
+                  style="background-image: url(./static/Images/nature4.png)"
+                >
                   <div class="up">
                     <div class="up-logo">
                       <img
-                        src="static/Images/card extra copyww 1.png"
+                        src="{% static  './Images/card extra copyww 1.png' %}"
                         alt="logo"
                       />
                     </div>
                     <h4>Nature</h4>
                   </div>
                   <div class="mid">
-                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <img
+                      src="{% static  './Images/wwww 1.png' %}"
+                      alt="card-sensor"
+                    />
                     <h5>000-000-000 000-000-000 000-000-000</h5>
                   </div>
                   <div class="end">
@@ -707,7 +847,7 @@
                     </div>
                     <div class="visa-logo">
                       <img
-                        src="static/Images/Visa_Inc._logo 1.png"
+                        src="{% static  './Images/Visa_Inc._logo 1.png' %}"
                         alt="visa-logo"
                       />
                     </div>
@@ -728,19 +868,25 @@
                   </ul>
                 </div>
               </div>
-              <div class="card-options">
-                <div class="card card4 nat4">
+              <!-- <div class="card-options">
+                <div
+                  class="card card5 nat5"
+                  style="background-image: url(./static/Images/nature5.png)"
+                >
                   <div class="up">
                     <div class="up-logo">
                       <img
-                        src="static/Images/card extra copyww 1.png"
+                        src="{% static  './Images/card extra copyww 1.png' %}"
                         alt="logo"
                       />
                     </div>
                     <h4>Nature</h4>
                   </div>
                   <div class="mid">
-                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <img
+                      src="{% static  './Images/wwww 1.png' %}"
+                      alt="card-sensor"
+                    />
                     <h5>000-000-000 000-000-000 000-000-000</h5>
                   </div>
                   <div class="end">
@@ -751,7 +897,7 @@
                     </div>
                     <div class="visa-logo">
                       <img
-                        src="static/Images/Visa_Inc._logo 1.png"
+                        src="{% static  './Images/Visa_Inc._logo 1.png' %}"
                         alt="visa-logo"
                       />
                     </div>
@@ -771,77 +917,39 @@
                     </li>
                   </ul>
                 </div>
-              </div>
-              <div class="card-options">
-                <div class="card card5 nat5">
-                  <div class="up">
-                    <div class="up-logo">
-                      <img
-                        src="static/Images/card extra copyww 1.png"
-                        alt="logo"
-                      />
-                    </div>
-                    <h4>Nature</h4>
-                  </div>
-                  <div class="mid">
-                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
-                    <h5>000-000-000 000-000-000 000-000-000</h5>
-                  </div>
-                  <div class="end">
-                    <div class="exp">
-                      <h5 class="card-name">First-Name Last-Name</h5>
-                      <h6>VALID THRU</h6>
-                      <h4>01/01</h4>
-                    </div>
-                    <div class="visa-logo">
-                      <img
-                        src="static/Images/Visa_Inc._logo 1.png"
-                        alt="visa-logo"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="save">
-                  <ul>
-                    <li>
-                      <a href="#"
-                        ><i class="fa-solid fa-floppy-disk"></i>Save</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i class="fa-solid fa-download"></i>Download</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
       </div>
 
       <!-- SPORTS -->
-      <div class="sport" id="sports">
-        <span><img src="static/Images/ball.png" alt="ball" /></span>
+      <!-- <div class="sport" id="sports">
+        <span><img src="{% static  './Images/ball.png' %}" alt="ball" /></span>
         <h2>Sports</h2>
         <hr />
         <div class="sport-col">
           <div class="sport-card-designs">
             <div class="first-flex-top">
               <div class="card-options">
-                <div class="card card1 spo1">
+                <div
+                  class="card card1 spo1"
+                  style="background-image: url(./static/Images/football1.png)"
+                >
                   <div class="up">
                     <div class="up-logo">
                       <img
-                        src="static/Images/card extra copyww 1.png"
+                        src="{% static  './Images/card extra copyww 1.png' %}"
                         alt="logo"
                       />
                     </div>
                     <h4>Sport</h4>
                   </div>
                   <div class="mid">
-                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <img
+                      src="{% static  './Images/wwww 1.png' %}"
+                      alt="card-sensor"
+                    />
                     <h5>000-000-000 000-000-000 000-000-000</h5>
                   </div>
                   <div class="end">
@@ -852,7 +960,7 @@
                     </div>
                     <div class="visa-logo">
                       <img
-                        src="static/Images/Visa_Inc._logo 1.png"
+                        src="{% static  './Images/Visa_Inc._logo 1.png' %}"
                         alt="visa-logo"
                       />
                     </div>
@@ -874,18 +982,24 @@
                 </div>
               </div>
               <div class="card-options">
-                <div class="card card2 spo2">
+                <div
+                  class="card card2 spo2"
+                  style="background-image: url(./static/Images/football2.png)"
+                >
                   <div class="up">
                     <div class="up-logo">
                       <img
-                        src="static/Images/card extra copyww 1.png"
+                        src="{% static  './Images/card extra copyww 1.png' %}"
                         alt="logo"
                       />
                     </div>
                     <h4>Sport</h4>
                   </div>
                   <div class="mid">
-                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <img
+                      src="{% static  './Images/wwww 1.png' %}"
+                      alt="card-sensor"
+                    />
                     <h5>000-000-000 000-000-000 000-000-000</h5>
                   </div>
                   <div class="end">
@@ -896,7 +1010,7 @@
                     </div>
                     <div class="visa-logo">
                       <img
-                        src="static/Images/Visa_Inc._logo 1.png"
+                        src="{% static  './Images/Visa_Inc._logo 1.png' %}"
                         alt="visa-logo"
                       />
                     </div>
@@ -918,18 +1032,24 @@
                 </div>
               </div>
               <div class="card-options">
-                <div class="card card3 spo3">
+                <div
+                  class="card card3 spo3"
+                  style="background-image: url(./static/Images/football3.png)"
+                >
                   <div class="up">
                     <div class="up-logo">
                       <img
-                        src="static/Images/card extra copyww 1.png"
+                        src="{% static  './Images/card extra copyww 1.png' %}"
                         alt="logo"
                       />
                     </div>
                     <h4>Sport</h4>
                   </div>
                   <div class="mid">
-                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <img
+                      src="{% static  './Images/wwww 1.png' %}"
+                      alt="card-sensor"
+                    />
                     <h5>000-000-000 000-000-000 000-000-000</h5>
                   </div>
                   <div class="end">
@@ -940,7 +1060,7 @@
                     </div>
                     <div class="visa-logo">
                       <img
-                        src="static/Images/Visa_Inc._logo 1.png"
+                        src="{% static  './Images/Visa_Inc._logo 1.png' %}"
                         alt="visa-logo"
                       />
                     </div>
@@ -962,18 +1082,24 @@
                 </div>
               </div>
               <div class="card-options">
-                <div class="card card4 spo4">
+                <div
+                  class="card card4 spo4"
+                  style="background-image: url(./static/Images/football4.png)"
+                >
                   <div class="up">
                     <div class="up-logo">
                       <img
-                        src="static/Images/card extra copyww 1.png"
+                        src="{% static  './Images/card extra copyww 1.png' %}"
                         alt="logo"
                       />
                     </div>
                     <h4>Sport</h4>
                   </div>
                   <div class="mid">
-                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <img
+                      src="{% static  './Images/wwww 1.png' %}"
+                      alt="card-sensor"
+                    />
                     <h5>000-000-000 000-000-000 000-000-000</h5>
                   </div>
                   <div class="end">
@@ -984,7 +1110,7 @@
                     </div>
                     <div class="visa-logo">
                       <img
-                        src="static/Images/Visa_Inc._logo 1.png"
+                        src="{% static  './Images/Visa_Inc._logo 1.png' %}"
                         alt="visa-logo"
                       />
                     </div>
@@ -1006,18 +1132,24 @@
                 </div>
               </div>
               <div class="card-options">
-                <div class="card card5 spo5">
+                <div
+                  class="card card5 spo5"
+                  style="background-image: url(./static/Images/football5.png)"
+                >
                   <div class="up">
                     <div class="up-logo">
                       <img
-                        src="static/Images/card extra copyww 1.png"
+                        src="{% static  './Images/card extra copyww 1.png' %}"
                         alt="logo"
                       />
                     </div>
                     <h4>Sport</h4>
                   </div>
                   <div class="mid">
-                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <img
+                      src="{% static  './Images/wwww 1.png' %}"
+                      alt="card-sensor"
+                    />
                     <h5>000-000-000 000-000-000 000-000-000</h5>
                   </div>
                   <div class="end">
@@ -1028,7 +1160,7 @@
                     </div>
                     <div class="visa-logo">
                       <img
-                        src="static/Images/Visa_Inc._logo 1.png"
+                        src="{% static  './Images/Visa_Inc._logo 1.png' %}"
                         alt="visa-logo"
                       />
                     </div>
@@ -1052,29 +1184,35 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <!-- CAR COLLECTION -->
       <div class="car" id="cars">
-        <span><img src="static/Images/cars.png" alt="car" /></span>
+        <span><img src="{% static  './Images/cars.png' %}" alt="car" /></span>
         <h2>Cars</h2>
         <hr />
         <div class="car-col">
           <div class="car-card-designs">
             <div class="first-flex-top">
-              <div class="card-options">
-                <div class="card card1 car1">
+              <!-- <div class="card-options">
+                <div
+                  class="card card1 car1"
+                  style="background-image: url(./static/Images/car1.png)"
+                >
                   <div class="up">
                     <div class="up-logo">
                       <img
-                        src="static/Images/card extra copyww 1.png"
+                        src="{% static  './Images/card extra copyww 1.png' %}"
                         alt="logo"
                       />
                     </div>
                     <h4>Cars</h4>
                   </div>
                   <div class="mid">
-                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <img
+                      src="{% static  './Images/wwww 1.png' %}"
+                      alt="card-sensor"
+                    />
                     <h5>000-000-000 000-000-000 000-000-000</h5>
                   </div>
                   <div class="end">
@@ -1085,7 +1223,7 @@
                     </div>
                     <div class="visa-logo">
                       <img
-                        src="static/Images/Visa_Inc._logo 1.png"
+                        src="{% static  './Images/Visa_Inc._logo 1.png' %}"
                         alt="visa-logo"
                       />
                     </div>
@@ -1105,20 +1243,26 @@
                     </li>
                   </ul>
                 </div>
-              </div>
+              </div> -->
               <div class="card-options">
-                <div class="card card2 car2">
+                <div
+                  class="card card2 car2"
+                  style="background-image: url(./static/Images/car2.png)"
+                >
                   <div class="up">
                     <div class="up-logo">
                       <img
-                        src="static/Images/card extra copyww 1.png"
+                        src="{% static  './Images/card extra copyww 1.png' %}"
                         alt="logo"
                       />
                     </div>
                     <h4>Cars</h4>
                   </div>
                   <div class="mid">
-                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <img
+                      src="{% static  './Images/wwww 1.png' %}"
+                      alt="card-sensor"
+                    />
                     <h5>000-000-000 000-000-000 000-000-000</h5>
                   </div>
                   <div class="end">
@@ -1129,7 +1273,7 @@
                     </div>
                     <div class="visa-logo">
                       <img
-                        src="static/Images/Visa_Inc._logo 1.png"
+                        src="{% static  './Images/Visa_Inc._logo 1.png' %}"
                         alt="visa-logo"
                       />
                     </div>
@@ -1151,18 +1295,24 @@
                 </div>
               </div>
               <div class="card-options">
-                <div class="card card3 car3">
+                <div
+                  class="card card3 car3"
+                  style="background-image: url(./static/Images/car3.png)"
+                >
                   <div class="up">
                     <div class="up-logo">
                       <img
-                        src="static/Images/card extra copyww 1.png"
+                        src="{% static  './Images/card extra copyww 1.png' %}"
                         alt="logo"
                       />
                     </div>
                     <h4>Cars</h4>
                   </div>
                   <div class="mid">
-                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <img
+                      src="{% static  './Images/wwww 1.png' %}"
+                      alt="card-sensor"
+                    />
                     <h5>000-000-000 000-000-000 000-000-000</h5>
                   </div>
                   <div class="end">
@@ -1173,7 +1323,7 @@
                     </div>
                     <div class="visa-logo">
                       <img
-                        src="static/Images/Visa_Inc._logo 1.png"
+                        src="{% static  './Images/Visa_Inc._logo 1.png' %}"
                         alt="visa-logo"
                       />
                     </div>
@@ -1195,18 +1345,24 @@
                 </div>
               </div>
               <div class="card-options">
-                <div class="card card4 car4">
+                <div
+                  class="card card4 car4"
+                  style="background-image: url(./static/Images/car4.png)"
+                >
                   <div class="up">
                     <div class="up-logo">
                       <img
-                        src="static/Images/card extra copyww 1.png"
+                        src="{% static  './Images/card extra copyww 1.png' %}"
                         alt="logo"
                       />
                     </div>
                     <h4>Cars</h4>
                   </div>
                   <div class="mid">
-                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <img
+                      src="{% static  './Images/wwww 1.png' %}"
+                      alt="card-sensor"
+                    />
                     <h5>000-000-000 000-000-000 000-000-000</h5>
                   </div>
                   <div class="end">
@@ -1217,7 +1373,7 @@
                     </div>
                     <div class="visa-logo">
                       <img
-                        src="static/Images/Visa_Inc._logo 1.png"
+                        src="{% static  './Images/Visa_Inc._logo 1.png' %}"
                         alt="visa-logo"
                       />
                     </div>
@@ -1238,19 +1394,25 @@
                   </ul>
                 </div>
               </div>
-              <div class="card-options">
-                <div class="card card5 car5">
+              <!-- <div class="card-options">
+                <div
+                  class="card card5 car5"
+                  style="background-image: url(./static/Images/car5.png)"
+                >
                   <div class="up">
                     <div class="up-logo">
                       <img
-                        src="static/Images/card extra copyww 1.png"
+                        src="{% static  './Images/card extra copyww 1.png' %}"
                         alt="logo"
                       />
                     </div>
                     <h4>Cars</h4>
                   </div>
                   <div class="mid">
-                    <img src="static/Images/wwww 1.png" alt="card-sensor" />
+                    <img
+                      src="{% static  './Images/wwww 1.png' %}"
+                      alt="card-sensor"
+                    />
                     <h5>000-000-000 000-000-000 000-000-000</h5>
                   </div>
                   <div class="end">
@@ -1261,7 +1423,7 @@
                     </div>
                     <div class="visa-logo">
                       <img
-                        src="static/Images/Visa_Inc._logo 1.png"
+                        src="{% static  './Images/Visa_Inc._logo 1.png' %}"
                         alt="visa-logo"
                       />
                     </div>
@@ -1282,7 +1444,7 @@
                   </ul>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -1291,7 +1453,7 @@
       <div class="footer">
         <div class="first-div">
           <img
-            src="static/Images/cardxtra_logo1-removebg-preview 6.png"
+            src="{% static  './Images/cardxtra_logo1-removebg-preview 6.png' %}"
             alt="logo"
             class="footer-logo"
           />

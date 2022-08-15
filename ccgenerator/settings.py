@@ -124,10 +124,10 @@ USE_TZ = True
 STATIC_URL = 'static/'
 #where i keep my static files
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static')
+    os.path.join(BASE_DIR, 'assets')
 ]
 #where django relocates them
-STATIC_ROOT = os.path.join(BASE_DIR, 'templates/assets')
+STATIC_ROOT = os.path.join(BASE_DIR, 'templates/static')
 MEDIA_URL = 'media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/media')
 # Default primary key field type
