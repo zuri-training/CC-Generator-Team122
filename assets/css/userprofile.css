@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --font-family: 'Lato', sans-serif;
+    --primary-blue:rgba(10, 62, 139, 1);
+    --White: rgba(255, 255, 255, 1);
+    --turquoise: rgba(6, 195, 254, 1);
+}
+body{
+    font-family: var(--font-family);
+}
+.profile-container{
+    min-width: 376px;
+}
+i{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(7, 28, 59);
+}
+/* HIDDEN SIDE BAR */
+.hide{
+display: none;
+}
+.close{
+    display: block;
+    color: var(--White);
+    font-size: 2rem;
+    margin-left: 1.5rem;
+    padding-top: 2rem;
+}
+.dropdown{
+    background-color: var(--primary-blue);
+    max-width: 376px;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+.dropdown button{
+    color: var(--White);
+}
+.dropdown ul{
+    padding: 3rem;
+    margin-left: 2rem;
+}
+.dropdown ul li{
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+.dropdown ul li:hover{
+    background-color: rgb(199, 213, 235);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.dropdown ul li a{
+    color: var(--White);
+    font-weight: lighter;
+    text-decoration: none;
+    transition: none;
+}
+.dropdown ul li a:hover{
+    color: var(--primary-blue);
+    font-size: inherit;
+    font-weight: bold;
+}
+.dropdown ul li i, .side-bar-main ul li i{
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+.logout{
+    display: block;
+    background-color: white;
+    margin-top: 5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    position: relative;
+}
+.logout a{
+    color: var(--primary-blue) !important;
+    font-weight: bold !important;
+}
+.logout a i{
+    position: absolute;
+    right: 2%;
+}
+/* SIDE BAR */
+.side-bar-top{
+    background-color: var(--White);
+    padding: 3rem;
+    position: relative;
+}
+.side-bar-top img{
+    width: 10rem;
+    position: absolute;
+    right: 2%;
+    margin-bottom: 5rem;
+}
+.DP{
+    display: inline-block;
+    font-size: 10rem;
+    background-color: rgb(75, 98, 133);
+    border-radius: 50%;
+    padding: 3rem 3rem 1.5rem;
+    margin: 3rem 5rem 1rem;
+}
+.side-bar-main{
+    background-color: var(--primary-blue);
+    padding: 5rem 3rem 4rem;
+}
+.side-bar-main h3, .side-bar-main h6{
+    color: var(--White);
+    text-align: center;
+}
+.side-bar-main h6{
+    margin-bottom: 5rem;
+}
+.side-bar-main ul li{
+    background-color: var(--White);
+    color: var(--primary-blue);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+.side-bar-main ul li a{
+    color: var(--primary-blue);
+    font-weight: bold;
+}
+.side-bar-main ul li a:hover{
+    font-size: 1.5rem;
+}
+/* CARD IN SIDE BAR */
+.card{
+    background-image: url(./Images/71MyHdn01bL\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 2rem auto;
+    width: 290px;
+    height: 160px;
+    color: var(--White);
+    padding: 0.5rem;
+    position: relative;
+}
+
+.up{
+    display: flex;
+    justify-content: space-between;
+}
+.up-logo{
+    width: 8rem;
+    margin-top: -0.5rem;
+    margin-left: -0.5rem;
+}
+.mid{
+    margin-top: 1.5rem;
+    position: relative;
+}
+.mid img{
+    width: 2rem;
+    margin-top: -2rem;
+    position: absolute;
+    left: 8%;
+}
+.mid h5{
+    text-align: center;
+}
+.end{
+    display: flex;
+    margin-top: 1rem;
+}
+.end .card-name{
+    font-size: 0.5rem;
+}
+.end h6{
+    font-size: 0.3rem;
+}
+.end h4{
+    font-size: 1rem;
+    margin-left: 1.2rem;
+    margin-top: -5.1rem;
+}
+.visa-logo{
+    position: absolute;
+    bottom: 3%;
+    right: 1%;
+    width: 4rem;
+}
+/* MAIN PAGE */
+.main-page{
+    padding: 4rem 2rem 7rem;
+}
+.main-page ul li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 2rem;
+}
+.main-page .heading{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+.main-page .heading h2{
+    color: var(--primary-blue);
+}
+.downloads img{
+    margin: 2rem auto;
+    width: 20rem;
+}
+/* FOOTER */
+footer{
+    padding: 3rem 4rem;
+    background-color: var(--primary-blue);
+}
+.footer-logo{
+    display: block;
+    width: 15rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer ul li{
+    list-style: none;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+footer a{
+    color:var(--White);
+    text-decoration: none;
+}
+.footer-media{
+    text-align: center;
+    margin-top: 3rem;
+}
+.footer-media li{
+    display: inline-block;
+    margin-right: 1.5rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+.footer-media li:hover{
+    color: rgba(157, 192, 244);
+    border: 2px;
+    border-color: var(--primary-blue);
+    font-size: 1.5rem;
+}
+.footer ul li a:hover{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+@media screen and (min-width: 567px){
+    .DP{
+        margin-left: 10rem;
+    }
+     .side-bar-top img{
+        top: 2%;
+    }
+}
+@media screen and (min-width: 867px){
+    .profile-container{
+        display: flex;
+        /* justify-content: space-between; */
+        height: auto;
+    }
+    .side-bar{
+        width: 45%;
+    }
+    .DP{
+        margin-left: 2rem;
+    }
+    .side-bar-top img{
+        left: 2%;
+    }
+    /* MAIN PAGE */
+    .main-page{
+        display: block;
+        width: 55%;
+        padding-top: 2rem;
+        padding-right: 0;
+    }
+    .main-page ul li{
+        padding-right: 1rem;
+        margin-right: 0;
+    }
+    .downloads{
+        margin-top: 20rem;
+        margin-left: 3rem;
+    }
+    /* FOOTER */
+    footer{
+        background-color: rgb(85, 136, 219);
+    }
+    .footer{
+    display: flex;
+    justify-content: space-between;
+    }
+    .footer-logo{
+        margin-top: -2.6rem;
+    }
+}
+@media screen and (min-width: 1040px){
+
+    .side-bar{
+        width: 467px;
+    }
+    .side-bar-top img{
+        left: 2%;
+    }
+    .side-bar-main{
+        padding-top: 3rem;
+    }
+    .DP{
+        margin-left: 4.5rem;
+    }
+    /* MAIN PAGE */
+    .main-page{
+        width: calc(100% - 467px);
+        padding-left: 4rem;
+        margin-right: 0;
+    }
+    .main-page ul li{
+        padding-right: 1rem;
+        margin-right: 0;
+    }
+    .downloads{
+        margin-top: 15rem;
+        margin-left: 13rem;
+    }
+}
+@media screen and (min-width: 1440px){
+.downloads{
+        margin-left: 22rem;
+    }
+}
